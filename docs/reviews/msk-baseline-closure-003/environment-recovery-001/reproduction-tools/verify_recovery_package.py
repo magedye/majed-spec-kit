@@ -52,6 +52,9 @@ def main():
     assert sha(REPORT/'engine-dogfood-004-predeclared.json')==raw['predeclared_sha256']
     assert sha(REPORT/'engine-dogfood-004-results.json')==parsed['dogfood-classification-correction.json']['raw_sha256']
     assert sum(r['RESULT']=='CONTROL_NOT_PROVIDED' for r in raw['results'])==5
+    tool_rows=parsed['REPRODUCTION_TOOL_IDENTITIES.json']['tools']
+    assert len({r['copy'] for r in tool_rows})==len(tool_rows),'Duplicate tool copy identities'
+    for row in tool_rows:assert sha(REPORT/row['copy'])==row['sha256'],row['copy']
     with (REPORT/'OWNER_DECISIONS_AR.csv').open(encoding='utf-8-sig') as f:
         rows=list(csv.DictReader(f))
     assert not any(r['OWNER_STATUS'] in ['OWNER_ACCEPTED','CORE_IMPLEMENTATION_APPROVED','PRODUCTION_READY'] for r in rows)
