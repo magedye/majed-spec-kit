@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "record_id": "MSK-GOV-REC-REPLACE-ME",
+  "revision": "REPLACE_WITH_GIT_REVISION",
+  "generated_at": "REPLACE_WITH_ISO8601_TIMESTAMP",
+  "requirements": [
+    {
+      "id": "MSK-01",
+      "source": "docs/majed-core/requirements-matrix.md#MSK-01",
+      "obligation": "Record the requested outcome, constraints, and non-goals.",
+      "acceptance_criteria": [
+        "The source request and non-goals are recorded in the specification."
+      ],
+      "status": "PENDING",
+      "protected": false,
+      "evidence": [],
+      "authorization": {
+        "status": "NOT_REQUIRED"
+      },
+      "review": {
+        "status": "PENDING",
+        "independent": false,
+        "reviewer": "",
+        "scope": ""
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "MSK-C-D1-001",
+      "domain": "D1",
+      "status": "DESIGNED_NOT_IMPLEMENTED",
+      "enforcement_type": "NONE",
+      "verification_status": "NOT_RUN",
+      "evidence_ids": []
+    }
+  ],
+  "acceptance": {
+    "status": "PENDING",
+    "owner": "",
+    "source": "",
+    "authenticated": false
+  },
+  "budget": {
+    "status": "NO_TELEMETRY",
+    "limits": {},
+    "meter": ""
+  }
+}

@@ -1,0 +1,48 @@
+schema_version: "1.0"
+
+extension:
+  id: majed-governance
+  name: "Majed Governance and Assurance"
+  version: "1.0.0"
+  description: "Deterministic, read-only governance checks for requirement traceability, evidence freshness, authorization status, reviewer independence, control coverage, and unsupported completion claims."
+  category: "process"
+  effect: "read-only"
+  author: "Majed Spec Kit"
+  repository: "https://github.com/magedye/majed-spec-kit"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=1.3.0"
+
+provides:
+  commands:
+    - name: "speckit.majed-governance.check"
+      file: "commands/speckit.majed-governance.check.md"
+      description: "Validate a governance record and report unsupported completion, stale evidence, authorization, review, and control findings"
+    - name: "speckit.majed-governance.trace"
+      file: "commands/speckit.majed-governance.trace.md"
+      description: "Render a derived, non-authoritative requirement-to-evidence traceability view"
+    - name: "speckit.majed-governance.decide"
+      file: "commands/speckit.majed-governance.decide.md"
+      description: "Prepare an owner decision brief without granting acceptance or release authority"
+
+  templates:
+    - name: "governance-record"
+      file: "templates/governance-record.json"
+      description: "Project-owned governance record template"
+    - name: "governance-record-schema"
+      file: "schemas/governance-record.schema.json"
+      description: "JSON Schema for the governance record"
+
+  scripts:
+    - name: "governance-core"
+      file: "scripts/python/governance_core.py"
+      description: "Stdlib-only governance record validator and derived-view renderer"
+      runtimes: ["python"]
+
+tags:
+  - "governance"
+  - "assurance"
+  - "traceability"
+  - "evidence"
+  - "review"

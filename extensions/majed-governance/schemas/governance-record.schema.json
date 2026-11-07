@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://majed-spec-kit.local/schemas/governance-record.schema.json",
+  "title": "Majed Governance Record",
+  "type": "object",
+  "required": ["schema_version", "record_id", "revision", "requirements"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_id": {"type": "string", "minLength": 1},
+    "revision": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string"},
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "source", "obligation", "status", "acceptance_criteria"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "source": {"type": "string", "minLength": 1},
+          "obligation": {"type": "string", "minLength": 1},
+          "status": {
+            "enum": ["COMPLETE", "PARTIAL", "PENDING", "NOT_VERIFIED", "NOT_APPLICABLE"]
+          },
+          "protected": {"type": "boolean"},
+          "acceptance_criteria": {"type": "array", "items": {"type": "string"}},
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "result", "provenance"],
+              "properties": {
+                "id": {"type": "string", "minLength": 1},
+                "kind": {"type": "string"},
+                "path": {"type": "string"},
+                "revision": {"type": "string"},
+                "result": {"enum": ["PASS", "FAIL", "UNKNOWN"]},
+                "provenance": {
+                  "enum": ["SELF_ASSERTED", "TOOL_OUTPUT", "INDEPENDENT_REVIEW", "OWNER_RECORD"]
+                },
+                "sha256": {"type": "string"},
+                "summary": {"type": "string"}
+              }
+            }
+          },
+          "authorization": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "enum": ["NOT_REQUIRED", "GRANTED", "PENDING", "NOT_VERIFIED", "NOT_GRANTED"]
+              },
+              "source": {"type": "string"},
+              "scope": {"type": "string"},
+              "expires_at": {"type": "string"}
+            }
+          },
+          "review": {
+            "type": "object",
+            "properties": {
+              "status": {"enum": ["PENDING", "SELF_REVIEW", "INDEPENDENT", "NOT_VERIFIED"]},
+              "independent": {"type": "boolean"},
+              "reviewer": {"type": "string"},
+              "scope": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "controls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "domain", "status", "enforcement_type", "verification_status"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "domain": {"enum": ["D1", "D2", "D3", "D4", "D5", "D6"]},
+          "status": {
+            "enum": ["IMPLEMENTED", "PARTIAL", "DESIGNED_NOT_IMPLEMENTED", "NOT_APPLICABLE"]
+          },
+          "enforcement_type": {
+            "enum": ["NONE", "ADVISORY", "PRE_EXECUTION", "POST_EXECUTION", "OS", "NETWORK", "TOOL_GATEWAY", "UNKNOWN"]
+          },
+          "verification_status": {"enum": ["PASS", "FAIL", "NOT_RUN", "NOT_VERIFIED", "NOT_APPLICABLE"]},
+          "evidence_ids": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "acceptance": {
+      "type": "object",
+      "properties": {
+        "status": {"enum": ["PENDING", "ACCEPTED", "REJECTED", "NOT_GRANTED", "NOT_VERIFIED"]},
+        "owner": {"type": "string"},
+        "source": {"type": "string"},
+        "authenticated": {"type": "boolean"}
+      }
+    },
+    "budget": {
+      "type": "object",
+      "properties": {
+        "status": {"enum": ["ENFORCED", "NO_TELEMETRY", "NOT_ENFORCED", "NOT_APPLICABLE"]},
+        "limits": {"type": "object"},
+        "meter": {"type": "string"}
+      }
+    }
+  }
+}
