@@ -24,8 +24,8 @@
     "bounded_execution": "GRANTED",
     "candidate_acceptance": "NOT_GRANTED",
     "Core": "NOT_GRANTED",
-    "merge": "PROHIBITED",
-    "push": "PROHIBITED"
+    "merge": "GRANTED_FOR_EXISTING_PARTIAL_PACKAGE_ONLY",
+    "push": "GRANTED_ORIGIN_MAIN_EXISTING_PARTIAL_PACKAGE_ONLY"
   },
   "independent_technical_review": {
     "status": "TECHNICAL_PARTIAL_PACKAGE_REVIEWED / BLOCKERS_CONFIRMED",
@@ -38,7 +38,7 @@
     "full_qualification_or_owner_acceptance": false
   },
   "previous_documentary_review": "../INDEPENDENT_REVIEW_002.md remains documentary only, no substitution",
-  "updated_at_utc": "2026-11-07T05:31:10.619395+00:00",
+  "updated_at_utc": "2026-11-07T05:39:07.394657+00:00",
   "mandatory_lint": {
     "result": "PASSED",
     "evidence": "lint-authorized-002/receipt.json",
@@ -55,5 +55,6 @@
   ],
   "current_evidence_prefix": "environment-recovery-001/",
   "previous_snapshot": "environment-recovery-001/historical-98e6269/readiness.json",
-  "source_candidate": "10b5862f6905e62eaef0983418cb9567b1b8a8d6"
+  "source_candidate": "10b5862f6905e62eaef0983418cb9567b1b8a8d6",
+  "git_delivery_authorization": "environment-recovery-001/OWNER_GIT_DELIVERY_AUTHORIZATION_001.json"
 }
