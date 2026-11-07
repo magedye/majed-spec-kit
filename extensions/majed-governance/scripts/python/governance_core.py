@@ -915,7 +915,7 @@ def trace_markdown(record: dict[str, Any]) -> str:
     lines = [
         "# Governance Trace",
         "",
-        "> **DERIVED / NON-AUTHORITATIVE** — this view summarizes a local record.",
+        "> **DERIVED / NON-AUTHORITATIVE** - this view summarizes a local record.",
         "> It is not an owner approval, an independent review, or enforcement evidence.",
         "",
         f"- Record: `{record_id}`",
@@ -1009,7 +1009,7 @@ def decision_markdown(record: dict[str, Any]) -> str:
     lines = [
         "# Owner Decision Brief",
         "",
-        "> **DERIVED / NON-AUTHORITATIVE** — this brief prepares a decision. It does not grant it.",
+        "> **DERIVED / NON-AUTHORITATIVE** - this brief prepares a decision. It does not grant it.",
         "",
         f"**Status:** {'OWNER_DECISION_REQUIRED' if has_open else 'NO_OPEN_ITEMS'}",
         "",
@@ -1094,7 +1094,14 @@ def _build_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def _configure_stdout() -> None:
+    reconfigure = getattr(sys.stdout, "reconfigure", None)
+    if callable(reconfigure):
+        reconfigure(encoding="utf-8", errors="replace")
+
+
 def main(argv: list[str] | None = None) -> int:
+    _configure_stdout()
     parser = _build_parser()
     args = parser.parse_args(argv)
     path = Path(args.record)

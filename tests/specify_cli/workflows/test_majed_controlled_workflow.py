@@ -21,6 +21,8 @@ WORKFLOW_FILE = WORKFLOW_DIR / "workflow.yml"
 
 
 def _install_workflow(project: Path) -> Path:
+    extension = project / ".specify" / "extensions" / "majed-governance"
+    shutil.copytree(REPO_ROOT / "extensions" / "majed-governance", extension)
     destination = project / ".specify" / "workflows" / "majed-controlled"
     shutil.copytree(WORKFLOW_DIR, destination)
     return destination / "workflow.yml"
