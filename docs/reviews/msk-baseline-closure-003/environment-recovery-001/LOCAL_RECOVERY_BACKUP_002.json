@@ -1,0 +1,32 @@
+{
+  "request_id": "MSK-BASELINE-CLOSURE-003",
+  "archive": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\backups\\recovery-20261107T053113Z.zip",
+  "sha256": "7096942177144cab571d2302c7da203b6f3252c113aae78856d66c4b9105c7ab",
+  "bytes": 15770711,
+  "member_files_verified": 441,
+  "manifest": "MANIFEST.json",
+  "CRC": "PASSED",
+  "all_member_sizes_and_sha256": "PASSED",
+  "scope": "Task drivers/raw fixture evidence, report snapshot, original four planning files and selected task marker/progress; no venv or massive pytest temp backup",
+  "excluded_directory_names": [
+    ".git",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__",
+    "dogfood-profile",
+    "dogfood-profile004",
+    "lint-authorized-venv",
+    "lint-venv",
+    "node_modules",
+    "profiles",
+    "project-build-venv",
+    "temp",
+    "venv"
+  ],
+  "sources_and_earlier_backups_preserved": true,
+  "git_tracked": false,
+  "restore": "Verify archive SHA, CRC, member SHA and path containment. Restore only missing explicitly intended task paths with exclusive create; never bulk extract or overwrite originals. No restore performed.",
+  "subsequent_receipts": "This backup identity record and final checkpoint006 receipt are subsequent to the fixed snapshot; not inside it. Snapshot README references that subsequent identity record intentionally.",
+  "self_containment_limit": "Virtualenvs, uv package cache, full external pytest temps and old fixture .git metadata excluded. This is task evidence recovery, not a complete machine or isolated dependency wheelhouse backup."
+}

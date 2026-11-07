@@ -8,12 +8,14 @@
     "P3": "STATIC_AUTHORITY_RECONCILIATION_COMPLETE_PROTECTED_DECISIONS_PENDING",
     "P4": "24OBLIGATIONS_AND50NONBLANK_P4P5SOURCE_LINES_DOCUMENTED; runtime method sample blocked, no complete execution claim",
     "P5": "SEVEN_PREVIOUSLY_BLOCKED_NATIVE_ENGINE_CASES_EXECUTED_WITH_CONTROL_GAPS; older positive preserved",
-    "P6": "NEW_INDEPENDENT_TECHNICAL_REVIEW_PENDING_FIXED_CURRENT_PACKAGE",
+    "P6": "TECHNICAL_PARTIAL_PACKAGE_REVIEWED_BLOCKERS_CONFIRMED; fixed68e99db; no full qualification or acceptance",
     "P7": "Source hash equivalence and environment change recorded; interrupted unsafe-temp attempt excluded; remaining cases rerun externally",
     "P8": "FOUR_INDEPENDENT_JUDGMENTS_RECORDED_NO_OWNER_ACCEPTANCE",
     "P9": "SOURCE_SCOPED_FIT_GAP_RECONCILED_NO_CORE_IMPLEMENTATION"
   },
   "next_action": "Owner review of actual blockers and requested narrow remedies; no Core/main merge/push or protected authority edits.",
   "reviewed_documentary_candidate": "b5817243c090a08b1d6371011bf144af6a509c16",
-  "current_evidence": "environment-recovery-001/readiness-current.json"
+  "current_evidence": "environment-recovery-001/readiness-current.json",
+  "reviewed_technical_candidate": "68e99db16199bb132f138357c0ba062635cdf4db",
+  "technical_review": "environment-recovery-001/INDEPENDENT_TECHNICAL_REVIEW_003.md"
 }

@@ -1,0 +1,34 @@
+{
+  "request_id": "MSK-BASELINE-CLOSURE-003",
+  "status": "PARTIAL_WITH_BLOCKERS",
+  "recorded_at_utc": "2026-11-07T05:31:10.619395+00:00",
+  "branch": "fix/msk-baseline-closure-003-qualified",
+  "pre_closeout_commit": "68e99db16199bb132f138357c0ba062635cdf4db",
+  "reviewed_technical_candidate": "68e99db16199bb132f138357c0ba062635cdf4db",
+  "source_candidate": "10b5862f6905e62eaef0983418cb9567b1b8a8d6",
+  "main": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+  "stored_origin_main": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+  "old_candidate": "ca3233afe5192ba01861098c429effea7e6a4f6c",
+  "incidental_branch_retained": {
+    "branch": "001-no-git",
+    "commit": "10b5862f6905e62eaef0983418cb9567b1b8a8d6"
+  },
+  "unpublished_commits_before_final_documentary_commit": 6,
+  "expected_after_one_final_commit": 7,
+  "remote_contact_performed": false,
+  "primary_worktree_read_only_observation": {
+    "branch": "feat/msk-extension-core-002",
+    "head": "977062bccff6d3f07835104b10e416315505851a",
+    "status_porcelain": "",
+    "concurrent_owner_progress_preserved": true
+  },
+  "no_merge": true,
+  "no_push": true,
+  "no_cleanup_or_branch_deletion": true,
+  "source_changes": "Only four exact reused ca3233a files;1017 baseline file identities retained; no protected authority change",
+  "checkpoint_scope": "Documentation-only partial-package checkpoint, not a baseline qualification/acceptance gate",
+  "final_commit_receipt": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\evidence-checkpoint-006\\receipt.json",
+  "final_commit_identity": "Resolve exact after SHA from the subsequent checkpoint receipt; no self-referential commit hash fabricated",
+  "next_action": "Owner reviews OWNER_DECISIONS_AR.csv and NEXT_ELIGIBLE_SCOPE_AND_UNLOCKS.json. Additional8test-file remedies remain NOT_GRANTED; protected decisions unresolved; STOP.",
+  "live_process_claim": "Owned qualification drivers returned completed receipts. No claim that the whole host or owner has no running processes."
+}
