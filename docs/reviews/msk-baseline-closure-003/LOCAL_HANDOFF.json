@@ -1,0 +1,21 @@
+{
+  "request_id": "MSK-BASELINE-CLOSURE-003",
+  "status": "PARTIAL_WITH_BLOCKERS",
+  "documentary_reviewed_candidate": "b5817243c090a08b1d6371011bf144af6a509c16",
+  "source_baseline": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+  "original_candidate_preserved": "ca3233afe5192ba01861098c429effea7e6a4f6c",
+  "current_branch": "fix/msk-baseline-closure-003-qualified",
+  "main_unchanged_at_checkpoint": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+  "stored_origin_main": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+  "task_branch_ahead_stored_origin_main_before_final_receipt_commit": 2,
+  "task_branch_behind_stored_origin_main": 0,
+  "remote_contacted": false,
+  "merge": false,
+  "push": false,
+  "local_source_corrections": 0,
+  "documentary_verification": "candidate-save002 pre/staged PASS_IN_DOCUMENTARY_SCOPE; final factual receipt commit repeats same safety gate",
+  "new_material_change_since_review": "None; only actual review/save/recovery/handoff records",
+  "preserved_worktrees": "worktree D:/APP/maged-spec-kit/majed-spec-kit\nHEAD ba397542684da2b2d1fe00bbca05cf3911136237\nbranch refs/heads/feat/msk-extension-core-002\n\nworktree D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree\nHEAD b5817243c090a08b1d6371011bf144af6a509c16\nbranch refs/heads/fix/msk-baseline-closure-003-qualified",
+  "final_metadata_commit": "Saved after these factual records; exact final HEAD observable in Git, no self-referential SHA invented",
+  "next_action": "Validate archive SHA/CRC/member SHA; restore only missing intended task paths using exclusive create. Never overwrite originals or bulk-extract untrusted paths. Original primary plan and earlier4filebackup remain intact. For qualification see STATE and README; no automatic next project task."
+}

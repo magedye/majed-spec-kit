@@ -1,0 +1,10 @@
+{
+  "archive": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\backups\\execution-20261107T034110Z.zip",
+  "sha256": "934d9dc6ab6c6791de10a34101cbd0012f7715653be85209cdddff8c5b2e47ba",
+  "member_files_verified": 87,
+  "manifest": "MANIFEST.json",
+  "source_directories_preserved": true,
+  "git_tracked": false,
+  "restore": "Validate archive SHA/CRC/member SHA; restore only missing intended task paths using exclusive create. Never overwrite originals or bulk-extract untrusted paths. Original primary plan and earlier4filebackup remain intact.",
+  "backup_scope": "Original4planning files and complete local execution drivers/rawlogs/fixtures/STATE at this checkpoint. Final post-backup documentary-save receipt remains a local subsequent receipt; backup is a fixed snapshot."
+}

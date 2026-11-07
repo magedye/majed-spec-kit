@@ -1,0 +1,6 @@
+warning: in the working copy of 'docs/reviews/msk-baseline-closure-003/README_AR.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/reviews/msk-baseline-closure-003/scenario-traceability.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/reviews/msk-baseline-closure-003/INDEPENDENT_REVIEW_001.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/reviews/msk-baseline-closure-003/OWNER_ENVIRONMENT_CLARIFICATION.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/reviews/msk-baseline-closure-003/review-remediation.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/reviews/msk-baseline-closure-003/scenario-source-coverage-checklist.json', CRLF will be replaced by LF the next time Git touches it

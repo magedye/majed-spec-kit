@@ -1,0 +1,24 @@
+{
+  "result": "PASS_IN_DOCUMENTARY_SCOPE",
+  "checks": {
+    "unchanged_preexisting_files": 1021,
+    "main_current": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+    "planning_original_and_backup_files_verified": 8,
+    "scenario_obligations": 24,
+    "dogfood_cases": {
+      "total": 9,
+      "blocked": 7,
+      "limited_script_profile_passes": 2
+    },
+    "unmet_dependency_requirements": 8,
+    "test_module_files": 315,
+    "static_test_definitions_not_runtime_cases": 7359,
+    "pending_owner_decisions": 6,
+    "json_artifacts": 18
+  },
+  "errors": [],
+  "qualification_granted": false,
+  "independent_review_granted": false,
+  "owner_acceptance": false,
+  "scope": "Preservation, declared documentary accounting/links and safe save only. All primary qualification blockers remain."
+}

@@ -120,6 +120,132 @@
       "copy": "raw-evidence/dispatcher-posix-true-on-windows.stdout.txt",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-001\\commit.stderr.txt",
+      "copy": "raw-evidence/candidate-save-001-commit.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-001\\commit.stdout.txt",
+      "copy": "raw-evidence/candidate-save-001-commit.stdout.txt",
+      "sha256": "0a6823a369d5df433d73390114afcf7188ae05cb1a33738a8fec4c8e91c001ec",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-001\\pre-stage.stderr.txt",
+      "copy": "raw-evidence/candidate-save-001-pre-stage.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-001\\pre-stage.stdout.txt",
+      "copy": "raw-evidence/candidate-save-001-pre-stage.stdout.txt",
+      "sha256": "82a103c982d53e62ec0ce14d984da815098f45551911e7d1f76b3343c8d2d75e",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-001\\RESULT.json",
+      "copy": "raw-evidence/candidate-save-001-RESULT.json",
+      "sha256": "8b371589396815933057fdffabd2de18b43049a249b32f4f95faf0e7c2ebf907",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-001\\stage.stderr.txt",
+      "copy": "raw-evidence/candidate-save-001-stage.stderr.txt",
+      "sha256": "1777495a177907cc2de09f0431f6be47aa57deeeb6ae56d9bad7ca380d74f637",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-001\\stage.stdout.txt",
+      "copy": "raw-evidence/candidate-save-001-stage.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-001\\staged-verification.stderr.txt",
+      "copy": "raw-evidence/candidate-save-001-staged-verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-001\\staged-verification.stdout.txt",
+      "copy": "raw-evidence/candidate-save-001-staged-verification.stdout.txt",
+      "sha256": "82a103c982d53e62ec0ce14d984da815098f45551911e7d1f76b3343c8d2d75e",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-002\\commit.stderr.txt",
+      "copy": "raw-evidence/candidate-save-002-commit.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-002\\commit.stdout.txt",
+      "copy": "raw-evidence/candidate-save-002-commit.stdout.txt",
+      "sha256": "e61ad6f2152dea87957b60effd70f1ad101a90890b3151b7b3e7a19834e8003b",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-002\\pre-stage.stderr.txt",
+      "copy": "raw-evidence/candidate-save-002-pre-stage.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-002\\pre-stage.stdout.txt",
+      "copy": "raw-evidence/candidate-save-002-pre-stage.stdout.txt",
+      "sha256": "1544a0ff785b182c97cda1a0d5e2f526b00c17450ec824787ea617b00b391a39",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-002\\RESULT.json",
+      "copy": "raw-evidence/candidate-save-002-RESULT.json",
+      "sha256": "7301267337d226c3fe50ea67d53a3805d2f66fb9b8f4bce386e4a53156af4994",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-002\\stage.stderr.txt",
+      "copy": "raw-evidence/candidate-save-002-stage.stderr.txt",
+      "sha256": "1c70fcb75aebd4272ee23e067b62bd51bf5849c80c97342c43155ef5edea6804",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-002\\stage.stdout.txt",
+      "copy": "raw-evidence/candidate-save-002-stage.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-002\\staged-verification.stderr.txt",
+      "copy": "raw-evidence/candidate-save-002-staged-verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\candidate-save-002\\staged-verification.stdout.txt",
+      "copy": "raw-evidence/candidate-save-002-staged-verification.stdout.txt",
+      "sha256": "1544a0ff785b182c97cda1a0d5e2f526b00c17450ec824787ea617b00b391a39",
+      "byte_identical": true,
+      "scope": "Actual documentary checkpoint; not baseline pytest qualification"
     }
   ]
 }

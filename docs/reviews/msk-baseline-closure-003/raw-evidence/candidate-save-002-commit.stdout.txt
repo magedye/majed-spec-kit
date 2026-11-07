@@ -1,0 +1,6 @@
+[fix/msk-baseline-closure-003-qualified b581724] docs: preserve commit acceptance boundary in MSK scenario trace
+ 6 files changed, 534 insertions(+), 5 deletions(-)
+ create mode 100644 docs/reviews/msk-baseline-closure-003/INDEPENDENT_REVIEW_001.md
+ create mode 100644 docs/reviews/msk-baseline-closure-003/OWNER_ENVIRONMENT_CLARIFICATION.md
+ create mode 100644 docs/reviews/msk-baseline-closure-003/review-remediation.json
+ create mode 100644 docs/reviews/msk-baseline-closure-003/scenario-source-coverage-checklist.json
