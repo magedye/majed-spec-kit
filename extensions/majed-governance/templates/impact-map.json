@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "paths": [
+    {
+      "prefix": "presets/",
+      "component": "majed-adeq",
+      "kind": "preset",
+      "risk": "MEDIUM",
+      "reversible": true
+    },
+    {
+      "prefix": "extensions/",
+      "component": "majed-governance",
+      "kind": "extension",
+      "risk": "MEDIUM",
+      "reversible": true
+    },
+    {
+      "prefix": "workflows/",
+      "component": "majed-controlled",
+      "kind": "workflow",
+      "risk": "MEDIUM",
+      "reversible": true
+    },
+    {
+      "prefix": "bundles/",
+      "component": "majed-governed",
+      "kind": "bundle",
+      "risk": "HIGH",
+      "reversible": true
+    },
+    {
+      "prefix": "tests/",
+      "component": "majed-governance",
+      "kind": "test",
+      "risk": "LOW",
+      "reversible": true
+    },
+    {
+      "prefix": "docs/majed-core/",
+      "component": "majed-core-docs",
+      "kind": "documentation",
+      "risk": "LOW",
+      "reversible": true
+    }
+  ]
+}

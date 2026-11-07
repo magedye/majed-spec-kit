@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "id": "project-constitution",
+      "priority": 1,
+      "path": ".specify/memory/constitution.md",
+      "revision": "REPLACE_WITH_GIT_REVISION",
+      "sha256": "REPLACE_WITH_64_HEX_SHA256",
+      "authority": "PROJECT_POLICY",
+      "scope": "project governance",
+      "supersedes": null
+    },
+    {
+      "id": "requirements-matrix",
+      "priority": 2,
+      "path": "docs/majed-core/requirements-matrix.md",
+      "revision": "REPLACE_WITH_GIT_REVISION",
+      "sha256": "REPLACE_WITH_64_HEX_SHA256",
+      "authority": "REFERENCE",
+      "scope": "Core coverage",
+      "supersedes": null
+    }
+  ]
+}

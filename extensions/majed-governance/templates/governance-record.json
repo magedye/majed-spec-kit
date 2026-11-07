@@ -8,10 +8,14 @@
       "id": "MSK-01",
       "source": "docs/majed-core/requirements-matrix.md#MSK-01",
       "obligation": "Record the requested outcome, constraints, and non-goals.",
+      "kind": "OBLIGATION",
       "acceptance_criteria": [
         "The source request and non-goals are recorded in the specification."
       ],
       "status": "PENDING",
+      "required": false,
+      "component": "",
+      "tests": [],
       "protected": false,
       "evidence": [],
       "authorization": {
@@ -32,7 +36,8 @@
       "status": "DESIGNED_NOT_IMPLEMENTED",
       "enforcement_type": "NONE",
       "verification_status": "NOT_RUN",
-      "evidence_ids": []
+      "evidence_ids": [],
+      "requirement_ids": []
     }
   ],
   "acceptance": {

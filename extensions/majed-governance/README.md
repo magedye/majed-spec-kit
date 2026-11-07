@@ -8,12 +8,18 @@ Kit status; it is not a second requirements, approval, or policy engine.
 
 | Command | Purpose |
 |---|---|
-| `speckit.majed-governance.check` | Validate a record; report unsupported completion, stale evidence, authorization, review, control, and budget findings |
-| `speckit.majed-governance.trace` | Render a derived requirement-to-evidence traceability view |
+| `speckit.majed-governance.check` | Validate a record; report unsupported completion, stale evidence, authorization, review, control, budget, linkage, and consistency findings |
+| `speckit.majed-governance.trace` | Render a derived requirement-to-source/component/evidence traceability view |
 | `speckit.majed-governance.decide` | Prepare an owner decision brief without granting acceptance |
+| `speckit.majed-governance.intake` | Extract traceable source-span candidates from a request document |
+| `speckit.majed-governance.impact` | Map changed files to components and require rollback for risky changes |
+| `speckit.majed-governance.converge` | Produce a bounded remediation plan for open requirements |
+| `speckit.majed-governance.sources` | Validate source authority, revision, hash, priority, and supersession |
+| `speckit.majed-governance.metrics` | Report deterministic record metrics |
 
 The commands invoke `scripts/python/governance_core.py`, which uses only the
-Python standard library.
+Python standard library. `scripts/python/workflow_bridge.py` supplies the
+versioned dependency bridge used by `majed-controlled`.
 
 ## Record model
 
@@ -34,6 +40,13 @@ The template is `templates/governance-record.json`; the JSON Schema is
 - `0` — `PASS` (warnings are allowed)
 - `2` — `FINDINGS` (one or more errors)
 - `3` — `INVALID` (unreadable or unsupported record)
+
+## Additional deterministic subcommands
+
+The script also exposes `intake`, `impact`, `converge`, `sources`, `metrics`,
+and `version`. `version --require X.Y.Z` is used by the controlled workflow's
+dependency gate. `converge --apply` writes a derived remediation plan and does
+not mutate the source record.
 
 ## What the checks actually prove
 

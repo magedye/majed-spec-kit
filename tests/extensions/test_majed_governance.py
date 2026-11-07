@@ -207,15 +207,23 @@ def test_enforced_budget_without_meter_is_rejected():
     assert "UNSUPPORTED_BUDGET" in _codes(result)
 
 
-def test_schema_and_template_are_valid_json():
+def test_schema_and_templates_are_valid_json():
     schema = json.loads(
         (EXT_DIR / "schemas" / "governance-record.schema.json").read_text(encoding="utf-8")
     )
     template = json.loads(
         (EXT_DIR / "templates" / "governance-record.json").read_text(encoding="utf-8")
     )
+    impact = json.loads(
+        (EXT_DIR / "templates" / "impact-map.json").read_text(encoding="utf-8")
+    )
+    sources = json.loads(
+        (EXT_DIR / "templates" / "sources-manifest.json").read_text(encoding="utf-8")
+    )
     assert schema["properties"]["requirements"]["type"] == "array"
     assert template["schema_version"] == "1.0"
+    assert impact["paths"]
+    assert sources["sources"]
 
 
 def test_trace_and_decision_views_are_derived_and_non_authoritative():
@@ -254,6 +262,11 @@ def test_manifest_and_command_layout():
         "speckit.majed-governance.check",
         "speckit.majed-governance.trace",
         "speckit.majed-governance.decide",
+        "speckit.majed-governance.intake",
+        "speckit.majed-governance.impact",
+        "speckit.majed-governance.converge",
+        "speckit.majed-governance.sources",
+        "speckit.majed-governance.metrics",
     }
     for entry in manifest["provides"]["commands"]:
         assert (EXT_DIR / entry["file"]).is_file()

@@ -3,7 +3,7 @@ schema_version: "1.0"
 extension:
   id: majed-governance
   name: "Majed Governance and Assurance"
-  version: "1.0.0"
+  version: "1.1.0"
   description: "Deterministic, read-only governance checks for requirement traceability, evidence freshness, authorization status, reviewer independence, control coverage, and unsupported completion claims."
   category: "process"
   effect: "read-write"
@@ -25,6 +25,21 @@ provides:
     - name: "speckit.majed-governance.decide"
       file: "commands/speckit.majed-governance.decide.md"
       description: "Prepare an owner decision brief without granting acceptance or release authority"
+    - name: "speckit.majed-governance.intake"
+      file: "commands/speckit.majed-governance.intake.md"
+      description: "Extract traceable candidate obligations from a request document"
+    - name: "speckit.majed-governance.impact"
+      file: "commands/speckit.majed-governance.impact.md"
+      description: "Map changed files to components and require rollback for risky changes"
+    - name: "speckit.majed-governance.converge"
+      file: "commands/speckit.majed-governance.converge.md"
+      description: "Produce a bounded remediation plan for open requirements"
+    - name: "speckit.majed-governance.sources"
+      file: "commands/speckit.majed-governance.sources.md"
+      description: "Validate source authority, revision, and content hashes"
+    - name: "speckit.majed-governance.metrics"
+      file: "commands/speckit.majed-governance.metrics.md"
+      description: "Report deterministic governance record metrics"
 
   templates:
     - name: "governance-record"
@@ -33,6 +48,12 @@ provides:
     - name: "governance-record-schema"
       file: "schemas/governance-record.schema.json"
       description: "JSON Schema for the governance record"
+    - name: "impact-map"
+      file: "templates/impact-map.json"
+      description: "Path-prefix impact map for changed-file analysis"
+    - name: "sources-manifest"
+      file: "templates/sources-manifest.json"
+      description: "Source authority/revision/hash manifest"
 
   scripts:
     - name: "governance-core"

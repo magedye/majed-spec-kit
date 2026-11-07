@@ -27,6 +27,7 @@ try:  # Script directory is on sys.path when invoked as a file.
 except ImportError:  # pragma: no cover - defensive for unusual import modes
     validate_record = None  # type: ignore[assignment]
 
+COMPONENT_VERSION = "1.1.0"
 PROFILES = {"quick", "standard", "controlled"}
 MODES = {"assess", "execute"}
 RUN_ID_RE = re.compile(r"^[A-Za-z0-9_-]{1,80}$")
@@ -234,11 +235,47 @@ def _configure_stdout() -> None:
         reconfigure(encoding="utf-8", errors="replace")
 
 
+def _version_tuple(value: str) -> tuple[int, int, int]:
+    parts = re.findall(r"\d+", value)
+    numbers = [int(part) for part in parts[:3]]
+    while len(numbers) < 3:
+        numbers.append(0)
+    return tuple(numbers[:3])  # type: ignore[return-value]
+
+
+def version(required: str = "") -> int:
+    compatible = (
+        _version_tuple(COMPONENT_VERSION) >= _version_tuple(required)
+        if required
+        else True
+    )
+    payload = {
+        "component": "majed-governance-workflow-bridge",
+        "version": COMPONENT_VERSION,
+        "required": required,
+        "compatible": compatible,
+        "schema_version": "1.0",
+    }
+    print(json.dumps(payload, ensure_ascii=False))
+    return 0 if compatible else 2
+
+
 def main(argv: list[str] | None = None) -> int:
     _configure_stdout()
     arguments = list(sys.argv[1:] if argv is None else argv)
+    if arguments and arguments[0] == "version":
+        required = ""
+        if len(arguments) >= 3 and arguments[1] == "--require":
+            required = arguments[2]
+        elif len(arguments) != 1:
+            print("usage: workflow_bridge.py version [--require X.Y.Z]", file=sys.stderr)
+            return 3
+        return version(required)
     if len(arguments) != 1 or arguments[0] not in {"preflight", "record", "close"}:
-        print("usage: workflow_bridge.py {preflight|record|close}", file=sys.stderr)
+        print(
+            "usage: workflow_bridge.py {preflight|record|close|version [--require X.Y.Z]}",
+            file=sys.stderr,
+        )
         return 3
     command = arguments[0]
     if command == "preflight":
