@@ -1,0 +1,229 @@
+schema_version: "1.0"
+
+workflow:
+  id: "majed-controlled"
+  name: "Majed Controlled Delivery"
+  version: "1.0.0"
+  author: "Majed Spec Kit"
+  description: "Profile-routed Spec Kit delivery with a governance preflight, evidence capture, and separate review and owner-acceptance gates."
+  integration: null
+  model: null
+
+requires:
+  speckit_version: ">=1.3.0"
+  integrations:
+    any:
+      - "claude"
+      - "copilot"
+      - "gemini"
+      - "opencode"
+      - "alquimia"
+
+inputs:
+  task:
+    type: string
+    required: true
+    prompt: "Describe the task, change, or decision to execute"
+  profile:
+    type: string
+    default: "standard"
+    enum: ["quick", "standard", "controlled"]
+    prompt: "Execution profile: quick, standard, or controlled"
+  mode:
+    type: string
+    default: "assess"
+    enum: ["assess", "execute"]
+    prompt: "assess = governance preflight and review gates; execute = run the selected SDD command route"
+  integration:
+    type: string
+    default: "auto"
+    prompt: "Integration to use (for example claude, copilot, gemini, opencode; auto uses the project integration)"
+  evidence_path:
+    type: string
+    default: ""
+    prompt: "Path to the JSON governance record (required for the controlled profile)"
+  review_verdict:
+    type: string
+    default: ""
+    prompt: "Optional review verdict: approve, reject, or pending"
+  accept_verdict:
+    type: string
+    default: ""
+    prompt: "Optional owner-acceptance gate choice: accept, pending, or reject (the gate does not authenticate the owner)"
+
+steps:
+  - id: preflight
+    type: shell
+    strict: true
+    timeout: 60
+    env:
+      PROFILE: "{{ inputs.profile }}"
+      MODE: "{{ inputs.mode }}"
+      TASK: "{{ inputs.task }}"
+      EVIDENCE_PATH: "{{ inputs.evidence_path }}"
+    run: 'python3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py preflight || python .specify/workflows/majed-controlled/scripts/python/controlled_check.py preflight || py -3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py preflight'
+
+  - id: record-preflight
+    type: shell
+    strict: true
+    timeout: 60
+    env:
+      RUN_ID: "{{ context.run_id }}"
+      PROFILE: "{{ inputs.profile }}"
+      MODE: "{{ inputs.mode }}"
+      TASK: "{{ inputs.task }}"
+      EVIDENCE_PATH: "{{ inputs.evidence_path }}"
+      PREFLIGHT_STDOUT: "{{ steps.preflight.output.stdout }}"
+    run: 'python3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py record || python .specify/workflows/majed-controlled/scripts/python/controlled_check.py record || py -3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py record'
+
+  - id: route
+    type: switch
+    expression: "{{ inputs.mode }}"
+    cases:
+      assess:
+        - id: review-gate
+          type: gate
+          message: "Review the preflight findings and evidence. A gate choice is recorded, not authenticated."
+          options: [approve, reject, pending]
+          verdict_input: "review_verdict"
+          on_reject: abort
+        - id: acceptance-gate
+          type: gate
+          message: "Owner acceptance is a separate decision. This workflow does not grant it."
+          options: [accept, pending, reject]
+          verdict_input: "accept_verdict"
+          on_reject: abort
+      execute:
+        - id: delivery
+          type: switch
+          expression: "{{ inputs.profile }}"
+          cases:
+            quick:
+              - id: quick-specify
+                command: speckit.specify
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: quick-implement
+                command: speckit.implement
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: quick-acceptance
+                type: gate
+                message: "Quick profile complete. Owner acceptance remains a separate decision."
+                options: [accept, pending, reject]
+                verdict_input: "accept_verdict"
+                on_reject: abort
+            standard:
+              - id: standard-specify
+                command: speckit.specify
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: standard-review
+                type: gate
+                message: "Review the specification before planning."
+                options: [approve, reject, pending]
+                verdict_input: "review_verdict"
+                on_reject: abort
+              - id: standard-plan
+                command: speckit.plan
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: standard-tasks
+                command: speckit.tasks
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: standard-implement
+                command: speckit.implement
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: standard-acceptance
+                type: gate
+                message: "Standard profile complete. Owner acceptance remains a separate decision."
+                options: [accept, pending, reject]
+                verdict_input: "accept_verdict"
+                on_reject: abort
+            controlled:
+              - id: controlled-specify
+                command: speckit.specify
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: controlled-review-spec
+                type: gate
+                message: "Review the specification, obligation trace, and evidence plan before clarification."
+                options: [approve, reject, pending]
+                verdict_input: "review_verdict"
+                on_reject: abort
+              - id: controlled-clarify
+                command: speckit.clarify
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: controlled-plan
+                command: speckit.plan
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: controlled-review-plan
+                type: gate
+                message: "Review alternatives, impact, recovery, confidence, and evidence before task generation."
+                options: [approve, reject, pending]
+                verdict_input: "review_verdict"
+                on_reject: abort
+              - id: controlled-tasks
+                command: speckit.tasks
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: controlled-analyze
+                command: speckit.analyze
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: controlled-implement
+                command: speckit.implement
+                integration: "{{ inputs.integration }}"
+                input:
+                  args: "{{ inputs.task }}"
+              - id: controlled-acceptance
+                type: gate
+                message: "Controlled execution complete. Owner acceptance and release authorization remain separate decisions."
+                options: [accept, pending, reject]
+                verdict_input: "accept_verdict"
+                on_reject: abort
+          default:
+            - id: invalid-profile
+              type: gate
+              message: "Unsupported profile. Stop the affected route."
+              options: [reject]
+              on_reject: abort
+    default:
+      - id: invalid-mode
+        type: gate
+        message: "Unsupported mode. Stop the affected route."
+        options: [reject]
+        on_reject: abort
+
+  - id: close
+    type: shell
+    strict: true
+    timeout: 60
+    env:
+      RUN_ID: "{{ context.run_id }}"
+      PROFILE: "{{ inputs.profile }}"
+      MODE: "{{ inputs.mode }}"
+      REVIEW_VERDICT: "{{ inputs.review_verdict }}"
+      ACCEPT_VERDICT: "{{ inputs.accept_verdict }}"
+    run: 'python3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py close || python .specify/workflows/majed-controlled/scripts/python/controlled_check.py close || py -3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py close'
+
+outputs:
+  preflight:
+    value: "{{ steps.preflight.output.stdout }}"
+  evidence:
+    value: "{{ steps.record-preflight.output.stdout }}"
