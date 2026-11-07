@@ -30,7 +30,7 @@ Result:
 
 ```text
 collected 54 items
-54 passed in 21.57s
+54 passed in 37.93s
 ```
 
 This covers:

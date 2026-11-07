@@ -71,7 +71,7 @@ Majed defects and are disclosed in the qualification record.
 
 | Check | Result |
 |---|---|
-| Focused Majed tests | 54 passed in 21.57s |
+| Focused Majed tests | 54 passed in 37.93s |
 | Contract suite | 170 passed |
 | Preset suite | 763 passed |
 | Extension suite | 236 passed, 10 skipped |
