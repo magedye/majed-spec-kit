@@ -640,7 +640,7 @@ class TestComposition:
             project_dir,
             "child",
             "workflow: {id: child, name: Child}\n"
-            "steps: [{id: noop, type: shell, run: 'true'}]\n",
+            "steps: [{id: noop, type: shell, run: 'echo noop'}]\n",
         )
         parent = (
             "workflow: {id: parent, name: Parent}\n"
@@ -659,7 +659,7 @@ class TestComposition:
             project_dir,
             "child",
             "workflow: {id: child, name: Child}\n"
-            "steps: [{id: noop, type: shell, run: 'true'}]\n",
+            "steps: [{id: noop, type: shell, run: 'echo noop'}]\n",
         )
         parent = (
             "workflow: {id: parent, name: Parent}\n"

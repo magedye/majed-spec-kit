@@ -731,11 +731,14 @@ def _resolve_event_command_argv(
     # sh: the script is chmod'd executable during install on POSIX. On Windows
     # subprocess.run(shell=False) can't execute a .sh directly, so prefix a
     # bash/sh launcher when one is available (mirroring the ps branch's
-    # pwsh -File handling, S5).
+    # pwsh -File handling, S5). When neither launcher is on PATH, return None
+    # like the generated dispatcher's stdlib mirror: returning the bare .sh
+    # path would only defer the failure to subprocess.run().
     if os.name == "nt":
         launcher = shutil.which("bash") or shutil.which("sh")
         if launcher:
             return [launcher, str(script_abs), *rest_args]
+        return None
     return [str(script_abs), *rest_args]
 
 

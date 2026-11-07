@@ -2180,7 +2180,7 @@ class TestCommandRunner:
         assert " 60" in cmd
         assert " 60000" not in cmd
 
-    def test_sh_variant_uses_launcher_on_windows(self, tmp_path):
+    def test_sh_variant_uses_launcher_on_windows(self, tmp_path, monkeypatch):
         """S5: on Windows the sh variant prefixes a bash/sh launcher so
         subprocess.run(shell=False) can execute the .sh script."""
         from specify_cli.events import _resolve_event_command_argv
@@ -2195,6 +2195,13 @@ class TestCommandRunner:
         sh_dir.mkdir(parents=True)
         (sh_dir / "boot.sh").write_text("#!/bin/sh\nexit 0\n", encoding="utf-8")
 
+        if platform.system().lower().startswith("win"):
+            # Do not depend on the developer/CI machine having bash on PATH.
+            monkeypatch.setattr(
+                "specify_cli.events.shutil.which",
+                lambda name: r"C:\fake\bash.exe" if name == "bash" else None,
+            )
+
         argv = _resolve_event_command_argv(cmd_dir / "boot.md", tmp_path, None)
         assert argv is not None
         # On POSIX the script runs directly; on Windows a launcher prefixes it.
@@ -2203,6 +2210,31 @@ class TestCommandRunner:
             assert PurePath(argv[1]).as_posix().endswith(".specify/scripts/bash/boot.sh")
         else:
             assert PurePath(argv[0]).as_posix().endswith(".specify/scripts/bash/boot.sh")
+
+    def test_sh_variant_without_launcher_returns_none(self, tmp_path, monkeypatch):
+        """On Windows, no bash/sh launcher means no runnable argv.
+
+        Returning the bare .sh path would make subprocess.run(shell=False)
+        fail later instead of degrading to the documented "no script found"
+        path used by the generated dispatcher's stdlib mirror.
+        """
+        if not platform.system().lower().startswith("win"):
+            pytest.skip("Windows-only launcher fallback")
+
+        from specify_cli.events import _resolve_event_command_argv
+
+        cmd_dir = tmp_path / ".specify" / "templates" / "commands"
+        cmd_dir.mkdir(parents=True)
+        (cmd_dir / "boot.md").write_text(
+            "---\ndescription: \"Boot\"\nscripts:\n  sh: scripts/bash/boot.sh\n---\nBody\n",
+            encoding="utf-8",
+        )
+        sh_dir = tmp_path / ".specify" / "scripts" / "bash"
+        sh_dir.mkdir(parents=True)
+        (sh_dir / "boot.sh").write_text("#!/bin/sh\nexit 0\n", encoding="utf-8")
+        monkeypatch.setattr("specify_cli.events.shutil.which", lambda name: None)
+
+        assert _resolve_event_command_argv(cmd_dir / "boot.md", tmp_path, None) is None
 
     def test_absolute_script_token_returns_none(self, tmp_path):
         """An absolute first ``scripts:`` token must not run a host binary."""
@@ -2244,7 +2276,7 @@ class TestCommandRunner:
 
         assert argv is None
 
-    def test_extension_dotdot_to_core_scripts_resolves(self, tmp_path):
+    def test_extension_dotdot_to_core_scripts_resolves(self, tmp_path, monkeypatch):
         """Extension templates may reach core scripts via ``../../scripts/...``."""
         from specify_cli.events import _resolve_event_command_argv
 
@@ -2261,6 +2293,11 @@ class TestCommandRunner:
         helper_dir = tmp_path / ".specify" / "scripts" / "bash"
         helper_dir.mkdir(parents=True)
         (helper_dir / "helper.sh").write_text("#!/bin/sh\nexit 0\n", encoding="utf-8")
+        if platform.system().lower().startswith("win"):
+            monkeypatch.setattr(
+                "specify_cli.events.shutil.which",
+                lambda name: r"C:\fake\bash.exe" if name == "bash" else None,
+            )
 
         argv = _resolve_event_command_argv(cmd_dir / "boot.md", tmp_path, ext_id)
 

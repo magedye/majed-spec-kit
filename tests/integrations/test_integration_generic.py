@@ -205,7 +205,8 @@ def test_generic_extension_rejects_modified_artifact_on_disable(
     finally:
         os.chdir(old_cwd)
     assert result.exit_code == 1
-    assert "modified or is not owned" in result.output
+    normalized_output = " ".join(result.output.split())
+    assert "modified or is not owned" in normalized_output
     assert artifact.read_text(encoding="utf-8") == "user edit"
     assert manager.registry.get("sample")["enabled"] is True
 
