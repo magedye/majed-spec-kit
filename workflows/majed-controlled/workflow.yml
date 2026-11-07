@@ -3,7 +3,7 @@ schema_version: "1.0"
 workflow:
   id: "majed-controlled"
   name: "Majed Controlled Delivery"
-  version: "1.0.0"
+  version: "1.1.0"
   author: "Majed Spec Kit"
   description: "Profile-routed Spec Kit delivery with a governance preflight, evidence capture, and separate review and owner-acceptance gates."
   integration: null
@@ -52,6 +52,24 @@ inputs:
     prompt: "Optional owner-acceptance gate choice: accept, pending, or reject (the gate does not authenticate the owner)"
 
 steps:
+  - id: dependency-check
+    type: shell
+    strict: true
+    timeout: 30
+    run: >-
+      python3 -c "import pathlib,sys; p=pathlib.Path('.specify/extensions/majed-governance/scripts/python/workflow_bridge.py'); print('DEPENDENCY_MISSING: install the majed-governance extension before majed-controlled', file=sys.stderr) if not p.is_file() else None; sys.exit(0 if p.is_file() else 2)"
+      || python -c "import pathlib,sys; p=pathlib.Path('.specify/extensions/majed-governance/scripts/python/workflow_bridge.py'); print('DEPENDENCY_MISSING: install the majed-governance extension before majed-controlled', file=sys.stderr) if not p.is_file() else None; sys.exit(0 if p.is_file() else 2)"
+      || py -3 -c "import pathlib,sys; p=pathlib.Path('.specify/extensions/majed-governance/scripts/python/workflow_bridge.py'); print('DEPENDENCY_MISSING: install the majed-governance extension before majed-controlled', file=sys.stderr) if not p.is_file() else None; sys.exit(0 if p.is_file() else 2)"
+
+  - id: dependency-version
+    type: shell
+    strict: true
+    timeout: 30
+    run: >-
+      python3 .specify/extensions/majed-governance/scripts/python/workflow_bridge.py version --require 1.1.0
+      || python .specify/extensions/majed-governance/scripts/python/workflow_bridge.py version --require 1.1.0
+      || py -3 .specify/extensions/majed-governance/scripts/python/workflow_bridge.py version --require 1.1.0
+
   - id: preflight
     type: shell
     strict: true

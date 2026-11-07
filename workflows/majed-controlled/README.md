@@ -54,8 +54,31 @@ The bundle installs the extension before the workflow, so the bridge is present
 when the workflow runs. If you install the workflow independently, install the
 governance extension first.
 
-The shell steps use `python3`, `python`, or `py -3` in that order; the bridge is
-stdlib-only.
+The first two steps enforce the dependency contract:
+
+- `dependency-check` fails with `DEPENDENCY_MISSING` when the extension bridge
+  is absent.
+- `dependency-version` requires bridge version `>= 1.1.0`; an older or
+  incompatible bridge fails before any governance check or command dispatch.
+
+Mandatory governance checks therefore cannot silently pass when the extension is
+missing. The shell steps use `python3`, `python`, or `py -3` in that order; the
+bridge is stdlib-only.
+
+## Execute qualification
+
+The qualification suite exercises the real integration dispatch path with a
+disposable stub CLI named `claude` on `PATH`:
+
+- QUICK: specify + implement (2 dispatches).
+- STANDARD: specify + plan + tasks + implement (4 dispatches).
+- CONTROLLED: specify + clarify + plan + tasks + analyze + implement
+  (6 dispatches), with a governance record.
+- ASSESS: preflight, review gate, acceptance gate, evidence close.
+
+The stub records the native command invocations and exits successfully. This
+verifies routing and native dispatch mechanics, not real agent quality.
+`REAL_AGENT_BEHAVIOR: NOT_VERIFIED`.
 
 ## Evidence and acceptance
 

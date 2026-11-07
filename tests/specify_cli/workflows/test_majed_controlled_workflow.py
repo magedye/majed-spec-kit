@@ -193,6 +193,68 @@ def test_pause_then_resume_at_review_gate(tmp_path, monkeypatch):
     assert resumed.status == RunStatus.COMPLETED
 
 
+def test_missing_extension_fails_at_dependency_check(tmp_path, monkeypatch):
+    _env_path(monkeypatch)
+    project = tmp_path / "project"
+    project.mkdir()
+    shutil.copytree(WORKFLOW_DIR, project / ".specify" / "workflows" / "majed-controlled")
+
+    engine = WorkflowEngine(project)
+    state = engine.execute(
+        _definition(),
+        inputs={
+            "task": "missing dependency",
+            "profile": "quick",
+            "mode": "assess",
+            "review_verdict": "approve",
+            "accept_verdict": "pending",
+        },
+    )
+
+    assert state.status == RunStatus.FAILED
+    assert "dependency-check" in state.step_results
+    assert "DEPENDENCY_MISSING" in state.step_results["dependency-check"]["output"]["stderr"]
+    assert "dependency-version" not in state.step_results
+
+
+def test_incompatible_bridge_version_fails(tmp_path, monkeypatch):
+    _env_path(monkeypatch)
+    project = tmp_path / "project"
+    project.mkdir()
+    _install_workflow(project)
+    bridge = (
+        project
+        / ".specify"
+        / "extensions"
+        / "majed-governance"
+        / "scripts"
+        / "python"
+        / "workflow_bridge.py"
+    )
+    bridge.write_text(
+        bridge.read_text(encoding="utf-8").replace(
+            'COMPONENT_VERSION = "1.1.0"', 'COMPONENT_VERSION = "0.9.0"'
+        ),
+        encoding="utf-8",
+    )
+
+    engine = WorkflowEngine(project)
+    state = engine.execute(
+        _definition(),
+        inputs={
+            "task": "incompatible bridge",
+            "profile": "quick",
+            "mode": "assess",
+            "review_verdict": "approve",
+            "accept_verdict": "pending",
+        },
+    )
+
+    assert state.status == RunStatus.FAILED
+    assert "dependency-version" in state.step_results
+    assert '"compatible": false' in state.step_results["dependency-version"]["output"]["stdout"]
+
+
 def test_execute_branch_contains_existing_commands():
     definition = _definition()
     route = next(step for step in definition.data["steps"] if step["id"] == "route")
