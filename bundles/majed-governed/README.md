@@ -23,6 +23,12 @@ The source-checkout components are resolved from `presets/majed-adeq`,
 `extensions/majed-governance`, and `workflows/majed-controlled`. No external
 catalog or network access is required for this local path.
 
+The workflow depends on the governance extension's deterministic bridge
+(`workflow_bridge.py`). The bundle installs the extension before the workflow;
+install the extension first if you install the workflow independently. This is
+required because the current bundled-workflow path copies only `workflow.yml`,
+not companion files from the workflow package.
+
 ## Use
 
 ```bash

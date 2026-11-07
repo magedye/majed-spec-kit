@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Deterministic preflight/evidence helpers for the majed-controlled workflow.
+"""Workflow support for the majed-controlled workflow.
 
-This script is intentionally small and stdlib-only. It is not a second
-governance engine: it performs the checks needed by the workflow and records a
-derived, non-authoritative evidence artifact. The full governance record audit
-lives in the majed-governance extension.
+This bridge lives in the governance extension because a bundled workflow in the
+current Spec Kit release installs only its ``workflow.yml``; companion files in
+the workflow package are not copied by that path. Keeping the deterministic
+logic here makes the bundle install order explicit: the governance extension is
+installed before the workflow.
 
-Exit codes for ``preflight``:
-  0  PASS
-  2  BLOCKED (profile/evidence requirement failed)
-  3  INVALID invocation
+It uses the same stdlib-only governance validator and writes a derived,
+non-authoritative evidence artifact. It does not authenticate an owner or
+enforce host permissions.
 """
 
 from __future__ import annotations
@@ -21,6 +21,11 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+
+try:  # Script directory is on sys.path when invoked as a file.
+    from governance_core import validate_record
+except ImportError:  # pragma: no cover - defensive for unusual import modes
+    validate_record = None  # type: ignore[assignment]
 
 PROFILES = {"quick", "standard", "controlled"}
 MODES = {"assess", "execute"}
@@ -38,115 +43,24 @@ def _finding(code: str, severity: str, message: str, **context: Any) -> dict[str
     return payload
 
 
-def _load_record(path: Path) -> tuple[dict[str, Any] | None, list[dict[str, Any]]]:
-    findings: list[dict[str, Any]] = []
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        return None, [
-            _finding(
-                "EVIDENCE_UNREADABLE",
-                "ERROR",
-                f"Cannot read the governance record: {exc}",
-            )
-        ]
-    if not isinstance(data, dict):
-        return None, [
-            _finding("EVIDENCE_NOT_OBJECT", "ERROR", "The evidence record must be a JSON object.")
-        ]
-    if str(data.get("schema_version", "")) != "1.0":
-        findings.append(
-            _finding(
-                "EVIDENCE_SCHEMA_UNSUPPORTED",
-                "ERROR",
-                "Only governance record schema_version 1.0 is supported.",
-            )
-        )
-    revision = str(data.get("revision", "")).strip()
-    if not revision:
-        findings.append(
-            _finding(
-                "EVIDENCE_REVISION_MISSING",
-                "ERROR",
-                "The governance record needs a revision for freshness checks.",
-            )
-        )
-    requirements = data.get("requirements")
-    if not isinstance(requirements, list) or not requirements:
-        findings.append(
-            _finding(
-                "EVIDENCE_REQUIREMENTS_MISSING",
-                "ERROR",
-                "The governance record needs a non-empty requirements list.",
-            )
-        )
-        return data, findings
+def _safe_run_id() -> str:
+    run_id = _env("RUN_ID")
+    return run_id if RUN_ID_RE.fullmatch(run_id) else "unknown-run"
 
-    for requirement in requirements:
-        if not isinstance(requirement, dict):
-            findings.append(
-                _finding("EVIDENCE_REQUIREMENT_INVALID", "ERROR", "Requirement entries must be objects.")
-            )
-            continue
-        req_id = str(requirement.get("id", "")).strip() or "(missing)"
-        status = str(requirement.get("status", "")).strip().upper()
-        if status == "COMPLETE":
-            evidence = requirement.get("evidence")
-            if not isinstance(evidence, list) or not evidence:
-                findings.append(
-                    _finding(
-                        "UNSUPPORTED_COMPLETION",
-                        "ERROR",
-                        "A COMPLETE requirement has no evidence.",
-                        requirement_id=req_id,
-                    )
-                )
-            else:
-                passing = [
-                    item
-                    for item in evidence
-                    if isinstance(item, dict)
-                    and str(item.get("result", "")).strip().upper() == "PASS"
-                ]
-                if not passing:
-                    findings.append(
-                        _finding(
-                            "UNSUPPORTED_COMPLETION",
-                            "ERROR",
-                            "A COMPLETE requirement has no passing evidence.",
-                            requirement_id=req_id,
-                        )
-                    )
-                for item in evidence:
-                    if not isinstance(item, dict):
-                        continue
-                    stale_revision = str(item.get("revision", "")).strip()
-                    if stale_revision and stale_revision not in {revision, "*"}:
-                        findings.append(
-                            _finding(
-                                "STALE_EVIDENCE",
-                                "ERROR",
-                                "Evidence revision does not match the record revision.",
-                                requirement_id=req_id,
-                            )
-                        )
-        if requirement.get("protected") is True:
-            authorization = requirement.get("authorization")
-            status_auth = (
-                str(authorization.get("status", "")).strip().upper()
-                if isinstance(authorization, dict)
-                else ""
-            )
-            if status_auth != "GRANTED":
-                findings.append(
-                    _finding(
-                        "AUTHORIZATION_NOT_VERIFIED",
-                        "ERROR",
-                        "Protected requirement has no GRANTED authorization.",
-                        requirement_id=req_id,
-                    )
-                )
-    return data, findings
+
+def _evidence_file() -> Path:
+    EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
+    return EVIDENCE_DIR / f"{_safe_run_id()}.json"
+
+
+def _load_preflight() -> Any:
+    raw = _env("PREFLIGHT_STDOUT")
+    if not raw:
+        return None
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        return {"raw": raw}
 
 
 def preflight() -> int:
@@ -184,15 +98,32 @@ def preflight() -> int:
                 _finding("EVIDENCE_PATH_MISSING", "ERROR", f"Evidence path not found: {candidate}")
             )
         else:
-            record, record_findings = _load_record(candidate)
-            findings.extend(record_findings)
-            checks.append(
-                {
-                    "id": "evidence",
-                    "status": "PASS" if not record_findings else "BLOCKED",
-                    "detail": str(candidate),
-                }
-            )
+            try:
+                record = json.loads(candidate.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError) as exc:
+                checks.append({"id": "evidence", "status": "BLOCKED", "detail": "unreadable"})
+                findings.append(
+                    _finding("EVIDENCE_UNREADABLE", "ERROR", f"Cannot read evidence: {exc}")
+                )
+            else:
+                if validate_record is not None:
+                    result = validate_record(record, root=Path.cwd())
+                    findings.extend(
+                        item
+                        for item in result.get("findings", [])
+                        if item.get("severity") == "ERROR"
+                    )
+                    checks.append(
+                        {
+                            "id": "evidence",
+                            "status": "PASS" if result.get("status") == "PASS" else "BLOCKED",
+                            "detail": str(candidate),
+                        }
+                    )
+                else:
+                    checks.append(
+                        {"id": "evidence", "status": "PASS", "detail": "validator unavailable"}
+                    )
     elif profile == "controlled":
         checks.append({"id": "evidence", "status": "BLOCKED", "detail": "required for controlled"})
         findings.append(
@@ -203,9 +134,7 @@ def preflight() -> int:
             )
         )
     else:
-        checks.append(
-            {"id": "evidence", "status": "PASS", "detail": "optional for this profile"}
-        )
+        checks.append({"id": "evidence", "status": "PASS", "detail": "optional for this profile"})
 
     errors = [item for item in findings if item["severity"] == "ERROR"]
     payload = {
@@ -216,7 +145,7 @@ def preflight() -> int:
         "findings": findings,
         "evidence_record": record is not None,
         "limitations": [
-            "This preflight checks input and record consistency only.",
+            "This preflight checks input and governance-record consistency only.",
             "It does not authenticate an owner or enforce host-wide permissions.",
         ],
     }
@@ -224,26 +153,6 @@ def preflight() -> int:
     if any(item["code"] in {"INVALID_PROFILE", "INVALID_MODE", "MISSING_TASK"} for item in errors):
         return 3
     return 2 if errors else 0
-
-
-def _safe_run_id() -> str:
-    run_id = _env("RUN_ID")
-    return run_id if RUN_ID_RE.fullmatch(run_id) else "unknown-run"
-
-
-def _evidence_file() -> Path:
-    EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
-    return EVIDENCE_DIR / f"{_safe_run_id()}.json"
-
-
-def _load_preflight() -> Any:
-    raw = _env("PREFLIGHT_STDOUT")
-    if not raw:
-        return None
-    try:
-        return json.loads(raw)
-    except json.JSONDecodeError:
-        return {"raw": raw}
 
 
 def record() -> int:
@@ -319,13 +228,17 @@ def close() -> int:
     return 0
 
 
+def _configure_stdout() -> None:
+    reconfigure = getattr(sys.stdout, "reconfigure", None)
+    if callable(reconfigure):
+        reconfigure(encoding="utf-8", errors="replace")
+
+
 def main(argv: list[str] | None = None) -> int:
+    _configure_stdout()
     arguments = list(sys.argv[1:] if argv is None else argv)
     if len(arguments) != 1 or arguments[0] not in {"preflight", "record", "close"}:
-        print(
-            "usage: controlled_check.py {preflight|record|close}",
-            file=sys.stderr,
-        )
+        print("usage: workflow_bridge.py {preflight|record|close}", file=sys.stderr)
         return 3
     command = arguments[0]
     if command == "preflight":

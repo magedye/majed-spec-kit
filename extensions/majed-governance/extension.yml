@@ -6,7 +6,7 @@ extension:
   version: "1.0.0"
   description: "Deterministic, read-only governance checks for requirement traceability, evidence freshness, authorization status, reviewer independence, control coverage, and unsupported completion claims."
   category: "process"
-  effect: "read-only"
+  effect: "read-write"
   author: "Majed Spec Kit"
   repository: "https://github.com/magedye/majed-spec-kit"
   license: "MIT"
@@ -38,6 +38,10 @@ provides:
     - name: "governance-core"
       file: "scripts/python/governance_core.py"
       description: "Stdlib-only governance record validator and derived-view renderer"
+      runtimes: ["python"]
+    - name: "workflow-bridge"
+      file: "scripts/python/workflow_bridge.py"
+      description: "Workflow preflight, evidence recording, and acceptance-boundary bridge"
       runtimes: ["python"]
 
 tags:

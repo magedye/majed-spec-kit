@@ -46,9 +46,16 @@ Or run the local YAML directly:
 specify workflow run ./workflows/majed-controlled/workflow.yml --input task="..." --input profile=quick
 ```
 
-The workflow installs companion scripts under
-`.specify/workflows/majed-controlled/scripts/python/`. The shell steps use
-`python3`, `python`, or `py -3` in that order; the script itself is stdlib-only.
+The deterministic bridge is installed by the `majed-governance` extension at
+`.specify/extensions/majed-governance/scripts/python/workflow_bridge.py`. This
+is deliberate: in the current Spec Kit release, installing a bundled workflow
+copies its `workflow.yml` but not companion files from the workflow package.
+The bundle installs the extension before the workflow, so the bridge is present
+when the workflow runs. If you install the workflow independently, install the
+governance extension first.
+
+The shell steps use `python3`, `python`, or `py -3` in that order; the bridge is
+stdlib-only.
 
 ## Evidence and acceptance
 

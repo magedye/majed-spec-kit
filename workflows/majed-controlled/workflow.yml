@@ -61,7 +61,7 @@ steps:
       MODE: "{{ inputs.mode }}"
       TASK: "{{ inputs.task }}"
       EVIDENCE_PATH: "{{ inputs.evidence_path }}"
-    run: 'python3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py preflight || python .specify/workflows/majed-controlled/scripts/python/controlled_check.py preflight || py -3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py preflight'
+    run: 'python3 .specify/extensions/majed-governance/scripts/python/workflow_bridge.py preflight || python .specify/extensions/majed-governance/scripts/python/workflow_bridge.py preflight || py -3 .specify/extensions/majed-governance/scripts/python/workflow_bridge.py preflight'
 
   - id: record-preflight
     type: shell
@@ -74,7 +74,7 @@ steps:
       TASK: "{{ inputs.task }}"
       EVIDENCE_PATH: "{{ inputs.evidence_path }}"
       PREFLIGHT_STDOUT: "{{ steps.preflight.output.stdout }}"
-    run: 'python3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py record || python .specify/workflows/majed-controlled/scripts/python/controlled_check.py record || py -3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py record'
+    run: 'python3 .specify/extensions/majed-governance/scripts/python/workflow_bridge.py record || python .specify/extensions/majed-governance/scripts/python/workflow_bridge.py record || py -3 .specify/extensions/majed-governance/scripts/python/workflow_bridge.py record'
 
   - id: route
     type: switch
@@ -220,7 +220,7 @@ steps:
       MODE: "{{ inputs.mode }}"
       REVIEW_VERDICT: "{{ inputs.review_verdict }}"
       ACCEPT_VERDICT: "{{ inputs.accept_verdict }}"
-    run: 'python3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py close || python .specify/workflows/majed-controlled/scripts/python/controlled_check.py close || py -3 .specify/workflows/majed-controlled/scripts/python/controlled_check.py close'
+    run: 'python3 .specify/extensions/majed-governance/scripts/python/workflow_bridge.py close || python .specify/extensions/majed-governance/scripts/python/workflow_bridge.py close || py -3 .specify/extensions/majed-governance/scripts/python/workflow_bridge.py close'
 
 outputs:
   preflight:
