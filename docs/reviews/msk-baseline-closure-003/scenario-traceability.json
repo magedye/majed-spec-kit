@@ -376,15 +376,15 @@
       "source": {
         "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
         "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
-        "line": 383,
-        "exact_source_line": "6. Passing tests being treated as final acceptance.",
+        "line": 346,
+        "exact_source_line": "- Avoid treating a Git commit or passing test as proof of owner acceptance.",
         "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
         "git_text_normalization_is_not_byte_original": true
       },
-      "meaning": "A passing test is not final acceptance",
+      "meaning": "Neither a Git commit nor a passing test proves owner acceptance.",
       "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
       "component": "workflows/engine.py + step/gate and agent authority procedure; runtime blocked",
-      "acceptance": "PASS test result and acceptance status remain distinct; complete negative engine path still BLOCKED.",
+      "acceptance": "A commit identity or PASS may be evidence of saved work/test outcome only. Owner acceptance requires an explicit decision tied to candidate and scope. The runtime negative remains BLOCKED, not newly tested.",
       "chain": {
         "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
         "Requirement": "SG-13",
@@ -399,7 +399,14 @@
       "case_id": "DF-N06",
       "execution_result": "BLOCKED",
       "technical_strength": "NOT_VERIFIED",
-      "execution_or_acceptance_not_inferred_from_links": true
+      "execution_or_acceptance_not_inferred_from_links": true,
+      "documentary_correction": {
+        "review": "INDEPENDENT_REVIEW_001.md",
+        "finding": "R1",
+        "reason_no_new_row": "One homogeneous acceptance-boundary obligation now preserves both disjunctive triggers, commit OR passing test;24rows retained, no new runtime case invented.",
+        "runtime_verification": "BLOCKED",
+        "owner_acceptance": "NOT_GRANTED"
+      }
     },
     {
       "REQUIREMENT_ID": "SG-14",

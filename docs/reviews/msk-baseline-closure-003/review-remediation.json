@@ -1,0 +1,10 @@
+{
+  "reviewed_candidate": "e174dbbde4968fa0f0573163f262626889b84d20",
+  "raw_review": "INDEPENDENT_REVIEW_001.md",
+  "finding": "R1",
+  "correction": "SG13 now preserves both commit and passing-test triggers with exact P4 source anchor; own criterion/status; all nonblank P4/P5 source lines rechecked against manual assignments.",
+  "scenario_denominator": 24,
+  "new_runtime_tests_claimed": false,
+  "status": "CORRECTED_PENDING_DIFFERENTIAL_DOCUMENTARY_REVIEW",
+  "full_closure_status": "PARTIAL_WITH_BLOCKERS"
+}

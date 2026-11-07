@@ -1,0 +1,468 @@
+{
+  "scope": "Every nonblank physical source line of ownerP4/P5, structure distinguished from obligations/bound fields; line count is not an independent-rule count.",
+  "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+  "source_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+  "nonblank_source_line_denominator": 50,
+  "unresolved_source_lines": [],
+  "units": [
+    {
+      "line": 329,
+      "exact_text": "## 7. P4 — Semantic Traceability and Self-Governance Requirements",
+      "classification": "SOURCE_STRUCTURE",
+      "requirement_refs": [],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 331,
+      "exact_text": "Establish at least one complete, non-destructive self-governance scenario.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-01",
+        "SG-02"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 333,
+      "exact_text": "Required traceability chain:",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-22"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 335,
+      "exact_text": "`Owner Instruction → Requirement → Scope → Authorization → Plan → Execution Evidence → Verification → Review → Acceptance Status`",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-22"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 337,
+      "exact_text": "For every mandatory obligation in the selected scenario:",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-20",
+        "SG-22"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 339,
+      "exact_text": "- Preserve its original meaning and context.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-20"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 340,
+      "exact_text": "- Preserve conditions and exceptions.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-20"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 341,
+      "exact_text": "- Identify the authoritative source and applicable scope.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-22"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 342,
+      "exact_text": "- Link the obligation to the relevant component or capability.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-22"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 343,
+      "exact_text": "- Define its acceptance criterion.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-22"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 344,
+      "exact_text": "- Reference appropriate execution and verification evidence.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-06",
+        "SG-22"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 345,
+      "exact_text": "- Preserve unresolved ambiguities.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-20"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 346,
+      "exact_text": "- Avoid treating a Git commit or passing test as proof of owner acceptance.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-13"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 348,
+      "exact_text": "Use an initial predefined sample to validate the traceability method, then account for the entire mandatory obligation population of the selected scenario.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-21"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 350,
+      "exact_text": "Do not generalize the success of one scenario to the entire MSK project.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-24"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 352,
+      "exact_text": "**P4 Exit Gate:** Complete and auditable scenario-specific obligation traceability, including explicit exceptions and unknowns.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-20",
+        "SG-22"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 354,
+      "exact_text": "---",
+      "classification": "SOURCE_STRUCTURE",
+      "requirement_refs": [],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 356,
+      "exact_text": "## 8. P5 — Controlled Governance Dogfooding",
+      "classification": "SOURCE_STRUCTURE",
+      "requirement_refs": [],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 358,
+      "exact_text": "Execute one complete positive scenario and eight predefined negative scenarios using isolated synthetic fixtures.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-01",
+        "SG-17"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 360,
+      "exact_text": "### Positive Scenario",
+      "classification": "SOURCE_STRUCTURE",
+      "requirement_refs": [],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 362,
+      "exact_text": "Demonstrate a small, authorized engineering change within a synthetic project using the existing Spec Kit workflow.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-02",
+        "SG-05"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 364,
+      "exact_text": "The evidence must show:",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-03",
+        "SG-04",
+        "SG-05",
+        "SG-06",
+        "SG-07"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 366,
+      "exact_text": "- Valid scope and authorization.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-03"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 367,
+      "exact_text": "- Requirement-to-plan traceability.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-04"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 368,
+      "exact_text": "- Controlled execution.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-05"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 369,
+      "exact_text": "- Verification results.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-06"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 370,
+      "exact_text": "- Separate review and acceptance status.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-06",
+        "SG-07"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 372,
+      "exact_text": "Synthetic approval data must not create real project authority.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-07"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 374,
+      "exact_text": "### Negative Scenarios",
+      "classification": "SOURCE_STRUCTURE",
+      "requirement_refs": [],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 376,
+      "exact_text": "Test at least:",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-08",
+        "SG-09",
+        "SG-10",
+        "SG-11",
+        "SG-12",
+        "SG-13",
+        "SG-14",
+        "SG-15"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 378,
+      "exact_text": "1. Missing or expired authorization.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-08"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 379,
+      "exact_text": "2. Modification outside the permitted write-set.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-09"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 380,
+      "exact_text": "3. Conflicting authority sources.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-10"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 381,
+      "exact_text": "4. Unauthorized role or permission escalation.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-11"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 382,
+      "exact_text": "5. Implementer attempting independent self-approval.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-12"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 383,
+      "exact_text": "6. Passing tests being treated as final acceptance.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-13"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 384,
+      "exact_text": "7. Reusing evidence from a different candidate revision.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-14"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 385,
+      "exact_text": "8. Continuing execution after a mandatory gate fails.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-15"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 387,
+      "exact_text": "Define the expected oracle before each test.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-16"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 389,
+      "exact_text": "For every case, record:",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-17"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 391,
+      "exact_text": "`CASE_ID / INPUT / EXPECTED / OBSERVED / RESULT / EVIDENCE / CANDIDATE / ENFORCEMENT_LEVEL`",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-17"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 393,
+      "exact_text": "Classify evidence strength as:",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-18"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 395,
+      "exact_text": "- `BEHAVIORAL_COMPLIANCE`",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-18"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 396,
+      "exact_text": "- `POST_EXECUTION_DETECTION`",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-18"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 397,
+      "exact_text": "- `PRE_EXECUTION_ENFORCEMENT`",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-18"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 398,
+      "exact_text": "- `NOT_VERIFIED`",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-18"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 400,
+      "exact_text": "Do not claim that a successful fixture or wrapper proves host-wide enforcement over unrestricted shell, filesystem, or network operations.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-19"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 402,
+      "exact_text": "Do not treat model-supplied approval or identity values as authenticated owner authorization.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-23"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 404,
+      "exact_text": "**P5 Exit Gate:** Traceable positive and negative results with accurately stated enforcement boundaries.",
+      "classification": "MANUAL_OBLIGATION_OR_BOUND_CONTEXT_ASSIGNMENT",
+      "requirement_refs": [
+        "SG-17",
+        "SG-18",
+        "SG-19"
+      ],
+      "runtime_satisfaction_not_inferred": true
+    },
+    {
+      "line": 406,
+      "exact_text": "---",
+      "classification": "SOURCE_STRUCTURE",
+      "requirement_refs": [],
+      "runtime_satisfaction_not_inferred": true
+    }
+  ],
+  "manual_review": "Root rechecked original P4/P5 full text after demonstrated R1 gap; does not certify actual runtime tests or allMSK requirements."
+}
