@@ -1,0 +1,78 @@
+{
+  "started_at_utc": "2026-11-07T04:42:20.889763+00:00",
+  "commands": [
+    {
+      "label": "backend-declared-requires",
+      "argv": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\project-build-venv\\Scripts\\python.exe",
+        "-I",
+        "-B",
+        "-c",
+        "import json;from hatchling.build import get_requires_for_build_editable;print(json.dumps(get_requires_for_build_editable()))"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "compile",
+      "argv": [
+        "C:\\Users\\Majed\\.local\\bin\\uv.exe",
+        "--offline",
+        "--no-config",
+        "--no-python-downloads",
+        "pip",
+        "compile",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\docs\\reviews\\msk-baseline-closure-003\\environment-recovery-001\\project-install-002\\requirements.in",
+        "--python",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\project-build-venv\\Scripts\\python.exe",
+        "--default-index",
+        "https://pypi.org/simple",
+        "--generate-hashes",
+        "--output-file",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\docs\\reviews\\msk-baseline-closure-003\\environment-recovery-001\\project-install-002\\requirements.txt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "install-builder-requires",
+      "argv": [
+        "C:\\Users\\Majed\\.local\\bin\\uv.exe",
+        "--offline",
+        "--no-config",
+        "--no-python-downloads",
+        "pip",
+        "install",
+        "--python",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\project-build-venv\\Scripts\\python.exe",
+        "--default-index",
+        "https://pypi.org/simple",
+        "--require-hashes",
+        "--only-binary",
+        ":all:",
+        "--strict",
+        "--link-mode",
+        "copy",
+        "-r",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\docs\\reviews\\msk-baseline-closure-003\\environment-recovery-001\\project-install-002\\requirements.txt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "build-editable",
+      "argv": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\project-build-venv\\Scripts\\python.exe",
+        "-I",
+        "-B",
+        "-c",
+        "from hatchling.build import build_editable;print(build_editable('D:\\\\APP\\\\maged-spec-kit\\\\majed-spec-kit\\\\specs\\\\003-msk-baseline-closure\\\\execution-worktree\\\\specs\\\\003-msk-baseline-closure\\\\execution\\\\environment-recovery-001\\\\project-editable-wheel-002'))"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "prior_attempt": "project-install-001 backend imported editables, missing; preserve failed build and pinned build tools",
+  "network": false,
+  "pytest_environment_modified": false,
+  "result": "EDITABLE_WHEEL_READY_INSTALL_AFTER_ACTIVE_TESTS_FINISH",
+  "artifact": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\project-editable-wheel-002\\specify_cli-1.3.3.dev0-py3-none-any.whl",
+  "artifact_sha256": "c18b97811d34b9c36db58120852671961fa0c32ead422df9b694b49a0f5c59d4",
+  "finished_at_utc": "2026-11-07T04:42:23.032669+00:00"
+}

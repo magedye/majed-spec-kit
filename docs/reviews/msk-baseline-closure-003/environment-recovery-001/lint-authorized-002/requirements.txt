@@ -1,0 +1,1 @@
+ruff==0.15.0 --hash=sha256:dd5e4d3301dc01de614da3cdffc33d4b1b96fb89e45721f1598e5532ccf78b18

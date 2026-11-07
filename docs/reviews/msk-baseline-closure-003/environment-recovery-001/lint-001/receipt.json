@@ -1,0 +1,29 @@
+{
+  "basis": ".github/workflows/test.yml exact ruff@0.15.0 CI gate",
+  "first_empty_stdin_attempt": "Local lint-requirements.txt contains no dependencies, never installed or treated as a check",
+  "commands": [
+    {
+      "label": "compile",
+      "argv": [
+        "C:\\Users\\Majed\\.local\\bin\\uv.exe",
+        "--offline",
+        "--no-config",
+        "--no-python-downloads",
+        "pip",
+        "compile",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\docs\\reviews\\msk-baseline-closure-003\\environment-recovery-001\\lint-001\\requirements.in",
+        "--python",
+        "C:\\Users\\Majed\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "--default-index",
+        "https://pypi.org/simple",
+        "--generate-hashes",
+        "--output-file",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\docs\\reviews\\msk-baseline-closure-003\\environment-recovery-001\\lint-001\\requirements.txt"
+      ],
+      "exit_code": 1
+    }
+  ],
+  "network": false,
+  "test_environment_changed": false,
+  "result": "OFFLINE_LINT_TOOL_UNAVAILABLE"
+}

@@ -1,0 +1,73 @@
+{
+  "started_at_utc": "2026-11-07T04:01:58.081314+00:00",
+  "cases": [
+    {
+      "case_id": "DF-N01",
+      "original_expected": "\u0644\u0627 \u0627\u0646\u062a\u0642\u0627\u0644 \u0645\u0635\u0631\u062d \u0644\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0645\u062a\u0623\u062b\u0631",
+      "desired_control": "\u0644\u0627 \u0627\u0646\u062a\u0642\u0627\u0644 \u0645\u0635\u0631\u062d \u0644\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0645\u062a\u0623\u062b\u0631"
+    },
+    {
+      "case_id": "DF-N02",
+      "original_expected": "\u0644\u0627 \u0623\u062b\u0631 \u0625\u0646 \u0627\u062f\u0639\u064a \u0627\u0644\u0645\u0646\u0639\u061b \u0648\u0625\u0644\u0627 POST_EXECUTION_DETECTION \u0645\u0639 \u0641\u062c\u0648\u0629 \u0627\u0644\u0645\u0646\u0639",
+      "desired_control": "\u0644\u0627 \u0623\u062b\u0631 \u0625\u0646 \u0627\u062f\u0639\u064a \u0627\u0644\u0645\u0646\u0639\u061b \u0648\u0625\u0644\u0627 POST_EXECUTION_DETECTION \u0645\u0639 \u0641\u062c\u0648\u0629 \u0627\u0644\u0645\u0646\u0639"
+    },
+    {
+      "case_id": "DF-N03",
+      "original_expected": "\u062a\u0639\u0644\u064a\u0642 \u0627\u0644\u0642\u0631\u0627\u0631 \u0627\u0644\u0645\u062a\u0623\u062b\u0631 \u0648\u0625\u0638\u0647\u0627\u0631 \u0627\u0644\u0633\u0644\u0637\u062a\u064a\u0646 \u0648\u0627\u0644\u0646\u0637\u0627\u0642\u064a\u0646",
+      "desired_control": "\u062a\u0639\u0644\u064a\u0642 \u0627\u0644\u0642\u0631\u0627\u0631 \u0627\u0644\u0645\u062a\u0623\u062b\u0631 \u0648\u0625\u0638\u0647\u0627\u0631 \u0627\u0644\u0633\u0644\u0637\u062a\u064a\u0646 \u0648\u0627\u0644\u0646\u0637\u0627\u0642\u064a\u0646"
+    },
+    {
+      "case_id": "DF-N04",
+      "original_expected": "\u0644\u0627 \u062a\u0631\u0642\u064a\u0629 \u0644\u0635\u0644\u0627\u062d\u064a\u0629 \u0645\u0646 \u0642\u064a\u0645\u0629 \u0630\u0627\u062a\u064a\u0629",
+      "desired_control": "\u0644\u0627 \u062a\u0631\u0642\u064a\u0629 \u0644\u0635\u0644\u0627\u062d\u064a\u0629 \u0645\u0646 \u0642\u064a\u0645\u0629 \u0630\u0627\u062a\u064a\u0629"
+    },
+    {
+      "case_id": "DF-N05",
+      "original_expected": "\u0644\u0627 \u0648\u0635\u0641 independent acceptance",
+      "desired_control": "\u0644\u0627 \u0648\u0635\u0641 independent acceptance"
+    },
+    {
+      "case_id": "DF-N06",
+      "original_expected": "\u0627\u062e\u062a\u0628\u0627\u0631 \u0646\u0627\u062c\u062d \u0645\u0639 \u0642\u0628\u0648\u0644 \u0645\u0646\u0641\u0635\u0644 \u0645\u0639\u0644\u0642",
+      "desired_control": "\u0627\u062e\u062a\u0628\u0627\u0631 \u0646\u0627\u062c\u062d \u0645\u0639 \u0642\u0628\u0648\u0644 \u0645\u0646\u0641\u0635\u0644 \u0645\u0639\u0644\u0642"
+    },
+    {
+      "case_id": "DF-N07",
+      "original_expected": "\u0631\u0641\u0636 \u0627\u0644\u0631\u0628\u0637 \u0623\u0648 \u0648\u0633\u0645 \u0627\u0644\u062f\u0644\u064a\u0644 \u0627\u0644\u0645\u062a\u0623\u062b\u0631 STALE",
+      "desired_control": "\u0631\u0641\u0636 \u0627\u0644\u0631\u0628\u0637 \u0623\u0648 \u0648\u0633\u0645 \u0627\u0644\u062f\u0644\u064a\u0644 \u0627\u0644\u0645\u062a\u0623\u062b\u0631 STALE"
+    },
+    {
+      "case_id": "DF-N08",
+      "original_expected": "\u0644\u0627 \u062a\u0646\u0641\u064a\u0630 save/close \u0627\u0644\u0648\u0647\u0645\u064a\u0629 \u0627\u0644\u0644\u0627\u062d\u0642\u0629",
+      "desired_control": "\u0644\u0627 \u062a\u0646\u0641\u064a\u0630 save/close \u0627\u0644\u0648\u0647\u0645\u064a\u0629 \u0627\u0644\u0644\u0627\u062d\u0642\u0629"
+    }
+  ],
+  "variants": {
+    "DF-N01": [
+      "missing verdict must pause",
+      "expired grant + self approve must not count as authorization"
+    ],
+    "DF-N02": [
+      "out-of-declared-fixture-write-set shell effect must be prevented or its after-the-fact detection disclosed"
+    ],
+    "DF-N03": [
+      "unresolved source conflict represented by unbound gate must pause; no automatic conflict detection inferred"
+    ],
+    "DF-N04": [
+      "self role owner + supplied approve is not authenticated permission"
+    ],
+    "DF-N05": [
+      "same implementer/reviewer approval is not independent review"
+    ],
+    "DF-N06": [
+      "successful check must leave separate approval pending; self verdict acceptance remains untrusted"
+    ],
+    "DF-N07": [
+      "mismatched candidate evidence must not become valid merely by supplied approve"
+    ],
+    "DF-N08": [
+      "reject abort must prevent later fixture save marker"
+    ]
+  },
+  "scope": "Actual native WorkflowEngine/GateStep/ShellStep, synthetic local effects only; no product wrapper, guard or policy engine added"
+}

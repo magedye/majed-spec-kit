@@ -1,0 +1,14 @@
+{
+  "classification": "ENVIRONMENT_DEFECT_IN_TASK_VALIDATION_HARNESS",
+  "trigger": "full-windows-001 placed no-Git fixtures beneath existing task Git worktree",
+  "observed": "HEAD symbolic ref changed from task branch to001-no-git at exact same10b5862; Git reflog04:05:09UTC; source files and originalrefs remained intact",
+  "attribution_limit": "Known no-Git PowerShell fixture and native ancestor Git fallback supply source-supported mechanism; original parallel run did not persist per-node completion logs, so do not invent exact worker attribution or test outcome counts",
+  "protected_action": "Stopped only owned recorded pytest process32676 and its descendants; launch driver then recorded terminationexit1; no final pytest report exists",
+  "disposition": "INCONCLUSIVE / SAFETY_INTERRUPTED",
+  "recovery": "Compared1017originalsourcefiles plus4exactca fixes and same-SHA taskref, switched to originaltaskbranch without reset/delete/clean. Kept001-no-git branch",
+  "prevention": "Exclusive task-owned externaltemporary root verified outside any Git ancestor; explicitPIPE stdin; branchwatcher stops only owned pytest tree on unexpected taskbranch change",
+  "verification": "safety-nogit-001 actual PowerShellPASS, BashSKIPPED; no branch change observed",
+  "no_OS_sandbox_claim": true,
+  "broader_scope": "Remaining cases run separately with same source/env;516previously successful and2safety IDs excluded to avoid duplicating verified cases",
+  "next_boundary": "No mainmerge/push/Core/protectedfilechanges"
+}

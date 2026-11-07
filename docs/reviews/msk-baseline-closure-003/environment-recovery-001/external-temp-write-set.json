@@ -1,0 +1,8 @@
+{
+  "path": "D:\\APP\\maged-spec-kit\\msk003-qualification-temp-20261107-001",
+  "task": "MSK-BASELINE-CLOSURE-003",
+  "purpose": "Isolated qualification temp fixtures outside any Git ancestor; new local write-set extension necessary to prevent ancestor Git traversal",
+  "no_other_project_data": true,
+  "repository_ancestor_probe_exit": 128,
+  "no_recursive_cleanup_authorized": true
+}

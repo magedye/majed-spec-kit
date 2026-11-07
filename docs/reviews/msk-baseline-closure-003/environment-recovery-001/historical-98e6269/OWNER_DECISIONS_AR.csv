@@ -1,0 +1,7 @@
+﻿DECISION_ID,ISSUE,EVIDENCE,OPTIONS,RECOMMENDATION,PRIORITY,OWNER_STATUS
+OD-ENV,بيئة التأهيل,environment.json;environment-recheck.json,توفير مسار بيئة MSK موجودة ومتوافقة؛ أو تفويض مستقل لتجهيز الاعتماديات,التحقق من جميع قيود pyproject ثم جمع الاختبارات وتشغيل المتأثر؛ لا تثبيت ضمن التفويض الحالي,P0,PENDING
+OD-HISTORY,أصل QUAL-002,historical-evidence-search.json,تقديم التقرير والسجلات الأصلية إن وجدت؛ أو الاحتفاظ بعدم توفرها مع التأهيل البديل المصرح,لا إعادة بناء تاريخ وهمي؛ لا حاجة لإعادة تفويض التأهيل البديل الذي أجيز بالفعل,P1,PENDING
+OD-MATRIX,الدستور وCI ونطاق المنصات,authority-reconciliation.json,تثبيت جهة اعتماد وتفسير نطاق؛ أو اقتراح تعديل محمي منفصل,عدم خفض مصفوفة الاختبارات أو تعديل CI/الدستور تلقائيًا,P0_FOR_DEPENDENT_QUALIFICATION,PENDING
+OD-AGENTS,توضيح مسار Windows في AGENTS,AGENTS_CANDIDATE_UNAPPLIED.patch,مراجعة الاقتراح المنفصل؛ أو إبقاؤه غير مطبق,التغيير المقروء شكلي لمسار المفسر، لكنه ملف محمي ولم يطبق في هذا الفرع,P2,PENDING
+OD-REVIEW,المراجعة المستقلة المؤهلة,readiness.json,مراجعة مرشح مؤهل بعد استكمال الاختبارات مع صلاحيات معلنة؛ أو إبقاء INDEPENDENT_REVIEW_PENDING,مراجعة الوثائق الجزئية لا تعوض تأهيلًا مفقودًا أو عزل OS غير مثبت,P1,PENDING
+OD-CORE,حدود Core/Full والعمل الجاري المنفصل,fit-gap.json,تعيين مصادر الفرع الآخر لاحقًا للمصالحة؛ تثبيت متطلبات الشريحة وقراراتها,لا إعادة بناء أو بدء Core أو تبني نتائج الفرع الآخر تحت هذا الطلب,FUTURE_SCOPE,PENDING

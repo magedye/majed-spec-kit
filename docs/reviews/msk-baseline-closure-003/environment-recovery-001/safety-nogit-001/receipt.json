@@ -1,0 +1,38 @@
+{
+  "run_id": "safety-nogit-001",
+  "started_at_utc": "2026-11-07T04:12:25.253821+00:00",
+  "argv": [
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "-p",
+    "qualification_capture",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "D:\\APP\\maged-spec-kit\\msk003-qualification-temp-20261107-001\\safety-nogit-001\\pytest",
+    "tests/extensions/git/test_git_extension.py",
+    "-k",
+    "no_git_graceful_degradation",
+    "-q"
+  ],
+  "git_head": "10b5862f6905e62eaef0983418cb9567b1b8a8d6",
+  "source_import_profile": "Owned source root via explicit PYTHONPATH; no other project editable install",
+  "isolation": "Task-local profile/temp; external Python sockets blocked, loopback allowed; no OS sandbox claim",
+  "process_only_PATH_prefix": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts",
+  "network_downloads": false,
+  "temp_root": "D:\\APP\\maged-spec-kit\\msk003-qualification-temp-20261107-001\\safety-nogit-001",
+  "temp_has_git_ancestor": false,
+  "source_files": {
+    "src/specify_cli/events/__init__.py": "dd3feec5259d02a0ebf274176724751a33aafb7c0005b7af676704a0cad773b6",
+    "tests/specify_cli/events/test_events.py": "8374df795578788eef21e557881e78ed9592e18207946bb5b55970d01a888dad",
+    "tests/integrations/test_integration_generic.py": "2eb92053e5992669e53de6493b45e8ad72afdd9f7a07235edbb9e63ea5fecb35",
+    "tests/specify_cli/workflows/test_command_definition.py": "603a4872e559fdc0412f3c037c0f652fa4955436e5f25d7e0adb6ce0feba7c0b"
+  },
+  "process_id": 37372,
+  "exit_code": 0,
+  "finished_at_utc": "2026-11-07T04:12:42.002864+00:00",
+  "stdout_sha256": "e3f3643e2f06c2d9cbe1aaa9e55536ebe65ff81d1ab9380573d9a25b15c62a3b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

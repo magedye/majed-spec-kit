@@ -1,0 +1,1 @@
+{"observed_branch": "001-no-git", "head": "10b5862f6905e62eaef0983418cb9567b1b8a8d6", "expected_task_ref": "10b5862f6905e62eaef0983418cb9567b1b8a8d6", "source_identity_mismatches": [], "baseline_protected_files_verified": 1017, "preserve_incidental_branch": true, "action": "Switch back to existing task branch at identical source revision; no reset/delete/clean/rewrite"}

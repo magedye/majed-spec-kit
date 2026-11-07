@@ -1,0 +1,44 @@
+{
+  "exit_code": 0,
+  "collect_only": false,
+  "collected_nodeids": [
+    "tests/specify_cli/mcp_server/test_stdio.py::test_real_stdio_server_initializes_discovers_and_calls_first_class_tools"
+  ],
+  "unique_count": 1,
+  "duplicate_nodeids": 0,
+  "counts": {
+    "PASSED": 1
+  },
+  "cases": [
+    {
+      "nodeid": "tests/specify_cli/mcp_server/test_stdio.py::test_real_stdio_server_initializes_discovers_and_calls_first_class_tools",
+      "result": "PASSED"
+    }
+  ],
+  "reports": [
+    {
+      "nodeid": "tests/specify_cli/mcp_server/test_stdio.py::test_real_stdio_server_initializes_discovers_and_calls_first_class_tools",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration": 0.027310000034049153,
+      "detail": null
+    },
+    {
+      "nodeid": "tests/specify_cli/mcp_server/test_stdio.py::test_real_stdio_server_initializes_discovers_and_calls_first_class_tools",
+      "phase": "call",
+      "outcome": "passed",
+      "duration": 11.772942199953832,
+      "detail": null
+    },
+    {
+      "nodeid": "tests/specify_cli/mcp_server/test_stdio.py::test_real_stdio_server_initializes_discovers_and_calls_first_class_tools",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration": 0.0009461999870836735,
+      "detail": null
+    }
+  ],
+  "collection_errors": [],
+  "source_import": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\src\\specify_cli\\__init__.py",
+  "interpreter": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe"
+}

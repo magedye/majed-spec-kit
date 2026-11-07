@@ -1,0 +1,14 @@
+{
+  "original_preparation_receipt": "recovery-state.json",
+  "original_receipt_preserved": true,
+  "result": "OFFLINE_ENVIRONMENT_VERIFIED",
+  "qualified_environment": true,
+  "qualified_scope": "Dependency compatibility and RECORD integrity for Windows Python3.12.10 only; not baseline acceptance",
+  "evidence": [
+    "environment-verified.json",
+    "offline-install.json",
+    "environment-final-verified.json",
+    "project-install-003/receipt.json",
+    "project-install-verification/receipt.json"
+  ]
+}

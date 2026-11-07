@@ -1,0 +1,93 @@
+{
+  "status": "PARTIAL_WITH_CONTROL_GAPS",
+  "all_seven_previously_dependency_blocked_cases_executed": true,
+  "original_positive_evidence": "../dogfooding-results.json#cases/0",
+  "no_original_positive_rerun": "SDD source scripts/fixture behavior unaffected by event resolver patch or new third-party environment",
+  "raw": "engine-dogfood-004-results.json",
+  "classification_correction": "dogfood-classification-correction.json",
+  "variants": [
+    {
+      "case": "DF-N01",
+      "variant": "missing",
+      "assessment": "PASS_CONFIGURED_GATE_ONLY",
+      "enforcement_level": "PRE_EXECUTION_ENFORCEMENT",
+      "limit": "No missing-grant semantic check; this is absence of gate choice",
+      "actual_runtime": "EXECUTED",
+      "raw_result_preserved": "PASS_CONFIGURED_GATE_ONLY"
+    },
+    {
+      "case": "DF-N01",
+      "variant": "expired",
+      "assessment": "CONTROL_NOT_PROVIDED",
+      "enforcement_level": "NOT_VERIFIED",
+      "limit": "Native gate does not validate expiry; supplied choice cannot establish real authorization",
+      "actual_runtime": "EXECUTED",
+      "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+    },
+    {
+      "case": "DF-N02",
+      "variant": "outside",
+      "assessment": "CONTROL_NOT_PROVIDED",
+      "enforcement_level": "POST_EXECUTION_DETECTION",
+      "limit": "Harness observes fixture effect afterwards; product has no write-set sandbox. Effect stayed inside authorized synthetic parent",
+      "actual_runtime": "EXECUTED",
+      "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+    },
+    {
+      "case": "DF-N03",
+      "variant": "conflict",
+      "assessment": "PASS_CONFIGURED_HOLD_ONLY",
+      "enforcement_level": "BEHAVIORAL_COMPLIANCE",
+      "limit": "Operator represented unresolved conflict by withholding choice; engine did not interpret/detect source authority",
+      "actual_runtime": "EXECUTED",
+      "raw_result_preserved": "PASS_CONFIGURED_HOLD_ONLY"
+    },
+    {
+      "case": "DF-N04",
+      "variant": "self-role",
+      "assessment": "CONTROL_NOT_PROVIDED",
+      "enforcement_level": "NOT_VERIFIED",
+      "limit": "Supplied role/verdict unauthenticated; engine completion is not a permission grant",
+      "actual_runtime": "EXECUTED",
+      "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+    },
+    {
+      "case": "DF-N05",
+      "variant": "self-review",
+      "assessment": "CONTROL_NOT_PROVIDED",
+      "enforcement_level": "NOT_VERIFIED",
+      "limit": "No independent identity check; actual independent review remains separate",
+      "actual_runtime": "EXECUTED",
+      "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+    },
+    {
+      "case": "DF-N06",
+      "variant": "test-pass",
+      "assessment": "PASS_SEPARATE_CONFIGURED_GATE",
+      "enforcement_level": "PRE_EXECUTION_ENFORCEMENT",
+      "limit": "Explicit pending gate separates check from choice; passing check itself does not authenticate acceptance",
+      "actual_runtime": "EXECUTED",
+      "raw_result_preserved": "PASS_SEPARATE_CONFIGURED_GATE"
+    },
+    {
+      "case": "DF-N07",
+      "variant": "stale-evidence",
+      "assessment": "CONTROL_NOT_PROVIDED",
+      "enforcement_level": "POST_EXECUTION_DETECTION",
+      "limit": "Mismatch explicitly detected by assessment after observation; engine does not bind evidence candidate. Never imported as current-candidate PASS",
+      "actual_runtime": "EXECUTED",
+      "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+    },
+    {
+      "case": "DF-N08",
+      "variant": "reject",
+      "assessment": "PASS_NATIVE_ABORT",
+      "enforcement_level": "PRE_EXECUTION_ENFORCEMENT",
+      "limit": "Actual configured native engine abort only; no global Shell/host enforcement claimed",
+      "actual_runtime": "EXECUTED",
+      "raw_result_preserved": "FAIL"
+    }
+  ],
+  "enforcement_not_inferred": "Native supplied-verdict workflow control is not authenticated owner/reviewer/scope/evidence authority",
+  "no_parallel_policy_engine_or_Core_implementation": true
+}

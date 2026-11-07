@@ -1,0 +1,36 @@
+{
+  "started_at_utc": "2026-11-07T04:59:30.674112+00:00",
+  "network": false,
+  "independent_prepared_wheel_sha256": "c18b97811d34b9c36db58120852671961fa0c32ead422df9b694b49a0f5c59d4",
+  "artifact_RECORD_entries_verified": 100,
+  "editable_source_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\src",
+  "third_party_dependencies_changed": false,
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\Majed\\.local\\bin\\uv.exe",
+        "--offline",
+        "--no-config",
+        "--no-python-downloads",
+        "pip",
+        "install",
+        "--python",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+        "--no-deps",
+        "--default-index",
+        "https://pypi.org/simple",
+        "--build-constraints",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\docs\\reviews\\msk-baseline-closure-003\\environment-recovery-001\\project-install-003\\build-constraints.txt",
+        "--strict",
+        "--editable",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "installation_method": "Canonical uv editable local source install, no runtime dependency resolution; hash-pinned build constraints. Prepared wheel is independent build evidence, not falsely claimed installed artifact.",
+  "local_source_authority": "Exact owned Git source10b5862; original1017files+fourca source identities independently checked. Local source is not an unverified third-party sdist.",
+  "result": "INSTALLED_OWNED_EDITABLE_PROJECT",
+  "finished_at_utc": "2026-11-07T04:59:34.820882+00:00",
+  "entrypoint_exists": true
+}

@@ -1,0 +1,10 @@
+Using Python 3.12.10 environment at: specs\003-msk-baseline-closure\execution\environment-recovery-001\venv
+Resolved 1 package in 27ms
+   Building specify-cli @ file:///D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree
+      Built specify-cli @ file:///D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree
+Prepared 1 package in 2.79s
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 1 package in 639ms
+ + specify-cli==1.3.3.dev0 (from file:///D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree)

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\project-build-venv\Lib\site-packages\hatchling\build.py", line 83, in build_editable
+    return os.path.basename(next(builder.build(directory=wheel_directory, versions=["editable"])))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\project-build-venv\Lib\site-packages\hatchling\builders\plugin\interface.py", line 166, in build
+    artifact = version_api[version](directory, **build_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\project-build-venv\Lib\site-packages\hatchling\builders\wheel.py", line 547, in build_editable
+    return self.build_editable_detection(directory, **build_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\project-build-venv\Lib\site-packages\hatchling\builders\wheel.py", line 550, in build_editable_detection
+    from editables import EditableProject
+ModuleNotFoundError: No module named 'editables'

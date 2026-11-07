@@ -1,0 +1,7 @@
+﻿DECISION_ID,ISSUE,EVIDENCE,OPTIONS,RECOMMENDATION,PRIORITY,OWNER_STATUS
+OD-ENV,البيئة المعزولة,OWNER_ENVIRONMENT_RECOVERY_AUTHORIZATION.txt;environment-verified.json,تفويض البيئة المحلية صدر ونُفذ؛ لا تنزيل إضافي تلقائي,الحفاظ على البيئة السابقة وإعادة الإنتاج بالبصمات,CLOSED_OFFLINE_SCOPE,GRANTED_OFFLINE_ONLY
+OD-LINT,نسخة Ruff المطلوبة,lint-authorized-002/receipt.json,تفويض Ruff0.15.0 المحدد صدر؛ لا يعمم على حزم أو مصادر أخرى,لا استبدال إصدار CI أو خفضه,COMPLETED_PINNED_CHECK,GRANTED_SINGLE_PACKAGE_ONLY
+OD-QUAL,إخفاقات التأهيل المتبقية,qualification-outcomes.json,طلب إصلاح محدود بملفاته بعد التصنيف؛ أو إبقاء الفحص المتأثر محجوبًا,لا تعديل خارج الملفات الأربعة بموجب هذا التسليم,P0,PENDING
+OD-TRUST,حدود Gate وسلطة الدستور/CI,dogfooding-assessment.json;../authority-reconciliation.json,تحديد الملف الوظيفي المطلوب وحدود الثقة؛ حسم القرارات المحمية بطلب مستقل,لا إنشاء Policy Engine أو تطبيق Core بدعوى إكمال التأهيل,P0_FOR_DEPENDENT_GATES,PENDING
+OD-HISTORY,أصل QUAL-002,../historical-evidence-search.json,تقديم الأصل إن وجد؛ أو إبقاء نتائجه التاريخية غير متحققة مع الأدلة البديلة الجديدة,لا اختلاق أصل أو جمع الأعداد القديمة,P1,PENDING
+OD-CORE,حدود Core/Full,../fit-gap.json;readiness-current.json,مراجعة متطلبات شريحة لاحقة بقرار مستقل,لا استنتاج التفويض من نجاح بيئة أو اختبارات أو مراجعة,FUTURE_SCOPE,NOT_GRANTED

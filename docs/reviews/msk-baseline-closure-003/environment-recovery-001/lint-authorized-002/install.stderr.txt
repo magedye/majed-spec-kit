@@ -1,0 +1,5 @@
+Using Python 3.12.10 environment at: specs\003-msk-baseline-closure\execution\environment-recovery-001\lint-authorized-venv
+Resolved 1 package in 59ms
+Prepared 1 package in 764ms
+Installed 1 package in 161ms
+ + ruff==0.15.0

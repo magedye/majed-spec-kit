@@ -1,0 +1,8 @@
+WARN ruff==0.15.0 needs to be downloaded from a registry
+WARN ruff needs to be downloaded from a registry
+  × No solution found when resolving dependencies:
+  ╰─▶ Because ruff==0.15.0 needs to be downloaded from a registry and you
+      require ruff==0.15.0, we can conclude that your requirements are
+      unsatisfiable.
+
+hint: Packages were unavailable because the network was disabled. When the network is disabled, registry packages may only be read from the cache.

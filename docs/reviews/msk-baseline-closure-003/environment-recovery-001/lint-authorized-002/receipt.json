@@ -1,0 +1,102 @@
+{
+  "request_id": "MSK-BASELINE-CLOSURE-003",
+  "started_at_utc": "2026-11-07T04:30:34.035584+00:00",
+  "artifact": {
+    "index": "https://pypi.org/simple/ruff/",
+    "index_response_sha256": "bec497bfe9baf3ac49aa3f3378ad6d20a9e8289e0d4cc4f32bc3e86faa99e07e",
+    "filename": "ruff-0.15.0-py3-none-win_amd64.whl",
+    "url": "https://files.pythonhosted.org/packages/51/ad/f813b6e2c97e9b4598be25e94a9147b9af7e60523b0cb5d94d307c15229d/ruff-0.15.0-py3-none-win_amd64.whl",
+    "sha256": "dd5e4d3301dc01de614da3cdffc33d4b1b96fb89e45721f1598e5532ccf78b18",
+    "yanked": false,
+    "requires_python": ">=3.7"
+  },
+  "network_in_this_resume": false,
+  "pytest_environment_unchanged": true,
+  "commands": [
+    {
+      "label": "venv",
+      "argv": [
+        "C:\\Users\\Majed\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-I",
+        "-m",
+        "venv",
+        "--without-pip",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\lint-authorized-venv"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "install",
+      "argv": [
+        "C:\\Users\\Majed\\.local\\bin\\uv.exe",
+        "--offline",
+        "--no-config",
+        "--no-python-downloads",
+        "pip",
+        "install",
+        "--python",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\lint-authorized-venv\\Scripts\\python.exe",
+        "--no-index",
+        "--find-links",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\ruff-wheelhouse",
+        "--require-hashes",
+        "--only-binary",
+        ":all:",
+        "--strict",
+        "--link-mode",
+        "copy",
+        "-r",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\docs\\reviews\\msk-baseline-closure-003\\environment-recovery-001\\lint-authorized-002\\requirements.txt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "version",
+      "argv": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\lint-authorized-venv\\Scripts\\ruff.exe",
+        "--version"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "check",
+      "argv": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\lint-authorized-venv\\Scripts\\ruff.exe",
+        "check",
+        "src",
+        "tests"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "prior_attempt": "Downloaded exact authorized wheel and verified advertised SHA; helper assumed POSIX RECORD names and raised KeyError on Windows backslashes before installation. Original artifact/metadata retained; no redownload.",
+  "verified_wheel_RECORD_entries": [
+    {
+      "RECORD_path": "ruff\\__init__.py",
+      "archive_path": "ruff/__init__.py"
+    },
+    {
+      "RECORD_path": "ruff\\__main__.py",
+      "archive_path": "ruff/__main__.py"
+    },
+    {
+      "RECORD_path": "ruff-0.15.0.data\\scripts\\ruff.exe",
+      "archive_path": "ruff-0.15.0.data/scripts/ruff.exe"
+    },
+    {
+      "RECORD_path": "ruff-0.15.0.dist-info\\METADATA",
+      "archive_path": "ruff-0.15.0.dist-info/METADATA"
+    },
+    {
+      "RECORD_path": "ruff-0.15.0.dist-info\\WHEEL",
+      "archive_path": "ruff-0.15.0.dist-info/WHEEL"
+    },
+    {
+      "RECORD_path": "ruff-0.15.0.dist-info\\licenses\\LICENSE",
+      "archive_path": "ruff-0.15.0.dist-info/licenses/LICENSE"
+    }
+  ],
+  "result": "PASSED",
+  "finished_at_utc": "2026-11-07T04:30:39.273262+00:00",
+  "executable_sha256": "1580fc1bd2cfbad0a6013fdcc0dbbc49ab3cc71e43a174cff583f6e4e33d901d"
+}

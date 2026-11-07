@@ -1,5 +1,9 @@
 # MSK-BASELINE-CLOSURE-003 — EXECUTION & OWNER REVIEW
 
+**الحالة الحالية:** `PARTIAL_WITH_BLOCKERS` بعد تجهيز البيئة وتشغيل التأهيل. التفاصيل والأعداد الحالية في [ملحق الاستئناف](environment-recovery-001/README_AR.md) و[قرارات المالك الحالية](environment-recovery-001/OWNER_DECISIONS_AR.csv).
+
+> الأقسام أدناه سجل الجولة السابقة عند98e6269؛ أوصاف مانع Python والحفظ والمراجعة فيها تاريخية. لا تُستعمل بدل الملحق الحالي.
+
 **الحالة الهندسية: PARTIAL_WITH_BLOCKERS.** اكتملت الأعمال المستقلة المبينة أدناه، لكن جمع اختبارات الحزمة محجوب بـDEPENDENCY_UNAVAILABLE؛ لذلك لم يُمنح BASELINE_CLOSURE_CANDIDATE أو READY_FOR_OWNER_REVIEW بوصفهما حكم إغلاق كامل. هذه حزمة مراجعة جزئية للمالك، وليست قبولًا ذاتيًا.
 
 ## 1. FACT — خط الأساس والمرشح والعزل

@@ -1,0 +1,566 @@
+{
+  "interpreter": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+  "version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "prefix": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv",
+  "base_prefix": "C:\\Users\\Majed\\AppData\\Local\\Programs\\Python\\Python312",
+  "user_site_enabled": false,
+  "sys_path": [
+    "C:\\Users\\Majed\\AppData\\Local\\Programs\\Python\\Python312\\python312.zip",
+    "C:\\Users\\Majed\\AppData\\Local\\Programs\\Python\\Python312\\DLLs",
+    "C:\\Users\\Majed\\AppData\\Local\\Programs\\Python\\Python312\\Lib",
+    "C:\\Users\\Majed\\AppData\\Local\\Programs\\Python\\Python312",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\src",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\win32",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\win32\\lib",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pythonwin"
+  ],
+  "requirements": [
+    {
+      "declared": "typer>=0.24.0",
+      "version": "0.28.0",
+      "satisfied": true
+    },
+    {
+      "declared": "click>=8.2.1",
+      "version": "8.5.1",
+      "satisfied": true
+    },
+    {
+      "declared": "rich",
+      "version": "15.0.0",
+      "satisfied": true
+    },
+    {
+      "declared": "readchar",
+      "version": "4.2.2",
+      "satisfied": true
+    },
+    {
+      "declared": "pyyaml>=6.0",
+      "version": "6.0.3",
+      "satisfied": true
+    },
+    {
+      "declared": "packaging>=23.0",
+      "version": "26.3",
+      "satisfied": true
+    },
+    {
+      "declared": "pathspec>=0.12.0",
+      "version": "1.1.1",
+      "satisfied": true
+    },
+    {
+      "declared": "json5>=0.13.0",
+      "version": "0.17.3",
+      "satisfied": true
+    },
+    {
+      "declared": "mcp>=2.2.0,<3.0.0",
+      "version": "2.3.0",
+      "satisfied": true
+    },
+    {
+      "declared": "pydantic>=2.13.0,<3.0.0",
+      "version": "2.14.3",
+      "satisfied": true
+    },
+    {
+      "declared": "lark>=1.3.1,<2.0.0",
+      "version": "1.3.1",
+      "satisfied": true
+    },
+    {
+      "declared": "pytest>=7.0",
+      "version": "9.2.0",
+      "satisfied": true
+    },
+    {
+      "declared": "pytest-cov>=4.0",
+      "version": "7.1.0",
+      "satisfied": true
+    },
+    {
+      "declared": "pytest-xdist>=3.0",
+      "version": "3.8.0",
+      "satisfied": true
+    }
+  ],
+  "installed_distributions": [
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\annotated_doc-0.0.5.dist-info",
+      "RECORD_hashes_verified": 9,
+      "unhashed_RECORD_entries": [
+        "annotated_doc-0.0.5.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\annotated_types-0.8.0.dist-info",
+      "RECORD_hashes_verified": 8,
+      "unhashed_RECORD_entries": [
+        "annotated_types-0.8.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "anyio",
+      "version": "4.16.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\anyio-4.16.0.dist-info",
+      "RECORD_hashes_verified": 54,
+      "unhashed_RECORD_entries": [
+        "anyio-4.16.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\attrs-26.1.0.dist-info",
+      "RECORD_hashes_verified": 36,
+      "unhashed_RECORD_entries": [
+        "attrs-26.1.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\cffi-2.1.1.dist-info",
+      "RECORD_hashes_verified": 33,
+      "unhashed_RECORD_entries": [
+        "cffi-2.1.1.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "click",
+      "version": "8.5.1",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\click-8.5.1.dist-info",
+      "RECORD_hashes_verified": 23,
+      "unhashed_RECORD_entries": [
+        "click-8.5.1.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\colorama-0.4.6.dist-info",
+      "RECORD_hashes_verified": 18,
+      "unhashed_RECORD_entries": [
+        "colorama-0.4.6.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "coverage",
+      "version": "7.17.2",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\coverage-7.17.2.dist-info",
+      "RECORD_hashes_verified": 66,
+      "unhashed_RECORD_entries": [
+        "coverage-7.17.2.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\cryptography-50.0.2.dist-info",
+      "RECORD_hashes_verified": 121,
+      "unhashed_RECORD_entries": [
+        "cryptography-50.0.2.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "execnet",
+      "version": "2.1.2",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\execnet-2.1.2.dist-info",
+      "RECORD_hashes_verified": 23,
+      "unhashed_RECORD_entries": [
+        "execnet-2.1.2.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\h11-0.16.0.dist-info",
+      "RECORD_hashes_verified": 18,
+      "unhashed_RECORD_entries": [
+        "h11-0.16.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "httpcore2",
+      "version": "2.16.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\httpcore2-2.16.0.dist-info",
+      "RECORD_hashes_verified": 37,
+      "unhashed_RECORD_entries": [
+        "httpcore2-2.16.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "httpx2",
+      "version": "2.16.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\httpx2-2.16.0.dist-info",
+      "RECORD_hashes_verified": 39,
+      "unhashed_RECORD_entries": [
+        "httpx2-2.16.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\idna-3.20.dist-info",
+      "RECORD_hashes_verified": 18,
+      "unhashed_RECORD_entries": [
+        "idna-3.20.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\iniconfig-2.3.1.dist-info",
+      "RECORD_hashes_verified": 11,
+      "unhashed_RECORD_entries": [
+        "iniconfig-2.3.1.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "json5",
+      "version": "0.17.3",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\json5-0.17.3.dist-info",
+      "RECORD_hashes_verified": 16,
+      "unhashed_RECORD_entries": [
+        "json5-0.17.3.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\jsonschema-4.26.0.dist-info",
+      "RECORD_hashes_verified": 45,
+      "unhashed_RECORD_entries": [
+        "jsonschema-4.26.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\jsonschema_specifications-2025.9.1.dist-info",
+      "RECORD_hashes_verified": 29,
+      "unhashed_RECORD_entries": [
+        "jsonschema_specifications-2025.9.1.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "lark",
+      "version": "1.3.1",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\lark-1.3.1.dist-info",
+      "RECORD_hashes_verified": 47,
+      "unhashed_RECORD_entries": [
+        "lark-1.3.1.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\markdown_it_py-4.2.0.dist-info",
+      "RECORD_hashes_verified": 76,
+      "unhashed_RECORD_entries": [
+        "markdown_it_py-4.2.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "mcp",
+      "version": "2.3.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\mcp-2.3.0.dist-info",
+      "RECORD_hashes_verified": 132,
+      "unhashed_RECORD_entries": [
+        "mcp-2.3.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "mcp-types",
+      "version": "2.3.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\mcp_types-2.3.0.dist-info",
+      "RECORD_hashes_verified": 14,
+      "unhashed_RECORD_entries": [
+        "mcp_types-2.3.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\mdurl-0.1.2.dist-info",
+      "RECORD_hashes_verified": 12,
+      "unhashed_RECORD_entries": [
+        "mdurl-0.1.2.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.2",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\opentelemetry_api-1.45.2.dist-info",
+      "RECORD_hashes_verified": 48,
+      "unhashed_RECORD_entries": [
+        "opentelemetry_api-1.45.2.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\packaging-26.3.dist-info",
+      "RECORD_hashes_verified": 30,
+      "unhashed_RECORD_entries": [
+        "packaging-26.3.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "pathspec",
+      "version": "1.1.1",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pathspec-1.1.1.dist-info",
+      "RECORD_hashes_verified": 37,
+      "unhashed_RECORD_entries": [
+        "pathspec-1.1.1.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pluggy-1.7.0.dist-info",
+      "RECORD_hashes_verified": 20,
+      "unhashed_RECORD_entries": [
+        "pluggy-1.7.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "pycparser",
+      "version": "3.12",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pycparser-3.12.dist-info",
+      "RECORD_hashes_verified": 14,
+      "unhashed_RECORD_entries": [
+        "pycparser-3.12.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.3",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pydantic-2.14.3.dist-info",
+      "RECORD_hashes_verified": 113,
+      "unhashed_RECORD_entries": [
+        "pydantic-2.14.3.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.50.4",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pydantic_core-2.50.4.dist-info",
+      "RECORD_hashes_verified": 12,
+      "unhashed_RECORD_entries": [
+        "pydantic_core-2.50.4.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pygments-2.21.0.dist-info",
+      "RECORD_hashes_verified": 351,
+      "unhashed_RECORD_entries": [
+        "pygments-2.21.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "PyJWT",
+      "version": "2.15.1",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pyjwt-2.15.1.dist-info",
+      "RECORD_hashes_verified": 20,
+      "unhashed_RECORD_entries": [
+        "pyjwt-2.15.1.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "pytest",
+      "version": "9.2.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pytest-9.2.0.dist-info",
+      "RECORD_hashes_verified": 93,
+      "unhashed_RECORD_entries": [
+        "pytest-9.2.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "pytest-cov",
+      "version": "7.1.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pytest_cov-7.1.0.dist-info",
+      "RECORD_hashes_verified": 10,
+      "unhashed_RECORD_entries": [
+        "pytest_cov-7.1.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "pytest-xdist",
+      "version": "3.8.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pytest_xdist-3.8.0.dist-info",
+      "RECORD_hashes_verified": 25,
+      "unhashed_RECORD_entries": [
+        "pytest_xdist-3.8.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "python-multipart",
+      "version": "0.0.33",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\python_multipart-0.0.33.dist-info",
+      "RECORD_hashes_verified": 14,
+      "unhashed_RECORD_entries": [
+        "python_multipart-0.0.33.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "pywin32",
+      "version": "312",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pywin32-312.dist-info",
+      "RECORD_hashes_verified": 614,
+      "unhashed_RECORD_entries": [
+        "pywin32-312.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pyyaml-6.0.3.dist-info",
+      "RECORD_hashes_verified": 25,
+      "unhashed_RECORD_entries": [
+        "pyyaml-6.0.3.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "readchar",
+      "version": "4.2.2",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\readchar-4.2.2.dist-info",
+      "RECORD_hashes_verified": 15,
+      "unhashed_RECORD_entries": [
+        "readchar-4.2.2.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\referencing-0.37.0.dist-info",
+      "RECORD_hashes_verified": 20,
+      "unhashed_RECORD_entries": [
+        "referencing-0.37.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\rich-15.0.0.dist-info",
+      "RECORD_hashes_verified": 106,
+      "unhashed_RECORD_entries": [
+        "rich-15.0.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\rpds_py-2026.9.1.dist-info",
+      "RECORD_hashes_verified": 10,
+      "unhashed_RECORD_entries": [
+        "rpds_py-2026.9.1.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\shellingham-1.5.4.dist-info",
+      "RECORD_hashes_verified": 14,
+      "unhashed_RECORD_entries": [
+        "shellingham-1.5.4.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "specify-cli",
+      "version": "1.3.3.dev0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\specify_cli-1.3.3.dev0.dist-info",
+      "RECORD_hashes_verified": 106,
+      "unhashed_RECORD_entries": [
+        "specify_cli-1.3.3.dev0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "sse-starlette",
+      "version": "3.6.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\sse_starlette-3.6.0.dist-info",
+      "RECORD_hashes_verified": 12,
+      "unhashed_RECORD_entries": [
+        "sse_starlette-3.6.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "starlette",
+      "version": "1.10.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\starlette-1.10.0.dist-info",
+      "RECORD_hashes_verified": 42,
+      "unhashed_RECORD_entries": [
+        "starlette-1.10.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "truststore",
+      "version": "0.10.5",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\truststore-0.10.5.dist-info",
+      "RECORD_hashes_verified": 12,
+      "unhashed_RECORD_entries": [
+        "truststore-0.10.5.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "typer",
+      "version": "0.28.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\typer-0.28.0.dist-info",
+      "RECORD_hashes_verified": 43,
+      "unhashed_RECORD_entries": [
+        "typer-0.28.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.5",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\typing_inspection-0.4.5.dist-info",
+      "RECORD_hashes_verified": 10,
+      "unhashed_RECORD_entries": [
+        "typing_inspection-0.4.5.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\typing_extensions-4.16.0.dist-info",
+      "RECORD_hashes_verified": 6,
+      "unhashed_RECORD_entries": [
+        "typing_extensions-4.16.0.dist-info/RECORD"
+      ]
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "metadata_path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\uvicorn-0.54.0.dist-info",
+      "RECORD_hashes_verified": 53,
+      "unhashed_RECORD_entries": [
+        "uvicorn-0.54.0.dist-info/RECORD"
+      ]
+    }
+  ],
+  "integrity_errors": [],
+  "transitive_errors": [],
+  "modules": {
+    "pytest": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pytest\\__init__.py",
+    "pydantic": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pydantic\\__init__.py",
+    "typer": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\typer\\__init__.py",
+    "rich": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\rich\\__init__.py",
+    "mcp": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\mcp\\__init__.py",
+    "readchar": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\readchar\\__init__.py",
+    "pathspec": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Lib\\site-packages\\pathspec\\__init__.py",
+    "specify_cli": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\src\\specify_cli\\__init__.py"
+  },
+  "all_declared_satisfied": true,
+  "dependency_scope_verified": true
+}

@@ -1,0 +1,137 @@
+# MSK-BASELINE-CLOSURE-003
+## Owner Authorization — Isolated Python Environment Recovery & Blocked Qualification Completion
+
+**Project:** Majed Spec Kit  
+**Repository:** `D:\APP\maged-spec-kit\majed-spec-kit`  
+**Existing Task:** `MSK-BASELINE-CLOSURE-003`  
+**Current Status:** `PARTIAL_WITH_BLOCKERS`  
+**Current Candidate:** `98e6269` (verify full SHA and Git state)  
+**Execution Mode:** Windows Native / Headless / Scoped Local Execution
+
+### 1. Objective
+
+Resume the existing task from its verified handoff.
+
+Resolve the Python environment dependency blocker, complete the previously blocked qualification checks, and reassess baseline readiness using candidate-specific evidence.
+
+Do not repeat completed reviews, analyses, or tests unless their evidence has become invalid.
+
+This authorization is limited to environment preparation and completion of the existing baseline qualification. It does not authorize Majed Core implementation.
+
+### 2. Environment Preparation
+
+First inspect the project's authoritative dependency specifications, including:
+
+- `pyproject.toml`
+- Relevant lockfiles, if present.
+- Test and development dependency groups.
+- Supported Python versions.
+- Existing local virtual environments and package caches.
+
+Determine the exact dependency requirements and compatible package versions.
+
+Prefer Python 3.12.10 if confirmed compatible with the project's authoritative constraints.
+
+**I authorize creating or repairing a project-specific isolated virtual environment and installing only the dependencies strictly required for the approved qualification scope, subject to the following boundaries:**
+
+1. Prefer existing verified local package caches and offline installation.
+2. Do not use `--system-site-packages` for the final qualification environment.
+3. Do not modify global Python installations, PATH, registry settings, or other projects.
+4. Do not modify dependency specifications or reduce version constraints merely to obtain a successful installation.
+5. If external downloads are required, identify the exact package sources and required network access, and stop that installation step for separate owner authorization.
+6. Do not install unverified packages or bypass integrity checks.
+7. Record the interpreter, environment location, installed packages, resolved versions, and dependency verification results.
+8. Preserve the previously created nonqualified environment and its evidence unless a separately authorized cleanup is approved.
+
+If the dependency set is unsatisfiable under the authoritative project constraints, report `DEPENDENCY_RESOLUTION_BLOCKED`. Do not silently downgrade requirements.
+
+### 3. Complete Blocked Qualification
+
+After establishing a valid environment:
+
+1. Verify dependency compatibility.
+2. Complete pytest collection and record the unique collected test IDs.
+3. Reconcile collected tests with the existing test inventory.
+4. Run the mandatory and previously blocked qualification suites.
+5. Reassess Windows, Rich, and workflow-related fixes.
+6. Complete the seven previously blocked negative Dogfooding scenarios.
+7. Preserve the positive scenario and previous valid evidence.
+8. Re-run only tests affected by material changes, plus mandatory qualification gates.
+
+Record the exact candidate revision, environment, commands, exit codes, and results.
+
+Do not classify `SKIPPED`, `BLOCKED`, or `NOT_RUN` as `PASSED`.
+
+### 4. Independent Review
+
+Prepare a fixed qualification candidate for independent technical review.
+
+The reviewer must examine:
+
+- Dependency integrity and environment reproducibility.
+- Actual test coverage and failures.
+- Correctness of the Windows and Rich fixes.
+- Positive and negative governance scenarios.
+- Evidence provenance and enforcement limitations.
+- Protected-file preservation.
+- Residual qualification blockers.
+
+Do not reuse the previous documentary review as technical qualification.
+
+If no qualified independent reviewer is available, report `INDEPENDENT_REVIEW_PENDING`.
+
+### 5. Preservation and Authorization
+
+Preserve:
+
+- The existing candidate and branch history.
+- All three local commits.
+- The owner's concurrent work.
+- The approved constitution and protected governance documents.
+- Existing recovery backups and evidence.
+- The current Core/Full scope boundaries.
+
+Local changes and commits are permitted only within a verified task-specific write-set and after applicable checks.
+
+Do not merge, push, release, deploy, modify global configurations, access QLE, or begin Core development.
+
+### 6. Deliverables
+
+Provide an Arabic final report containing:
+
+1. Environment diagnosis and final dependency resolution.
+2. Python version, dependency versions, and reproducibility instructions.
+3. Test collection results and deduplicated qualification outcomes.
+4. Previously blocked tests and their final disposition.
+5. Remaining product, test, or environment defects.
+6. Independent technical review results.
+7. Updated evidence and readiness matrices.
+8. Exact Git baseline, candidate, branch, and commit state.
+9. Residual risks and required owner decisions.
+10. Updated Core readiness recommendation without automatically authorizing Core work.
+
+### 7. Completion States
+
+Use:
+
+`BASELINE_CLOSURE_CANDIDATE / READY_FOR_OWNER_REVIEW`
+
+only when all applicable mandatory gates and required reviews are satisfied.
+
+Otherwise use:
+
+`PARTIAL_WITH_BLOCKERS`
+
+with exact blockers and preserved evidence.
+
+Do not grant:
+
+`OWNER_ACCEPTED / CORE_IMPLEMENTATION_APPROVED / PRODUCTION_READY`
+
+### Final Instruction
+
+Resume `MSK-BASELINE-CLOSURE-003` from its current verified state. Prepare the isolated environment using authorized local resources, complete all technically feasible blocked qualification work, and present an evidence-backed owner review package.
+
+Stop only the affected operation when additional authorization is required. Continue other independent, authorized work.
+
+**Do not start Majed Core, merge, push, publish, or deploy.**

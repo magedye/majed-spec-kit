@@ -1,0 +1,75 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree
+configfile: pyproject.toml
+created: 4/4 workers
+4 workers [285 items]
+
+........................................................................ [ 25%]
+.........s.s.....................................ss...........s......... [ 50%]
+.........................s......ss...................................... [ 75%]
+..........F........................................................F.    [100%]
+================================== FAILURES ===================================
+_ TestWindowsUvToolEnvironment.test_non_windows_uv_tool_dry_run_still_previews_installer _
+[gw2] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\test_version_execution.py:740: in test_non_windows_uv_tool_dry_run_still_previews_installer
+    assert f"Command that would be executed: {expected_argv}" in " ".join(
+E   AssertionError: assert 'Command that would be executed: D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-w...1\\venv\\Scripts\\python.exe tool install specify-cli --force --from git+https://github.com/github/spec-kit.git@v1.2.4' in 'Dry run — no changes will be made. Detected install method: uv tool Current version: 1.2.2 Target version: v1.2.4 Com...\\venv\\ Scripts\\python.exe tool install specify-cli --force --from git+https://github.com/github/spec-kit.git@v1.2.4'
+E    +  where 'Dry run — no changes will be made. Detected install method: uv tool Current version: 1.2.2 Target version: v1.2.4 Com...\\venv\\ Scripts\\python.exe tool install specify-cli --force --from git+https://github.com/github/spec-kit.git@v1.2.4' = <built-in method join of str object at 0x00007FFF452D3210>(['Dry', 'run', '—', 'no', 'changes', 'will', ...])
+E    +    where <built-in method join of str object at 0x00007FFF452D3210> = ' '.join
+E    +    and   ['Dry', 'run', '—', 'no', 'changes', 'will', ...] = <built-in method split of str object at 0x0000014BB3FCBD60>()
+E    +      where <built-in method split of str object at 0x0000014BB3FCBD60> = 'Dry run — no changes will be made.\nDetected install method: uv tool\nCurrent version: 1.2.2\nTarget version: v1.2.4\...v\\\nScripts\\python.exe tool install specify-cli --force --from \ngit+https://github.com/github/spec-kit.git@v1.2.4\n'.split
+__ test_real_stdio_server_initializes_discovers_and_calls_first_class_tools ___
+[gw0] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\mcp_server\test_stdio.py", line 135, in test_real_stdio_server_initializes_discovers_and_calls_first_class_tools
+  |     asyncio.run(exercise())
+  |   File "C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 195, in run
+  |     return runner.run(main)
+  |            ^^^^^^^^^^^^^^^^
+  |   File "C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+  |     return self._loop.run_until_complete(task)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 691, in run_until_complete
+  |     return future.result()
+  |            ^^^^^^^^^^^^^^^
+  |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\mcp_server\test_stdio.py", line 28, in exercise
+  |     stdio_client(parameters, errlog=errlog) as (read, write),
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 231, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\mcp\client\stdio.py", line 201, in stdio_client
+  |     async with anyio.create_task_group() as tg:
+  |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 871, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Exception Group Traceback (most recent call last):
+    |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\mcp_server\test_stdio.py", line 29, in exercise
+    |     ClientSession(
+    |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\mcp\client\session.py", line 514, in __aexit__
+    |     result = await self._task_group.__aexit__(exc_type, exc_val, exc_tb)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 871, in __aexit__
+    |     raise BaseExceptionGroup(
+    | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+    +-+---------------- 1 ----------------
+      | Traceback (most recent call last):
+      |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\mcp_server\test_stdio.py", line 35, in exercise
+      |     initialized = await session.initialize()
+      |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\mcp\client\session.py", line 654, in initialize
+      |     result = await self.send_request(
+      |              ^^^^^^^^^^^^^^^^^^^^^^^^
+      |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\mcp\client\session.py", line 586, in send_request
+      |     raw = await self._dispatcher.send_raw_request(method, data.get("params"), opts)
+      |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\mcp\shared\jsonrpc_dispatcher.py", line 442, in send_raw_request
+      |     raise MCPError(code=REQUEST_TIMEOUT, message=f"Request {method!r} timed out") from None
+      | mcp.shared.exceptions.MCPError: Request 'initialize' timed out
+      +------------------------------------
+=========================== short test summary info ===========================
+FAILED tests/specify_cli/test_version_execution.py::TestWindowsUvToolEnvironment::test_non_windows_uv_tool_dry_run_still_previews_installer
+FAILED tests/specify_cli/mcp_server/test_stdio.py::test_real_stdio_server_initializes_discovers_and_calls_first_class_tools
+============ 2 failed, 275 passed, 8 skipped in 126.87s (0:02:06) =============

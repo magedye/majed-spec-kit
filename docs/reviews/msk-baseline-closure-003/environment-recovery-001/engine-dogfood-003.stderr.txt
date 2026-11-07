@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\run_engine_dogfood.py", line 102, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\run_engine_dogfood.py", line 22, in main
+    assert not sys.stdin.isatty(), 'Headless fixture requires DEVNULL stdin'
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Headless fixture requires DEVNULL stdin

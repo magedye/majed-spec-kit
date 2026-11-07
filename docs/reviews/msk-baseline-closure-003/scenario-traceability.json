@@ -739,5 +739,7 @@
       "execution_or_acceptance_not_inferred_from_links": true
     }
   ],
-  "actual_scenario_qualification": "PARTIAL_WITH_BLOCKERS"
+  "actual_scenario_qualification": "PARTIAL_WITH_CONTROL_GAPS",
+  "historical_record_scope": "Prior source-script/blocked-engine evidence at98e6269 retained; current observations are separate, not retroactive fulfillment",
+  "current_execution_overlay": "environment-recovery-001/scenario-current-overlay.json"
 }

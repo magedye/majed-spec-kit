@@ -1,0 +1,285 @@
+{
+  "scope": "Current task-local scripts captured at packagefreeze; not a promise of exact earlier helper versions. Raw prior receipts/failures retained. Scripts have exclusive attempt IDs and absolute custody guards; do not rerun blindly or install/download under expired scope.",
+  "tools": [
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\check_offline_lint.py",
+      "copy": "reproduction-tools/check_offline_lint.py",
+      "sha256": "9433dc450f68a484a9c08d676dd1b7130fd3bd6c49d10b5062b7d47fd27bf41e"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\checkpoint_recovery.py",
+      "copy": "reproduction-tools/checkpoint_recovery.py",
+      "sha256": "ecc4e2ab8ab1368108efb80325796e0e8cb6cfb64cc360f3248124f1235324cb"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\correct_review.py",
+      "copy": "reproduction-tools/correct_review.py",
+      "sha256": "6fa5ae82289813195e78d25a114d3f7e2271ffb219f8f7540c337e25976b967b"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\diagnose.py",
+      "copy": "reproduction-tools/diagnose.py",
+      "sha256": "27ec32138979a4ca9ffa5b9b25aa60adb4e53fbd46fd142a23316f8079727552"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\diagnose_stdio.py",
+      "copy": "reproduction-tools/diagnose_stdio.py",
+      "sha256": "e726e9599ee60f921e50f17ac1781f88efc2e9786b4abdd123999253c396fb83"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\document_recovery.py",
+      "copy": "reproduction-tools/document_recovery.py",
+      "sha256": "d52210c4ae6c0905c51ca6ec0851529cf51717f39934c72b69a20a44ecf95775"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\dogfood.py",
+      "copy": "reproduction-tools/dogfood.py",
+      "sha256": "48405292e8f0ffa5a3c5aadc539b33b4c039d5329ed02581a763e48f76739e02"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\download_authorized_ruff.py",
+      "copy": "reproduction-tools/download_authorized_ruff.py",
+      "sha256": "70d76623411ef83e987c483e0325b8564ff0a3c0300946329c69bbe7fbae8627"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\finish_project_editable.py",
+      "copy": "reproduction-tools/finish_project_editable.py",
+      "sha256": "06bef8d99ce17c4e329bf8b74d17279c9846d509c4b4fe1c6afe6fa938f5573e"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\install_offline_environment.py",
+      "copy": "reproduction-tools/install_offline_environment.py",
+      "sha256": "3713f2e479538a851ca23d63e90f099f237e5bf270a6ea6b39ccca22a5affff1"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\install_project_editable.py",
+      "copy": "reproduction-tools/install_project_editable.py",
+      "sha256": "cecfe98e8e3b897573959d5e739df20f46b49b6e7d11782a8d8d8860ca824694"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\install_verified_ruff_cache.py",
+      "copy": "reproduction-tools/install_verified_ruff_cache.py",
+      "sha256": "00943603bb7f81cd2d7a2970e10b8c1f948dcb758bd4e172e8eae0990def8fbd"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\package_review.py",
+      "copy": "reproduction-tools/package_review.py",
+      "sha256": "d2ddaf44925fd640b11a8ce4097fbb3a120f0a76ce76e4cf0c6cb0477bc3d1b6"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\preflight.py",
+      "copy": "reproduction-tools/preflight.py",
+      "sha256": "d7d4dd5a01c9d1b40ab3d089ca3abf572386ed47852bba0bfd81ee1e5bb4ee66"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\prepare_project_editable.py",
+      "copy": "reproduction-tools/prepare_project_editable.py",
+      "sha256": "832498af5d902387d67141a7c32dd5b54d56f772f68b74c51a69132ece0082dd"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\qualification_capture.py",
+      "copy": "reproduction-tools/qualification_capture.py",
+      "sha256": "82895bc57b675f2cbda7c0d133d027257f2f35a1d8b265f3760c229ddf8e6214"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\qualify.py",
+      "copy": "reproduction-tools/qualify.py",
+      "sha256": "b2eac998f19b0e5ea8adc00d7d00e9d6eba622a9f844e541cafed68a5d14d73b"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\reconcile.py",
+      "copy": "reproduction-tools/reconcile.py",
+      "sha256": "9c30a16edf737c675af4faaf49323a84db22e1352e1ce6a2bbb2a6a8e84bdf4a"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\recover_environment.py",
+      "copy": "reproduction-tools/recover_environment.py",
+      "sha256": "14db47d12d3673077b2d9ac7146d62588c7897fe57274bca0644c510bde37eba"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\run_engine_dogfood.py",
+      "copy": "reproduction-tools/run_engine_dogfood.py",
+      "sha256": "fc6d68a357b6f3adaafb5e2e5082fc5ce0b47a31761a5735f5306299c7b36c26"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\run_recovered_checks.py",
+      "copy": "reproduction-tools/run_recovered_checks.py",
+      "sha256": "2bb97b98f03702758c4df54484b5dd92ed5177babaee797564bb2218d8ba7f10"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\save_documentary_candidate.py",
+      "copy": "reproduction-tools/save_documentary_candidate.py",
+      "sha256": "f9f275790f61e57a2d38ee9b9b8ac379533d2ecdd1444d98366c0619bba5571c"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\save_reused_fixes.py",
+      "copy": "reproduction-tools/save_reused_fixes.py",
+      "sha256": "971880efad004596638301034418ef6f24543428afd66f0b97e9e2d9211773c9"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\summarize_recovery.py",
+      "copy": "reproduction-tools/summarize_recovery.py",
+      "sha256": "b6db4f81e120ab066968834da2722eece704080c067dd17111df0a68329c01e5"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\verify_package.py",
+      "copy": "reproduction-tools/verify_package.py",
+      "sha256": "24979cc4c811f17ea6f8939fdd606c688f82c50ffaad3d6efad25f35677f18de"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\verify_project_install_and_revalidate.py",
+      "copy": "reproduction-tools/verify_project_install_and_revalidate.py",
+      "sha256": "0cec7888376784409c5dab4e39830b9d5e9f55a11b0d2e7b5e382d3e9b054558"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\verify_recovered_environment.py",
+      "copy": "reproduction-tools/verify_recovered_environment.py",
+      "sha256": "627f2a7603576ac00aa090c062d68193a354f13e4b4291871e4001a88acd1ee9"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\verify_recovery_package.py",
+      "copy": "reproduction-tools/verify_recovery_package.py",
+      "sha256": "996a8bfdefc51abba12aec09a05b2688ae8739e1e4fcf9e604810030a68fee9a"
+    },
+    {
+      "source": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\guard\\sitecustomize.py",
+      "copy": "reproduction-tools/sitecustomize.py",
+      "sha256": "d13b15d7c07fca6b213c9d9f7e6a8dc4afccf5a307265cdc0a4120a977f5f0ed"
+    }
+  ]
+}

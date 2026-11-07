@@ -1,0 +1,28 @@
+{
+  "started_at_utc": "2026-11-07T03:52:02.302317+00:00",
+  "argv": [
+    "C:\\Users\\Majed\\.local\\bin\\uv.exe",
+    "--offline",
+    "--no-config",
+    "--no-python-downloads",
+    "pip",
+    "install",
+    "--python",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+    "--default-index",
+    "https://pypi.org/simple",
+    "--require-hashes",
+    "--only-binary",
+    ":all:",
+    "--link-mode",
+    "copy",
+    "--strict",
+    "-r",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\docs\\reviews\\msk-baseline-closure-003\\environment-recovery-001\\requirements-offline.txt"
+  ],
+  "network_allowed": false,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "d062a8a15332ddf9817cd03b6fdeacf80b72441dd39fe769018dd1318c3a8f81",
+  "exit_code": 0,
+  "finished_at_utc": "2026-11-07T03:52:09.116225+00:00"
+}

@@ -1,0 +1,17 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree
+configfile: pyproject.toml
+collected 1 item
+
+tests\specify_cli\events\test_events.py F                                [100%]
+
+================================== FAILURES ===================================
+_______ TestCommandRunner.test_sh_variant_without_launcher_returns_none _______
+tests\specify_cli\events\test_events.py:2237: in test_sh_variant_without_launcher_returns_none
+    assert _resolve_event_command_argv(cmd_dir / "boot.md", tmp_path, None) is None
+E   AssertionError: assert ['D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baselin...-recovery-001\\temp\\regression-before-001\\pytest\\test_sh_variant_without_launch0\\.specify\\scripts\\bash\\boot.sh'] is None
+E    +  where ['D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baselin...-recovery-001\\temp\\regression-before-001\\pytest\\test_sh_variant_without_launch0\\.specify\\scripts\\bash\\boot.sh'] = <function _resolve_event_command_argv at 0x0000024715B1D800>((WindowsPath('D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree/specs/003-msk-base...nvironment-recovery-001/temp/regression-before-001/pytest/test_sh_variant_without_launch0/.specify/templates/commands') / 'boot.md'), WindowsPath('D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree/specs/003-msk-baseline-closure/execution/environment-recovery-001/temp/regression-before-001/pytest/test_sh_variant_without_launch0'), None)
+=========================== short test summary info ===========================
+FAILED tests/specify_cli/events/test_events.py::TestCommandRunner::test_sh_variant_without_launcher_returns_none
+============================== 1 failed in 1.46s ==============================

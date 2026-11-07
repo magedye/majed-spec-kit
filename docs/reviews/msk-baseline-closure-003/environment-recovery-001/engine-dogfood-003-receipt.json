@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+    "-B",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\run_engine_dogfood.py"
+  ],
+  "exit_code": 1,
+  "headless_stdin": "DEVNULL",
+  "env_profile": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\dogfood-profile",
+  "prior_attempt": "002 failed before first scenario outcome: inherited TTY attempted prompt; cp1252 box output error. Prior fixture and predeclared inputs retained; no production edit"
+}

@@ -1,0 +1,9 @@
+{
+  "index": "https://pypi.org/simple/ruff/",
+  "index_response_sha256": "bec497bfe9baf3ac49aa3f3378ad6d20a9e8289e0d4cc4f32bc3e86faa99e07e",
+  "filename": "ruff-0.15.0-py3-none-win_amd64.whl",
+  "url": "https://files.pythonhosted.org/packages/51/ad/f813b6e2c97e9b4598be25e94a9147b9af7e60523b0cb5d94d307c15229d/ruff-0.15.0-py3-none-win_amd64.whl",
+  "sha256": "dd5e4d3301dc01de614da3cdffc33d4b1b96fb89e45721f1598e5532ccf78b18",
+  "yanked": false,
+  "requires_python": ">=3.7"
+}

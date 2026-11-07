@@ -1,45 +1,50 @@
 {
+  "request_id": "MSK-BASELINE-CLOSURE-003",
   "engineering_status": "PARTIAL_WITH_BLOCKERS",
+  "environment": "ISOLATED_DEPENDENCIES_AND_OWNED_EDITABLE_INSTALL_VERIFIED",
   "BASELINE_TECHNICAL_QUALIFICATION": {
-    "status": "BLOCKED",
-    "evidence": [
-      "environment.json",
-      "qualification-results.json"
-    ],
-    "reason": "Primary collection blocked, unique case denominator unresolved; full matrix/CodeQL not executed; old counts unverified.",
-    "blocker_class": "DEPENDENCY_UNAVAILABLE"
+    "status": "PARTIAL_WITH_BLOCKERS",
+    "local_result": {
+      "PASSED": 13661,
+      "SKIPPED": 730,
+      "FAILED": 11
+    },
+    "remaining_partition_exit_code": 1,
+    "remaining": "11actual unresolved catalog/Rich cases; parallelMCP timeout not explained by serialPASS; matrix/CodeQL and historical evidence gaps remain"
   },
   "SELF_GOVERNANCE_QUALIFICATION": {
-    "status": "PARTIAL_WITH_BLOCKERS",
-    "evidence": [
-      "dogfooding-results.json",
-      "scenario-traceability.json"
-    ],
-    "reason": "Actual source-script positive and local failed-prerequisite caller guard only;7negative engine/policy cases blocked. No host-wide identity/enforcement proof."
+    "status": "PARTIAL_WITH_CONTROL_GAPS",
+    "evidence": "dogfooding-assessment.json"
   },
   "CORE_IMPLEMENTATION_READINESS": {
     "status": "UNRESOLVED_NOT_APPROVED",
-    "evidence": [
-      "fit-gap.json",
-      "authority-reconciliation.json"
-    ],
-    "reason": "No approved complete Core slice requirements/authority and qualified dependencies established; unrelated concurrent work not adopted."
+    "reason": "No approved complete Core slice/authority; host-trust controls not supplied by baseline native gate"
   },
   "OWNER_APPROVAL_STATUS": {
-    "execution_authorization": "GRANTED_FOR_THIS_BOUNDED_TASK",
+    "bounded_execution": "GRANTED",
     "candidate_acceptance": "NOT_GRANTED",
-    "core_implementation": "NOT_GRANTED",
-    "main_merge": "PROHIBITED",
+    "Core": "NOT_GRANTED",
+    "merge": "PROHIBITED",
     "push": "PROHIBITED"
   },
-  "independent_review": {
-    "documentary_status": "DOCUMENTARY_PARTIAL_PACKAGE_REVIEWED",
-    "reviewed_candidate": "b5817243c090a08b1d6371011bf144af6a509c16",
-    "reviewer": "/root/msk_closure_review_001",
-    "report": "INDEPENDENT_REVIEW_002.md",
-    "access": "Procedural read-only separate context; actual declared MSK-only scope; OS isolation NOT_VERIFIED",
-    "full_technical_qualification_review": "INDEPENDENT_REVIEW_PENDING",
-    "owner_core_or_merge_acceptance": false
+  "independent_technical_review": "PENDING_FIXED_PACKAGE_REVIEW",
+  "previous_documentary_review": "../INDEPENDENT_REVIEW_002.md remains documentary only, no substitution",
+  "updated_at_utc": "2026-11-07T05:11:05.370923+00:00",
+  "mandatory_lint": {
+    "result": "PASSED",
+    "evidence": "lint-authorized-002/receipt.json",
+    "required_version": "0.15.0",
+    "no_silent_substitution": true
   },
-  "latest_owner_environment_clarification": "No new environment or dependency installs; examine existing MSK/host interpreters only; no other project environment."
+  "baseline_source_candidate": "10b5862f6905e62eaef0983418cb9567b1b8a8d6",
+  "remaining_blockers": [
+    "11 unresolved observations:7unmocked externalcatalog expectations and4Rich hardwrap assertions outside current write-set",
+    "Parallel stdio initialize timed out; native initialize diagnostic and original complete stdio test passed serially. Concurrency/rootcause unresolved; no globalPASS transfer.",
+    "Native gate does not provide authenticated grant/role/independent review/write-set/evidence-candidate controls",
+    "Protected constitution/CI matrix reconciliation and broader CI/security evidence not supplied by this local profile",
+    "Historical QUAL-002 raw provenance remains unavailable"
+  ],
+  "current_evidence_prefix": "environment-recovery-001/",
+  "previous_snapshot": "environment-recovery-001/historical-98e6269/readiness.json",
+  "source_candidate": "10b5862f6905e62eaef0983418cb9567b1b8a8d6"
 }

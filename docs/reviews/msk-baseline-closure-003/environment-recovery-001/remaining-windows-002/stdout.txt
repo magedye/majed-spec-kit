@@ -1,0 +1,704 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree
+configfile: pyproject.toml
+created: 4/4 workers
+4 workers [13884 items]
+
+........................................................................ [  0%]
+........................................................................ [  1%]
+..s................................................s.................... [  1%]
+........................................................................ [  2%]
+........................................................................ [  2%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  4%]
+........................................................................ [  4%]
+........................................................................ [  5%]
+........................................................................ [  5%]
+........................................................................ [  6%]
+........................................................................ [  6%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+......................................................s.......s......... [ 10%]
+.................F...................................................... [ 10%]
+.........................................................s.............. [ 11%]
+........................................................................ [ 11%]
+........................................................................ [ 12%]
+........................................................................ [ 12%]
+........................................................................ [ 13%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+............................................sss......................... [ 15%]
+........................................................................ [ 15%]
+........................................................................ [ 16%]
+.................................................sssssss.ssssssssss.ssss [ 16%]
+ssssss................................s................................. [ 17%]
+........................................................................ [ 17%]
+........................................................................ [ 18%]
+........................................................................ [ 18%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 20%]
+........................................................................ [ 20%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 22%]
+........................................................................ [ 22%]
+..........................s..........................................F.. [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 24%]
+........................................................................ [ 24%]
+........................................................................ [ 25%]
+.........s................................F............................. [ 25%]
+..F..................................................................... [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 27%]
+............................s.....................s..................... [ 28%]
+..........................s............................................. [ 28%]
+........................................................................ [ 29%]
+........................................................................ [ 29%]
+........................................................................ [ 30%]
+................................s....................................... [ 30%]
+.......................................s................................ [ 31%]
+........................................................................ [ 31%]
+........................................................................ [ 32%]
+................................................sss....sss.............. [ 32%]
+......................F................................................. [ 33%]
+........................................................................ [ 33%]
+...........................ssssssssssssssssssssss....................... [ 34%]
+.....F..................................................s............... [ 34%]
+.............s.......................................................... [ 35%]
+........................................................................ [ 35%]
+...................................sssssss.sss.......................... [ 36%]
+..................................................................ssssss [ 36%]
+ssssss.ssssssssssssssssssssssssssss.ssssssssssssssss.................... [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 38%]
+...........................................................s............ [ 38%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 40%]
+........................................................................ [ 40%]
+...............................................................ss....... [ 41%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+...............................................sss.ssss.ssssssss.sss.... [ 44%]
+.................................s........................s............. [ 44%]
+.....s..............s..................s................................ [ 45%]
+...................................s............s.....s....s......s..... [ 45%]
+sss..s.........s.....s.................................................. [ 46%]
+..s......s............s............s..........s.....................s... [ 46%]
+........................................................................ [ 47%]
+......s........................s..............s......................... [ 47%]
+........s............................................................... [ 48%]
+..............................s........................ss............... [ 48%]
+.....................ss.............s..............s.............ss..s.. [ 49%]
+s.......................sF................s............................. [ 49%]
+...............s..................sss................................... [ 50%]
+.sssss.........s........................................................ [ 50%]
+..............FF..................................................F..... [ 51%]
+........................................................................ [ 51%]
+............................s........................................... [ 52%]
+................ssss..s....................ssssssssssssssssssssss....... [ 52%]
+...s..............s.....ss.............................................. [ 53%]
+..sss.................s.......ss.ss..................................... [ 53%]
+.....................................ssssss.........................s... [ 54%]
+.......sssss.sssssss........s...s....s.......s...s..s..s...s....s..s.... [ 54%]
+s...s...s....s................................................ssssssssss [ 55%]
+s...............s...............ssss.................................... [ 56%]
+........................................................................ [ 56%]
+........................s............................................... [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 59%]
+...................s.................................................... [ 59%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+...........sssssssss.................................................... [ 61%]
+.................................................sssssss.ss.sss..sssssss [ 61%]
+sssssssssss............................................................. [ 62%]
+................................................ssssss.........sssssssss [ 62%]
+s....................................................................... [ 63%]
+........................................................................ [ 63%]
+........................................................................ [ 64%]
+......................................sssssssss......................... [ 64%]
+........................................s........ss..................... [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 66%]
+......................................................s................. [ 66%]
+............s........................................................... [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 69%]
+.......................................ss......................ss..s.... [ 70%]
+............................................s........................... [ 70%]
+...................................s...........s........s.........s..... [ 71%]
+..............sss...s..............s............s...........s..sssssssss [ 71%]
+........s.........................sssssssssssssssssssss................. [ 72%]
+........................................................................ [ 72%]
+...ssss...ssssssssssssss................................................ [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+.................................................s.......s.....s....s... [ 75%]
+..s............s...s.s....ssssssssssss..s.sssss.s.s.ssssssssssssssssssss [ 75%]
+..s....s...s....s...s...s..s......s........s...s....s...s...ssssssss.sss [ 76%]
+sssssssssssssssssssssssssssssss................................sssssssss [ 76%]
+ssssssssssssssssssss..sssss...ssssss...ssssssssssssssss...............ss [ 77%]
+ss..s....ssss.............F....F.......s......s.......s.......s.......s. [ 77%]
+........s.......s....s....s....s......s...s...s...s..................... [ 78%]
+......................................ssss.............................. [ 78%]
+.........ss............................................................. [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................F......F........................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 83%]
+........................................................................ [ 84%]
+..........F............................................................. [ 84%]
+.........F.......................................................F...... [ 85%]
+...................................................sssssssssss.......... [ 85%]
+.............................ssss....................................... [ 86%]
+............................s...............................s........... [ 86%]
+............................................sss.s....................... [ 87%]
+........................................................................ [ 87%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 89%]
+....................................................s................... [ 89%]
+................................sss..................................... [ 90%]
+s.............................sssssssssss............................... [ 90%]
+........................................................................ [ 91%]
+........................ssss..........ssssssssss................ssssssss [ 91%]
+ssss.................................................................... [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 93%]
+........................................................ssssssssssssss.. [ 93%]
+.....ss........ssss....s.............ss................................. [ 94%]
+..........................................................sssss......... [ 94%]
+......................ss............ssss.....ssssssssss................. [ 95%]
+......................................................F.F.F.F.F......... [ 95%]
+..........................................F..F.F.F.F.F.................. [ 96%]
+........................................................................ [ 96%]
+..............F.FF..F................................................... [ 97%]
+...........................................F............................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 99%]
+........................................................................ [ 99%]
+............................................................             [100%]
+================================== FAILURES ===================================
+__________ TestInitIntegrationFlag.test_unknown_integration_rejected __________
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\integrations\test_cli.py:56: in test_unknown_integration_rejected
+    assert "Unknown integration" in result.output
+E   assert 'Unknown integration' in "Error: Integration init failed: Failed to fetch any integration catalog\nWarning: Could not fetch catalog 'default': ...om/github/spec-kit/main/integrations/catalog.community.json: <urlopen error MSK qualification external DNS disabled>\n"
+E    +  where "Error: Integration init failed: Failed to fetch any integration catalog\nWarning: Could not fetch catalog 'default': ...om/github/spec-kit/main/integrations/catalog.community.json: <urlopen error MSK qualification external DNS disabled>\n" = <Result SystemExit(1)>.output
+___________________ test_validate_rejects_broken_reference ____________________
+[gw2] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\bundles\test_command_validate.py:203: in test_validate_rejects_broken_reference
+    assert result.exit_code == 1
+E   assert 0 == 1
+E    +  where 0 = <Result okay>.exit_code
+________________ test_community_step_is_not_treated_as_bundled ________________
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\bundles\test_references.py:120: in test_community_step_is_not_treated_as_bundled
+    assert problem is not None, "leaked community step resolved as bundled"
+E   AssertionError: leaked community step resolved as bundled
+E   assert None is not None
+____________________ test_unknown_reference_errors_online _____________________
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\bundles\test_references.py:144: in test_unknown_reference_errors_online
+    assert problem is not None
+E   assert None is not None
+___________ TestIntegrationInstall.test_install_unknown_integration ___________
+[gw2] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_command_install.py:94: in test_install_unknown_integration
+    assert "Unknown integration" in result.output
+E   assert 'Unknown integration' in "Error: Integration install failed: Failed to fetch any integration catalog\nWarning: Could not fetch catalog 'default...om/github/spec-kit/main/integrations/catalog.community.json: <urlopen error MSK qualification external DNS disabled>\n"
+E    +  where "Error: Integration install failed: Failed to fetch any integration catalog\nWarning: Could not fetch catalog 'default...om/github/spec-kit/main/integrations/catalog.community.json: <urlopen error MSK qualification external DNS disabled>\n" = <Result SystemExit(1)>.output
+______________ TestIntegrationSwitch.test_switch_unknown_target _______________
+[gw2] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_command_switch.py:221: in test_switch_unknown_target
+    assert "Unknown integration" in result.output
+E   assert 'Unknown integration' in "Error: Integration switch failed: Failed to fetch any integration catalog\nWarning: Could not fetch catalog 'default'...om/github/spec-kit/main/integrations/catalog.community.json: <urlopen error MSK qualification external DNS disabled>\n"
+E    +  where "Error: Integration switch failed: Failed to fetch any integration catalog\nWarning: Could not fetch catalog 'default'...om/github/spec-kit/main/integrations/catalog.community.json: <urlopen error MSK qualification external DNS disabled>\n" = <Result SystemExit(1)>.output
+_ TestWindowsUvToolEnvironment.test_non_windows_uv_tool_dry_run_still_previews_installer _
+[gw3] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\test_version_execution.py:740: in test_non_windows_uv_tool_dry_run_still_previews_installer
+    assert f"Command that would be executed: {expected_argv}" in " ".join(
+E   AssertionError: assert 'Command that would be executed: D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-w...1\\venv\\Scripts\\python.exe tool install specify-cli --force --from git+https://github.com/github/spec-kit.git@v1.2.4' in 'Dry run — no changes will be made. Detected install method: uv tool Current version: 1.2.2 Target version: v1.2.4 Com...\\venv\\ Scripts\\python.exe tool install specify-cli --force --from git+https://github.com/github/spec-kit.git@v1.2.4'
+E    +  where 'Dry run — no changes will be made. Detected install method: uv tool Current version: 1.2.2 Target version: v1.2.4 Com...\\venv\\ Scripts\\python.exe tool install specify-cli --force --from git+https://github.com/github/spec-kit.git@v1.2.4' = <built-in method join of str object at 0x00007FFF452D3210>(['Dry', 'run', '—', 'no', 'changes', 'will', ...])
+E    +    where <built-in method join of str object at 0x00007FFF452D3210> = ' '.join
+E    +    and   ['Dry', 'run', '—', 'no', 'changes', 'will', ...] = <built-in method split of str object at 0x00000190D9A36B50>()
+E    +      where <built-in method split of str object at 0x00000190D9A36B50> = 'Dry run — no changes will be made.\nDetected install method: uv tool\nCurrent version: 1.2.2\nTarget version: v1.2.4\...v\\\nScripts\\python.exe tool install specify-cli --force --from \ngit+https://github.com/github/spec-kit.git@v1.2.4\n'.split
+_ TestWorkflowStepAddCLI.test_archive_cleanup_failure_preserves_primary_install_error _
+[gw3] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\workflows\step\test_command_add.py:285: in test_archive_cleanup_failure_preserves_primary_install_error
+    assert extract_paths[0] in result.output
+E   AssertionError: assert 'D:\\\\APP\\\\maged-spec-kit\\\\msk003-qualification-temp-20261107-001\\\\remaining-windows-002\\\\speckit-step-archive-eplh45r1' in '\\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 \u26a0 Untrusted Source \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\\n\u2502                                 ...ion-temp-20261107-001\\\\remaining-windows-\\n002\\\\speckit-step-archive-eplh45r1)\\nError: primary archive install error\\n'
+E    +  where '\\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 \u26a0 Untrusted Source \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\\n\u2502                                 ...ion-temp-20261107-001\\\\remaining-windows-\\n002\\\\speckit-step-archive-eplh45r1)\\nError: primary archive install error\\n' = <Result SystemExit(1)>.output
+_ TestWorkflowStepAddCLI.test_catalog_cleanup_failure_adds_note_to_primary_error _
+[gw3] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\workflows\step\test_command_add.py:373: in test_catalog_cleanup_failure_adds_note_to_primary_error
+    assert allocated[0].name in result.output
+E   AssertionError: assert 'D:\\APP\\maged-spec-kit\\msk003-qualification-temp-20261107-001\\remaining-windows-002\\speckit-step-package-xcl_0fyy' in 'Warning: Could not remove temporary step package directory: catalog cleanup \nblocked (path: \nD:\\APP\\maged-spec-ki...alification-temp-20261107-001\\remaining-windows-\n002\\speckit-step-package-xcl_0fyy)\nError: primary install error\n'
+E    +  where 'D:\\APP\\maged-spec-kit\\msk003-qualification-temp-20261107-001\\remaining-windows-002\\speckit-step-package-xcl_0fyy' = <tests.specify_cli.workflows.step.test_command_add.TestWorkflowStepAddCLI.test_catalog_cleanup_failure_adds_note_to_primary_error.<locals>._FailCleanupTempDir object at 0x00000190E0BEA6F0>.name
+E    +  and   'Warning: Could not remove temporary step package directory: catalog cleanup \nblocked (path: \nD:\\APP\\maged-spec-ki...alification-temp-20261107-001\\remaining-windows-\n002\\speckit-step-package-xcl_0fyy)\nError: primary install error\n' = <Result SystemExit(1)>.output
+_ TestWorkflowStepAddSources.test_archive_temp_directory_cleanup_failure_warns_after_commit _
+[gw3] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\workflows\step\test_command_add.py:1348: in test_archive_temp_directory_cleanup_failure_warns_after_commit
+    assert extract_paths[0] in result.output
+E   assert 'D:\\\\APP\\\\maged-spec-kit\\\\msk003-qualification-temp-20261107-001\\\\remaining-windows-002\\\\speckit-step-archive-7sm2klen' in "\\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 \u26a0 Untrusted Source \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\\n\u2502                                 ...e-7sm2klen)\\n\u2713 Step type 'My Step' (my-step) installed\\n  Use specify workflow step list to verify the installation.\\n"
+E    +  where "\\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 \u26a0 Untrusted Source \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\\n\u2502                                 ...e-7sm2klen)\\n\u2713 Step type 'My Step' (my-step) installed\\n  Use specify workflow step list to verify the installation.\\n" = <Result okay>.output
+_____ test_catalog_install_renders_host_templates_and_fresh_process[zip] ______
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:1289: in test_catalog_install_renders_host_templates_and_fresh_process
+    process = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+____ test_catalog_install_renders_host_templates_and_fresh_process[tar.gz] ____
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:1289: in test_catalog_install_renders_host_templates_and_fresh_process
+    process = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_extension_and_preset_contributions_follow_active_external_adapter[False-False] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:1587: in test_extension_and_preset_contributions_follow_active_external_adapter
+    fresh_removal = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+__________ TestInitStep.test_failed_init_surfaces_inits_own_message ___________
+[gw0] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\test_workflows.py:3708: in test_failed_init_surfaces_inits_own_message
+    assert "no-such-agent" in collapsed or "Unknown" in collapsed, collapsed
+E   AssertionError: Warning: Could not fetch catalog 'default': Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/integrations/catalog.json: <urlopen error MSK qualification external DNS disabled> Warning: Could not fetch catalog 'community': Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/integrations/catalog.community.json: <urlopen error MSK qualification external DNS disabled>
+E   assert ('no-such-agent' in "Warning: Could not fetch catalog 'default': Failed to fetch catalog from https://raw.githubusercontent.com/github/spe....com/github/spec-kit/main/integrations/catalog.community.json: <urlopen error MSK qualification external DNS disabled>" or 'Unknown' in "Warning: Could not fetch catalog 'default': Failed to fetch catalog from https://raw.githubusercontent.com/github/spe....com/github/spec-kit/main/integrations/catalog.community.json: <urlopen error MSK qualification external DNS disabled>")
+_ test_extension_and_preset_contributions_follow_active_external_adapter[False-True] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:1587: in test_extension_and_preset_contributions_follow_active_external_adapter
+    fresh_removal = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_extension_and_preset_contributions_follow_active_external_adapter[True-False] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:1587: in test_extension_and_preset_contributions_follow_active_external_adapter
+    fresh_removal = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_extension_and_preset_contributions_follow_active_external_adapter[True-True] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:1587: in test_extension_and_preset_contributions_follow_active_external_adapter
+    fresh_removal = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+____ test_metadata_commands_never_import_an_installed_adapter[arguments0] _____
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2238: in test_metadata_commands_never_import_an_installed_adapter
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+____ test_metadata_commands_never_import_an_installed_adapter[arguments1] _____
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2238: in test_metadata_commands_never_import_an_installed_adapter
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+____ test_metadata_commands_never_import_an_installed_adapter[arguments2] _____
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2238: in test_metadata_commands_never_import_an_installed_adapter
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+____ test_metadata_commands_never_import_an_installed_adapter[arguments3] _____
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2238: in test_metadata_commands_never_import_an_installed_adapter
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+____ test_metadata_commands_never_import_an_installed_adapter[arguments4] _____
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2238: in test_metadata_commands_never_import_an_installed_adapter
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[extension-list] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2412: in test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[extension-info] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2412: in test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[extension-lookup] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2412: in test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[preset-list] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2412: in test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[preset-info] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2412: in test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[preset-lookup] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:2412: in test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+___ test_round3_extension_event_refresh_loads_adapter_in_fresh_process[add] ___
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:3127: in test_round3_extension_event_refresh_loads_adapter_in_fresh_process
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_round3_extension_event_refresh_loads_adapter_in_fresh_process[remove] __
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:3127: in test_round3_extension_event_refresh_loads_adapter_in_fresh_process
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_round3_extension_event_refresh_loads_adapter_in_fresh_process[enable] __
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:3127: in test_round3_extension_event_refresh_loads_adapter_in_fresh_process
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+_ test_round3_extension_event_refresh_loads_adapter_in_fresh_process[disable] _
+[gw1] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+tests\specify_cli\integrations\test_installed_adapters.py:3127: in test_round3_extension_event_refresh_loads_adapter_in_fresh_process
+    result = subprocess.run(
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:548: in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1538: in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+E   FileNotFoundError: [WinError 2] The system cannot find the file specified
+__ test_real_stdio_server_initializes_discovers_and_calls_first_class_tools ___
+[gw2] win32 -- Python 3.12.10 D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Scripts\python.exe
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\mcp_server\test_stdio.py", line 135, in test_real_stdio_server_initializes_discovers_and_calls_first_class_tools
+  |     asyncio.run(exercise())
+  |   File "C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 195, in run
+  |     return runner.run(main)
+  |            ^^^^^^^^^^^^^^^^
+  |   File "C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+  |     return self._loop.run_until_complete(task)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 691, in run_until_complete
+  |     return future.result()
+  |            ^^^^^^^^^^^^^^^
+  |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\mcp_server\test_stdio.py", line 28, in exercise
+  |     stdio_client(parameters, errlog=errlog) as (read, write),
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 231, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\mcp\client\stdio.py", line 201, in stdio_client
+  |     async with anyio.create_task_group() as tg:
+  |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 871, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Exception Group Traceback (most recent call last):
+    |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\mcp_server\test_stdio.py", line 29, in exercise
+    |     ClientSession(
+    |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\mcp\client\session.py", line 514, in __aexit__
+    |     result = await self._task_group.__aexit__(exc_type, exc_val, exc_tb)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 871, in __aexit__
+    |     raise BaseExceptionGroup(
+    | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+    +-+---------------- 1 ----------------
+      | Traceback (most recent call last):
+      |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\mcp_server\test_stdio.py", line 35, in exercise
+      |     initialized = await session.initialize()
+      |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\mcp\client\session.py", line 654, in initialize
+      |     result = await self.send_request(
+      |              ^^^^^^^^^^^^^^^^^^^^^^^^
+      |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\mcp\client\session.py", line 586, in send_request
+      |     raw = await self._dispatcher.send_raw_request(method, data.get("params"), opts)
+      |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      |   File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\specs\003-msk-baseline-closure\execution\environment-recovery-001\venv\Lib\site-packages\mcp\shared\jsonrpc_dispatcher.py", line 461, in send_raw_request
+      |     raise MCPError(code=outcome.code, message=outcome.message, data=outcome.data)
+      | mcp.shared.exceptions.MCPError: Connection closed
+      +------------------------------------
+============================== warnings summary ===============================
+tests/integrations/test_integration_kilocode.py::TestKilocodeIntegration::test_legacy_dir_extension_registration
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\src\specify_cli\integrations\_registration.py:22: UserWarning: Found legacy '.kilocode/workflows' directory for kilocode. Run 'specify integration upgrade kilocode' to migrate to '.kilo/commands'.
+    return handler(*args, **kwargs)
+
+tests/integrations/test_integration_kilocode.py::TestKilocodeIntegration::test_legacy_dir_extension_unregister
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\integrations\test_integration_kilocode.py:56: UserWarning: Found legacy '.kilocode/workflows' directory for kilocode. Run 'specify integration upgrade kilocode' to migrate to '.kilo/commands'.
+    registrar.unregister_commands({"kilocode": ["speckit.myext"]}, tmp_path)
+
+tests/integrations/test_integration_bob.py::TestBobLegacyCommandsMode::test_setup_legacy_creates_markdown_files
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\integrations\test_integration_bob.py:321: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    created = bob.setup(tmp_path, m, parsed_options={"legacy_commands": True})
+
+tests/integrations/test_integration_bob.py::TestBobLegacyCommandsMode::test_setup_legacy_no_skills_dir
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\integrations\test_integration_bob.py:340: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    bob.setup(tmp_path, m, parsed_options={"legacy_commands": True})
+
+tests/integrations/test_integration_bob.py::TestBobLegacyCommandsMode::test_setup_legacy_templates_are_processed
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\integrations\test_integration_bob.py:347: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    bob.setup(tmp_path, m, parsed_options={"legacy_commands": True})
+
+tests/integrations/test_integration_bob.py::TestBobLegacyCommandsMode::test_setup_legacy_all_files_tracked
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\integrations\test_integration_bob.py:360: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    created = bob.setup(tmp_path, m, parsed_options={"legacy_commands": True})
+
+tests/integrations/test_integration_bob.py::TestBobLegacyCommandsMode::test_setup_legacy_uninstall_roundtrip
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\src\specify_cli\integrations\base.py:1156: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    return self.setup(project_root, manifest, parsed_options=parsed_options, **opts)
+
+tests/integrations/test_integration_bob.py::TestBobInitFlowLegacy::test_init_legacy_creates_commands
+tests/integrations/test_integration_bob.py::TestBobInitFlowLegacy::test_init_legacy_does_not_set_ai_skills
+tests/integrations/test_integration_bob.py::TestBobUseFlowPreservesLegacyLayout::test_use_force_keeps_legacy_command_refs_in_shared_templates
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_bob_skills_migration_preserves_manifest
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_bob_layout_change_reconciles_extension_artifacts
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_layout_change_preserves_extension_artifacts_when_reregistration_fails
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_active_layout_change_rejected_before_missing_preset_source_can_lose_override
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_active_layout_change_rejected_with_disabled_preset
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_bob_layout_change_rejected_when_preset_registry_unreadable
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\src\specify_cli\command_init.py:732: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    resolved_integration.setup(
+
+tests/specify_cli/extensions/test_command_update.py::TestExtensionUpdateCLI::test_update_rejects_normalized_manifest_collision_before_removal[repo/extension.yml-repo\\extension.yml]
+  C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py:1611: UserWarning: Duplicate name: 'repo/extension.yml'
+    return self._open_to_write(zinfo, force_zip64=force_zip64)
+
+tests/specify_cli/bundles/test_adapters.py::test_builtin_community_catalog_falls_back_for_transient_http_failures[408]
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\bundles\test_adapters.py:367: UserWarning: Built-in catalog 'builtin://community' is unavailable (Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/bundles/catalog.community.json: HTTP 408 transient); using the packaged snapshot.
+    assert fetcher(_source("builtin://community")) == {
+
+tests/specify_cli/bundles/test_adapters.py::test_builtin_community_catalog_falls_back_for_transient_http_failures[429]
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\bundles\test_adapters.py:367: UserWarning: Built-in catalog 'builtin://community' is unavailable (Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/bundles/catalog.community.json: HTTP 429 transient); using the packaged snapshot.
+    assert fetcher(_source("builtin://community")) == {
+
+tests/specify_cli/bundles/test_adapters.py::test_builtin_community_catalog_falls_back_for_transient_http_failures[500]
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\bundles\test_adapters.py:367: UserWarning: Built-in catalog 'builtin://community' is unavailable (Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/bundles/catalog.community.json: HTTP 500 transient); using the packaged snapshot.
+    assert fetcher(_source("builtin://community")) == {
+
+tests/specify_cli/bundles/test_adapters.py::test_builtin_community_catalog_falls_back_for_transport_errors
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\bundles\test_adapters.py:387: UserWarning: Built-in catalog 'builtin://community' is unavailable (Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/bundles/catalog.community.json: network unreachable); using the packaged snapshot.
+    assert fetcher(_source("builtin://community")) == {
+
+tests/specify_cli/bundles/test_adapters.py::test_builtin_community_catalog_falls_back_for_incomplete_read
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\bundles\test_adapters.py:476: UserWarning: Built-in catalog 'builtin://community' is unavailable (Failed to fetch catalog from https://raw.githubusercontent.com/github/spec-kit/main/bundles/catalog.community.json: incomplete read (IncompleteRead(7 bytes read))); using the packaged snapshot.
+    assert fetcher(_source("builtin://community")) == {
+
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_reconciles_kilocode_legacy_extension_artifacts
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_preserves_disabled_kilocode_legacy_extension_and_user_file
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\src\specify_cli\extensions\__init__.py:4409: UserWarning: Found legacy '.kilocode/workflows' directory for kilocode. Run 'specify integration upgrade kilocode' to migrate to '.kilo/commands'.
+    return self._registrar.register_commands_for_all_agents(
+
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_bob_layout_change_reconciles_extension_artifacts
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_secondary_layout_change_rejected_with_presets_installed
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\src\specify_cli\integrations\command_upgrade.py:238: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    integration.setup(
+
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_secondary_layout_change_rejected_with_presets_installed
+tests/specify_cli/integrations/test_command_upgrade.py::TestIntegrationUpgradeDetailed::test_upgrade_secondary_bob_layout_change_preserves_active_agent_skills
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\src\specify_cli\integrations\command_install.py:147: UserWarning: Bob legacy commands mode (.bob/commands/) is deprecated and will be removed in a future Spec Kit release. Omit --legacy-commands to use the default skills layout (.bob/skills/).
+    integration.setup(
+
+tests/specify_cli/presets/test_manager_commands.py::TestPresetSkills::test_uncomposable_wrap_command_skips_skill_in_skills_mode
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\src\specify_cli\presets\_manager.py:488: UserWarning: Cannot compose command 'speckit.git.feature': no base layer. Stale command files may remain.
+    self._reconcile_composed_commands(cmd_names)
+
+tests/specify_cli/presets/test_manager_commands.py::TestPresetSkills::test_composed_none_unregister_respects_active_agent
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\src\specify_cli\presets\_manager.py:910: UserWarning: Cannot compose command 'speckit.fake-compose-test': no base layer. Stale command files may remain.
+    self._reconcile_composed_commands(
+
+tests/specify_cli/presets/test_manager_skills.py::TestPresetSkills::test_remove_cleans_native_skill_missing_from_partial_skill_map
+  D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\specify_cli\presets\test_manager_skills.py:1465: UserWarning: Post-rescaffold reconciliation failed for 'codex': simulated skills phase failure. Agent command files may be stale; re-run 'specify integration use codex' or reinstall affected presets to refresh.
+    manager.register_enabled_presets_for_agent("codex")
+
+tests/test_download_security.py::test_safe_extract_zip_rejects_conflicting_paths_before_writing[members0]
+  C:\Users\Majed\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py:1611: UserWarning: Duplicate name: 'nested/file.txt'
+    return self._open_to_write(zinfo, force_zip64=force_zip64)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/integrations/test_cli.py::TestInitIntegrationFlag::test_unknown_integration_rejected
+FAILED tests/specify_cli/bundles/test_command_validate.py::test_validate_rejects_broken_reference
+FAILED tests/specify_cli/bundles/test_references.py::test_community_step_is_not_treated_as_bundled
+FAILED tests/specify_cli/bundles/test_references.py::test_unknown_reference_errors_online
+FAILED tests/specify_cli/integrations/test_command_install.py::TestIntegrationInstall::test_install_unknown_integration
+FAILED tests/specify_cli/integrations/test_command_switch.py::TestIntegrationSwitch::test_switch_unknown_target
+FAILED tests/specify_cli/test_version_execution.py::TestWindowsUvToolEnvironment::test_non_windows_uv_tool_dry_run_still_previews_installer
+FAILED tests/specify_cli/workflows/step/test_command_add.py::TestWorkflowStepAddCLI::test_archive_cleanup_failure_preserves_primary_install_error
+FAILED tests/specify_cli/workflows/step/test_command_add.py::TestWorkflowStepAddCLI::test_catalog_cleanup_failure_adds_note_to_primary_error
+FAILED tests/specify_cli/workflows/step/test_command_add.py::TestWorkflowStepAddSources::test_archive_temp_directory_cleanup_failure_warns_after_commit
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_catalog_install_renders_host_templates_and_fresh_process[zip]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_catalog_install_renders_host_templates_and_fresh_process[tar.gz]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_extension_and_preset_contributions_follow_active_external_adapter[False-False]
+FAILED tests/test_workflows.py::TestInitStep::test_failed_init_surfaces_inits_own_message
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_extension_and_preset_contributions_follow_active_external_adapter[False-True]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_extension_and_preset_contributions_follow_active_external_adapter[True-False]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_extension_and_preset_contributions_follow_active_external_adapter[True-True]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_metadata_commands_never_import_an_installed_adapter[arguments0]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_metadata_commands_never_import_an_installed_adapter[arguments1]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_metadata_commands_never_import_an_installed_adapter[arguments2]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_metadata_commands_never_import_an_installed_adapter[arguments3]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_metadata_commands_never_import_an_installed_adapter[arguments4]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[extension-list]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[extension-info]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[extension-lookup]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[preset-list]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[preset-info]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_review_artifact_fresh_process_loads_adapter_and_preserves_json_errors[preset-lookup]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_round3_extension_event_refresh_loads_adapter_in_fresh_process[add]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_round3_extension_event_refresh_loads_adapter_in_fresh_process[remove]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_round3_extension_event_refresh_loads_adapter_in_fresh_process[enable]
+FAILED tests/specify_cli/integrations/test_installed_adapters.py::test_round3_extension_event_refresh_loads_adapter_in_fresh_process[disable]
+FAILED tests/specify_cli/mcp_server/test_stdio.py::test_real_stdio_server_initializes_discovers_and_calls_first_class_tools
+=== 33 failed, 13122 passed, 729 skipped, 32 warnings in 2725.24s (0:45:25) ===

@@ -1,0 +1,51 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree
+configfile: pyproject.toml
+collected 515 items
+
+tests\specify_cli\events\test_events.py ................................ [  6%]
+........................................................................ [ 20%]
+...........F..F......................................................... [ 34%]
+...............................                                          [ 40%]
+tests\integrations\test_integration_generic.py ......................... [ 45%]
+........................................................................ [ 59%]
+........................................................................ [ 73%]
+.......................................................................  [ 86%]
+tests\specify_cli\workflows\test_command_definition.py ................. [ 90%]
+............FF.....................................                      [100%]
+
+================================== FAILURES ===================================
+_________ TestCommandRunner.test_sh_variant_uses_launcher_on_windows __________
+tests\specify_cli\events\test_events.py:2202: in test_sh_variant_uses_launcher_on_windows
+    assert PurePath(argv[0]).stem.lower() in ("bash", "sh")
+E   AssertionError: assert 'boot' in ('bash', 'sh')
+E    +  where 'boot' = <built-in method lower of str object at 0x000001E30EAC32D0>()
+E    +    where <built-in method lower of str object at 0x000001E30EAC32D0> = 'boot'.lower
+E    +      where 'boot' = PureWindowsPath('D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree/specs/003-msk-...vironment-recovery-001/temp/focused-baseline-001/pytest/test_sh_variant_uses_launcher_0/.specify/scripts/bash/boot.sh').stem
+E    +        where PureWindowsPath('D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree/specs/003-msk-...vironment-recovery-001/temp/focused-baseline-001/pytest/test_sh_variant_uses_launcher_0/.specify/scripts/bash/boot.sh') = PurePath('D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline...nt-recovery-001\\temp\\focused-baseline-001\\pytest\\test_sh_variant_uses_launcher_0\\.specify\\scripts\\bash\\boot.sh')
+______ TestCommandRunner.test_extension_dotdot_to_core_scripts_resolves _______
+tests\specify_cli\events\test_events.py:2268: in test_extension_dotdot_to_core_scripts_resolves
+    script_arg = argv[1] if platform.system().lower().startswith("win") else argv[0]
+                 ^^^^^^^
+E   IndexError: list index out of range
+____________ TestComposition.test_same_call_bound_per_fan_out_item ____________
+tests\specify_cli\workflows\test_command_definition.py:654: in test_same_call_bound_per_fan_out_item
+    assert paths == [["fan", "0", "call"], ["fan", "1", "call"]]
+E   AssertionError: assert [['fan', '0', 'call']] == [['fan', '0',... '1', 'call']]
+E     
+E     Right contains one more item: ['fan', '1', 'call']
+E     Use -v to get more diff
+___________ TestComposition.test_same_call_bound_per_loop_iteration ___________
+tests\specify_cli\workflows\test_command_definition.py:673: in test_same_call_bound_per_loop_iteration
+    assert paths == [["loop", "0", "call"], ["loop", "1", "call"]]
+E   AssertionError: assert [['loop', '0', 'call']] == [['loop', '0'... '1', 'call']]
+E     
+E     Right contains one more item: ['loop', '1', 'call']
+E     Use -v to get more diff
+=========================== short test summary info ===========================
+FAILED tests/specify_cli/events/test_events.py::TestCommandRunner::test_sh_variant_uses_launcher_on_windows
+FAILED tests/specify_cli/events/test_events.py::TestCommandRunner::test_extension_dotdot_to_core_scripts_resolves
+FAILED tests/specify_cli/workflows/test_command_definition.py::TestComposition::test_same_call_bound_per_fan_out_item
+FAILED tests/specify_cli/workflows/test_command_definition.py::TestComposition::test_same_call_bound_per_loop_iteration
+================== 4 failed, 511 passed in 142.82s (0:02:22) ==================

@@ -1,0 +1,9 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree
+configfile: pyproject.toml
+collected 126 items / 124 deselected / 2 selected
+
+tests\extensions\git\test_git_extension.py s.                            [100%]
+
+================ 1 passed, 1 skipped, 124 deselected in 8.22s =================

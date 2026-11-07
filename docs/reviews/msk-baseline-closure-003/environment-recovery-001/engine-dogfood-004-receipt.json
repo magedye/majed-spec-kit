@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+    "-B",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\run_engine_dogfood.py"
+  ],
+  "exit_code": 0,
+  "headless_stdin": "PIPE with empty input, not Windows NUL",
+  "env_profile": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\dogfood-profile004",
+  "prior_attempts": "002 inherited character stdin prompted and failed cp1252 box output; 003 Windows NUL also isatty true, early assertion prevented any scenario; original artifacts retained. No product edit"
+}

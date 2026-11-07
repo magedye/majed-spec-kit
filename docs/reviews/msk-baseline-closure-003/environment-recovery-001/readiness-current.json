@@ -1,0 +1,47 @@
+{
+  "request_id": "MSK-BASELINE-CLOSURE-003",
+  "engineering_status": "PARTIAL_WITH_BLOCKERS",
+  "environment": "ISOLATED_DEPENDENCIES_AND_OWNED_EDITABLE_INSTALL_VERIFIED",
+  "BASELINE_TECHNICAL_QUALIFICATION": {
+    "status": "PARTIAL_WITH_BLOCKERS",
+    "local_result": {
+      "PASSED": 13661,
+      "SKIPPED": 730,
+      "FAILED": 11
+    },
+    "remaining_partition_exit_code": 1,
+    "remaining": "11actual unresolved catalog/Rich cases; parallelMCP timeout not explained by serialPASS; matrix/CodeQL and historical evidence gaps remain"
+  },
+  "SELF_GOVERNANCE_QUALIFICATION": {
+    "status": "PARTIAL_WITH_CONTROL_GAPS",
+    "evidence": "dogfooding-assessment.json"
+  },
+  "CORE_IMPLEMENTATION_READINESS": {
+    "status": "UNRESOLVED_NOT_APPROVED",
+    "reason": "No approved complete Core slice/authority; host-trust controls not supplied by baseline native gate"
+  },
+  "OWNER_APPROVAL_STATUS": {
+    "bounded_execution": "GRANTED",
+    "candidate_acceptance": "NOT_GRANTED",
+    "Core": "NOT_GRANTED",
+    "merge": "PROHIBITED",
+    "push": "PROHIBITED"
+  },
+  "independent_technical_review": "PENDING_FIXED_PACKAGE_REVIEW",
+  "previous_documentary_review": "../INDEPENDENT_REVIEW_002.md remains documentary only, no substitution",
+  "updated_at_utc": "2026-11-07T05:11:05.370923+00:00",
+  "mandatory_lint": {
+    "result": "PASSED",
+    "evidence": "lint-authorized-002/receipt.json",
+    "required_version": "0.15.0",
+    "no_silent_substitution": true
+  },
+  "baseline_source_candidate": "10b5862f6905e62eaef0983418cb9567b1b8a8d6",
+  "remaining_blockers": [
+    "11 unresolved observations:7unmocked externalcatalog expectations and4Rich hardwrap assertions outside current write-set",
+    "Parallel stdio initialize timed out; native initialize diagnostic and original complete stdio test passed serially. Concurrency/rootcause unresolved; no globalPASS transfer.",
+    "Native gate does not provide authenticated grant/role/independent review/write-set/evidence-candidate controls",
+    "Protected constitution/CI matrix reconciliation and broader CI/security evidence not supplied by this local profile",
+    "Historical QUAL-002 raw provenance remains unavailable"
+  ]
+}

@@ -1,0 +1,9 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree
+configfile: pyproject.toml
+collected 1 item
+
+tests\specify_cli\mcp_server\test_stdio.py .                             [100%]
+
+============================= 1 passed in 13.67s ==============================

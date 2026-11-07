@@ -1,0 +1,20 @@
+[
+  {
+    "path": "src/specify_cli/events/__init__.py",
+    "before": "e1a124593f445aa88b083b0b4d428125d48f57892df266c1478527ff601eb62a",
+    "after": "dd3feec5259d02a0ebf274176724751a33aafb7c0005b7af676704a0cad773b6",
+    "reused_from": "ca3233a"
+  },
+  {
+    "path": "tests/integrations/test_integration_generic.py",
+    "before": "65deb244ee96a3d6c764c66f8d0fb0258eb93b665bbb8706da2fe4da2b38dbcf",
+    "after": "2eb92053e5992669e53de6493b45e8ad72afdd9f7a07235edbb9e63ea5fecb35",
+    "reused_from": "ca3233a"
+  },
+  {
+    "path": "tests/specify_cli/workflows/test_command_definition.py",
+    "before": "c3164f7bba6e2dfce67f9432597e7429e5d478e4546aa1dfdbdd6df64164aa9f",
+    "after": "603a4872e559fdc0412f3c037c0f652fa4955436e5f25d7e0adb6ce0feba7c0b",
+    "reused_from": "ca3233a"
+  }
+]

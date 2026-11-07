@@ -3,16 +3,17 @@
   "original_plan_preserved": true,
   "phase_dispositions": {
     "P0": "SCOPED_CUSTODY_BACKUP_WRITESET_ESTABLISHED",
-    "P1": "HISTORY_UNAVAILABLE_REPLACEMENT_COLLECTION_BLOCKED",
-    "P2": "EXISTING_PATCH_REVIEWED_BOUNDED_CAUSES_REPRODUCED_PRIMARY_REGRESSIONS_BLOCKED",
+    "P1": "BASELINE14401COLLECTED; CURRENT14402ACCOUNTED; initial13639PASS730SKIP33FAIL; scoped differential then latest13661PASS730SKIP11FAIL with explicit env/parallelMCP limits",
+    "P2": "FOUR_EXISTING_CA3233A_FIX_FILES_REUSED_EXACTLY; actual before regression FAIL and516 affected checks PASS",
     "P3": "STATIC_AUTHORITY_RECONCILIATION_COMPLETE_PROTECTED_DECISIONS_PENDING",
     "P4": "24OBLIGATIONS_AND50NONBLANK_P4P5SOURCE_LINES_DOCUMENTED; runtime method sample blocked, no complete execution claim",
-    "P5": "SOURCE_SCRIPT_POSITIVE_AND_LOCAL_FAILURE_GATE_OBSERVED_7NEGATIVES_BLOCKED",
-    "P6": "DOCUMENTARY_PARTIAL_PACKAGE_REVIEWED_ON_EXACT_C2; full independent technical qualification review pending",
-    "P7": "NO_PRODUCT_SOURCE_CHANGE; source-byte validity and documentary differences recorded separately",
+    "P5": "SEVEN_PREVIOUSLY_BLOCKED_NATIVE_ENGINE_CASES_EXECUTED_WITH_CONTROL_GAPS; older positive preserved",
+    "P6": "NEW_INDEPENDENT_TECHNICAL_REVIEW_PENDING_FIXED_CURRENT_PACKAGE",
+    "P7": "Source hash equivalence and environment change recorded; interrupted unsafe-temp attempt excluded; remaining cases rerun externally",
     "P8": "FOUR_INDEPENDENT_JUDGMENTS_RECORDED_NO_OWNER_ACCEPTANCE",
     "P9": "SOURCE_SCOPED_FIT_GAP_RECONCILED_NO_CORE_IMPLEMENTATION"
   },
-  "next_action": "Qualified MSK environment needed for primary collection/regressions and7blocked cases; continue only within current authorized bounds. No installs/main merge/push.",
-  "reviewed_documentary_candidate": "b5817243c090a08b1d6371011bf144af6a509c16"
+  "next_action": "Owner review of actual blockers and requested narrow remedies; no Core/main merge/push or protected authority edits.",
+  "reviewed_documentary_candidate": "b5817243c090a08b1d6371011bf144af6a509c16",
+  "current_evidence": "environment-recovery-001/readiness-current.json"
 }

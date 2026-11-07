@@ -1,0 +1,64 @@
+{
+  "exit_code": 0,
+  "collect_only": false,
+  "collected_nodeids": [
+    "tests/extensions/git/test_git_extension.py::TestCreateFeatureBash::test_no_git_graceful_degradation",
+    "tests/extensions/git/test_git_extension.py::TestCreateFeaturePowerShell::test_no_git_graceful_degradation"
+  ],
+  "unique_count": 2,
+  "duplicate_nodeids": 0,
+  "counts": {
+    "SKIPPED": 1,
+    "PASSED": 1
+  },
+  "cases": [
+    {
+      "nodeid": "tests/extensions/git/test_git_extension.py::TestCreateFeatureBash::test_no_git_graceful_degradation",
+      "result": "SKIPPED"
+    },
+    {
+      "nodeid": "tests/extensions/git/test_git_extension.py::TestCreateFeaturePowerShell::test_no_git_graceful_degradation",
+      "result": "PASSED"
+    }
+  ],
+  "reports": [
+    {
+      "nodeid": "tests/extensions/git/test_git_extension.py::TestCreateFeatureBash::test_no_git_graceful_degradation",
+      "phase": "setup",
+      "outcome": "skipped",
+      "duration": 0.00040580006316304207,
+      "detail": "('D:\\\\APP\\\\maged-spec-kit\\\\majed-spec-kit\\\\specs\\\\003-msk-baseline-closure\\\\execution-worktree\\\\tests\\\\extensions\\\\git\\\\test_git_extension.py', 726, 'Skipped: working bash not available')"
+    },
+    {
+      "nodeid": "tests/extensions/git/test_git_extension.py::TestCreateFeatureBash::test_no_git_graceful_degradation",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration": 0.000595899997279048,
+      "detail": null
+    },
+    {
+      "nodeid": "tests/extensions/git/test_git_extension.py::TestCreateFeaturePowerShell::test_no_git_graceful_degradation",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration": 0.04834310000296682,
+      "detail": null
+    },
+    {
+      "nodeid": "tests/extensions/git/test_git_extension.py::TestCreateFeaturePowerShell::test_no_git_graceful_degradation",
+      "phase": "call",
+      "outcome": "passed",
+      "duration": 7.13245250005275,
+      "detail": null
+    },
+    {
+      "nodeid": "tests/extensions/git/test_git_extension.py::TestCreateFeaturePowerShell::test_no_git_graceful_degradation",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration": 0.0010492999572306871,
+      "detail": null
+    }
+  ],
+  "collection_errors": [],
+  "source_import": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\src\\specify_cli\\__init__.py",
+  "interpreter": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe"
+}

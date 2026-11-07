@@ -1,0 +1,60 @@
+{
+  "status": "PARTIAL_WITH_BLOCKERS",
+  "unresolved_test_ids": [
+    "tests/integrations/test_cli.py::TestInitIntegrationFlag::test_unknown_integration_rejected",
+    "tests/specify_cli/bundles/test_command_validate.py::test_validate_rejects_broken_reference",
+    "tests/specify_cli/bundles/test_references.py::test_community_step_is_not_treated_as_bundled",
+    "tests/specify_cli/bundles/test_references.py::test_unknown_reference_errors_online",
+    "tests/specify_cli/integrations/test_command_install.py::TestIntegrationInstall::test_install_unknown_integration",
+    "tests/specify_cli/integrations/test_command_switch.py::TestIntegrationSwitch::test_switch_unknown_target",
+    "tests/specify_cli/test_version_execution.py::TestWindowsUvToolEnvironment::test_non_windows_uv_tool_dry_run_still_previews_installer",
+    "tests/specify_cli/workflows/step/test_command_add.py::TestWorkflowStepAddCLI::test_archive_cleanup_failure_preserves_primary_install_error",
+    "tests/specify_cli/workflows/step/test_command_add.py::TestWorkflowStepAddCLI::test_catalog_cleanup_failure_adds_note_to_primary_error",
+    "tests/specify_cli/workflows/step/test_command_add.py::TestWorkflowStepAddSources::test_archive_temp_directory_cleanup_failure_warns_after_commit",
+    "tests/test_workflows.py::TestInitStep::test_failed_init_surfaces_inits_own_message"
+  ],
+  "proposed_test_only_write_set": [
+    "tests/integrations/test_cli.py",
+    "tests/specify_cli/bundles/test_command_validate.py",
+    "tests/specify_cli/bundles/test_references.py",
+    "tests/specify_cli/integrations/test_command_install.py",
+    "tests/specify_cli/integrations/test_command_switch.py",
+    "tests/specify_cli/test_version_execution.py",
+    "tests/specify_cli/workflows/step/test_command_add.py",
+    "tests/test_workflows.py"
+  ],
+  "minimum_next_slices": [
+    {
+      "id": "NEXT-QUAL-CATALOG",
+      "action": "Use existing deterministic catalog test helpers for7unknown-ID cases, retaining hard-error assertions and unknown/unreachable distinction",
+      "authorization": "NOT_GRANTED_OUTSIDE_CURRENT_FOUR_FILES",
+      "acceptance": "Original negative tests and affected catalog/CLI regressions pass with controlled catalog evidence without external downloads"
+    },
+    {
+      "id": "NEXT-QUAL-RENDER",
+      "action": "Deterministic Console width/faithful fixture for4longpath checks; preserve exactpath,primaryerror,cleanup,state/filesystem assertions",
+      "authorization": "NOT_GRANTED_OUTSIDE_CURRENT_FOUR_FILES",
+      "acceptance": "Original failing cases pass and subsequent filesystem assertions are actually executed"
+    },
+    {
+      "id": "NEXT-QUAL-STDIO",
+      "action": "Investigate parallel initialize timeout with stderr/startup/runtime evidence; serialprotocolPASS preserved without causal inference",
+      "authorization": "READ_ONLY_DIAGNOSIS_PERFORMED; SOURCE_FIX_REQUIRES_VALID_SCOPED_WRITESET",
+      "acceptance": "Reproducible root cause and requiredparallelprofile passes without silently extending timeouts/weakening protocol assertions"
+    },
+    {
+      "id": "OWNER-MATRIX-TRUST",
+      "action": "Resolve protected matrix/authority policy and required trust profile; review unavailable controls and Core requirements separately",
+      "authorization": "PROTECTED_OWNER_DECISION_ONLY",
+      "acceptance": "Explicit scoped owner decision; no Core/production authority inferred"
+    }
+  ],
+  "parallel_stdio_results": {
+    "before_own_install": "Connection closed",
+    "finalenv_xdist4": "initialize timeout",
+    "single_initialize_diagnostic": "PASS",
+    "original_full_stdio_test_serial": "PASS"
+  },
+  "no_uniform_finalenv_fullsuite_pass": true,
+  "no_new_task_registered_or_started": true
+}

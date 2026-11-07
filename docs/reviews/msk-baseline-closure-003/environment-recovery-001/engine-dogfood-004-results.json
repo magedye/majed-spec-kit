@@ -1,0 +1,540 @@
+{
+  "status": "PARTIAL_WITH_CONTROL_GAPS",
+  "synthetic_only": true,
+  "interpreter": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+  "source_import": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\src\\specify_cli\\__init__.py",
+  "predeclared_sha256": "c55b430cddecd67263d5a062dc4e88e4c330d2b92e529f5b2ef2e833b00864cd",
+  "original_cases_completed": 8,
+  "newly_unblocked_original_cases": 7,
+  "variant_runs": 9,
+  "results": [
+    {
+      "CASE_ID": "DF-N01",
+      "variant": "missing",
+      "fixture": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\engine-dogfood-004\\df-n01-missing",
+      "inputs": {},
+      "metadata": {
+        "grant": null
+      },
+      "run_status": "paused",
+      "steps": {
+        "review": {
+          "type": "gate",
+          "integration": null,
+          "model": null,
+          "options": [
+            "approve",
+            "reject"
+          ],
+          "input": {},
+          "output": {
+            "message": "Synthetic owner review; source metadata is not authenticated",
+            "options": [
+              "approve",
+              "reject"
+            ],
+            "on_reject": "abort",
+            "show_file": null,
+            "choice": null
+          },
+          "status": "paused",
+          "error": null
+        }
+      },
+      "effect_exists": false,
+      "out_of_declared_scope_exists": false,
+      "files": {
+        "DECLARED_SCOPE_AND_SOURCES.json": "468f6a520e265d910466a22ca3dc26c41442ad3c256fc6b7c4778c92fcf5bc4d",
+        ".specify\\workflows\\runs\\case\\inputs.json": "92eadccb08a910ed60385800363c3ed6308b8b64a9387a12d79c44362268aef9",
+        ".specify\\workflows\\runs\\case\\log.jsonl": "b0c99dd64a9bc7a183ff292c4763386bf0f5b64e51a1890f65c7c6ff49c4a5ca",
+        ".specify\\workflows\\runs\\case\\state.json": "13c571724108a6b3d28763d86daccf259d6fd0955213febff813ed9f0c6f58b3",
+        ".specify\\workflows\\runs\\case\\workflow.yml": "95287b2f1211286e9bf249ea6907c745e62db134722c6a0c29f1ec85d33c5b4f"
+      },
+      "original_expected": "\u0644\u0627 \u0627\u0646\u062a\u0642\u0627\u0644 \u0645\u0635\u0631\u062d \u0644\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0645\u062a\u0623\u062b\u0631",
+      "RESULT": "PASS_CONFIGURED_GATE_ONLY",
+      "ENFORCEMENT_LEVEL": "PRE_EXECUTION_ENFORCEMENT",
+      "LIMIT": "No missing-grant semantic check; this is absence of gate choice"
+    },
+    {
+      "CASE_ID": "DF-N01",
+      "variant": "expired",
+      "fixture": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\engine-dogfood-004\\df-n01-expired",
+      "inputs": {
+        "verdict": "approve"
+      },
+      "metadata": {
+        "grant": {
+          "expires_at": "2000-01-01T00:00:00Z"
+        },
+        "supplied_by": "executor"
+      },
+      "run_status": "completed",
+      "steps": {
+        "review": {
+          "type": "gate",
+          "integration": null,
+          "model": null,
+          "options": [
+            "approve",
+            "reject"
+          ],
+          "input": {},
+          "output": {
+            "message": "Synthetic owner review; source metadata is not authenticated",
+            "options": [
+              "approve",
+              "reject"
+            ],
+            "on_reject": "abort",
+            "show_file": null,
+            "choice": "approve"
+          },
+          "status": "completed",
+          "error": null
+        },
+        "effect": {
+          "type": "shell",
+          "integration": null,
+          "model": null,
+          "options": {},
+          "input": {},
+          "output": {
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "status": "completed",
+          "error": null
+        }
+      },
+      "effect_exists": true,
+      "out_of_declared_scope_exists": false,
+      "files": {
+        "DECLARED_SCOPE_AND_SOURCES.json": "660c8266db730311b97d8681f3fbb35df3fb7801526efb0c0590b12f57583cdf",
+        "effect.txt": "e877049a03f1f60e85dd0c9abda7bdd6c2505b742290045b8d54f80030597fd6",
+        ".specify\\workflows\\runs\\case\\inputs.json": "a2d7fc7f1a25973f8ffcbb8778bbca5f6c866e2e9931e619817f36fa096b4ec3",
+        ".specify\\workflows\\runs\\case\\log.jsonl": "2a1c67f9422cfb65debfb713e7b164b4f6154c80a2bd1b9543110b71f813302a",
+        ".specify\\workflows\\runs\\case\\state.json": "8741d31346be5236b83ab33193b3ef0212a3a2193cd514669771a75817dfdaa8",
+        ".specify\\workflows\\runs\\case\\workflow.yml": "95287b2f1211286e9bf249ea6907c745e62db134722c6a0c29f1ec85d33c5b4f"
+      },
+      "original_expected": "\u0644\u0627 \u0627\u0646\u062a\u0642\u0627\u0644 \u0645\u0635\u0631\u062d \u0644\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0645\u062a\u0623\u062b\u0631",
+      "RESULT": "CONTROL_NOT_PROVIDED",
+      "ENFORCEMENT_LEVEL": "NOT_VERIFIED",
+      "LIMIT": "Native gate does not validate expiry; supplied choice cannot establish real authorization"
+    },
+    {
+      "CASE_ID": "DF-N02",
+      "variant": "outside",
+      "fixture": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\engine-dogfood-004\\df-n02-outside",
+      "inputs": {},
+      "metadata": {
+        "declared_fixture_write_set": [
+          "allowed.txt"
+        ],
+        "safe_parent": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\engine-dogfood-004"
+      },
+      "run_status": "completed",
+      "steps": {
+        "effect": {
+          "type": "shell",
+          "integration": null,
+          "model": null,
+          "options": {},
+          "input": {},
+          "output": {
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "status": "completed",
+          "error": null
+        }
+      },
+      "effect_exists": false,
+      "out_of_declared_scope_exists": true,
+      "files": {
+        "DECLARED_SCOPE_AND_SOURCES.json": "9ca501c57547fbea28ea5f9a07e92fb9487f7a44d1d99fdde4e26c508ccc979f",
+        "outside.txt": "e877049a03f1f60e85dd0c9abda7bdd6c2505b742290045b8d54f80030597fd6",
+        ".specify\\workflows\\runs\\case\\inputs.json": "92eadccb08a910ed60385800363c3ed6308b8b64a9387a12d79c44362268aef9",
+        ".specify\\workflows\\runs\\case\\log.jsonl": "aee5d06c64f3da4df6f6bf296c51ad36c0fb468d0896e5e6cf682a3117aa9347",
+        ".specify\\workflows\\runs\\case\\state.json": "14866a08b0d98a9ec25b147c0de8fd6439c259f40dcb3138ac56d6421bd8bc2a",
+        ".specify\\workflows\\runs\\case\\workflow.yml": "a263ba782ba1671e671e33d60d607df9840fa38a70b112a2bf8495a30e47ca6c"
+      },
+      "original_expected": "\u0644\u0627 \u0623\u062b\u0631 \u0625\u0646 \u0627\u062f\u0639\u064a \u0627\u0644\u0645\u0646\u0639\u061b \u0648\u0625\u0644\u0627 POST_EXECUTION_DETECTION \u0645\u0639 \u0641\u062c\u0648\u0629 \u0627\u0644\u0645\u0646\u0639",
+      "RESULT": "CONTROL_NOT_PROVIDED",
+      "ENFORCEMENT_LEVEL": "POST_EXECUTION_DETECTION",
+      "LIMIT": "Harness observes fixture effect afterwards; product has no write-set sandbox. Effect stayed inside authorized synthetic parent"
+    },
+    {
+      "CASE_ID": "DF-N03",
+      "variant": "conflict",
+      "fixture": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\engine-dogfood-004\\df-n03-conflict",
+      "inputs": {},
+      "metadata": {
+        "sources": [
+          {
+            "id": "synthetic-A",
+            "decision": "allow"
+          },
+          {
+            "id": "synthetic-B",
+            "decision": "deny"
+          }
+        ],
+        "resolution": null
+      },
+      "run_status": "paused",
+      "steps": {
+        "review": {
+          "type": "gate",
+          "integration": null,
+          "model": null,
+          "options": [
+            "approve",
+            "reject"
+          ],
+          "input": {},
+          "output": {
+            "message": "Synthetic owner review; source metadata is not authenticated",
+            "options": [
+              "approve",
+              "reject"
+            ],
+            "on_reject": "abort",
+            "show_file": null,
+            "choice": null
+          },
+          "status": "paused",
+          "error": null
+        }
+      },
+      "effect_exists": false,
+      "out_of_declared_scope_exists": false,
+      "files": {
+        "DECLARED_SCOPE_AND_SOURCES.json": "87f71568634fcb28e5327719fcf9ae3e973a822890602a5cceba26eba1cbe90d",
+        ".specify\\workflows\\runs\\case\\inputs.json": "92eadccb08a910ed60385800363c3ed6308b8b64a9387a12d79c44362268aef9",
+        ".specify\\workflows\\runs\\case\\log.jsonl": "6a48c9e746b8d15a3612627b66e9e801a46a90b907fd84ca727197213be97a69",
+        ".specify\\workflows\\runs\\case\\state.json": "ea0965a97fa509f202e678f3b2d65fc873ca8c16d605186c04c6b03586d68567",
+        ".specify\\workflows\\runs\\case\\workflow.yml": "95287b2f1211286e9bf249ea6907c745e62db134722c6a0c29f1ec85d33c5b4f"
+      },
+      "original_expected": "\u062a\u0639\u0644\u064a\u0642 \u0627\u0644\u0642\u0631\u0627\u0631 \u0627\u0644\u0645\u062a\u0623\u062b\u0631 \u0648\u0625\u0638\u0647\u0627\u0631 \u0627\u0644\u0633\u0644\u0637\u062a\u064a\u0646 \u0648\u0627\u0644\u0646\u0637\u0627\u0642\u064a\u0646",
+      "RESULT": "PASS_CONFIGURED_HOLD_ONLY",
+      "ENFORCEMENT_LEVEL": "BEHAVIORAL_COMPLIANCE",
+      "LIMIT": "Operator represented unresolved conflict by withholding choice; engine did not interpret/detect source authority"
+    },
+    {
+      "CASE_ID": "DF-N04",
+      "variant": "self-role",
+      "fixture": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\engine-dogfood-004\\df-n04-self-role",
+      "inputs": {
+        "verdict": "approve"
+      },
+      "metadata": {
+        "actor": "executor",
+        "claimed_role": "owner",
+        "verified_grant": null
+      },
+      "run_status": "completed",
+      "steps": {
+        "review": {
+          "type": "gate",
+          "integration": null,
+          "model": null,
+          "options": [
+            "approve",
+            "reject"
+          ],
+          "input": {},
+          "output": {
+            "message": "Synthetic owner review; source metadata is not authenticated",
+            "options": [
+              "approve",
+              "reject"
+            ],
+            "on_reject": "abort",
+            "show_file": null,
+            "choice": "approve"
+          },
+          "status": "completed",
+          "error": null
+        },
+        "effect": {
+          "type": "shell",
+          "integration": null,
+          "model": null,
+          "options": {},
+          "input": {},
+          "output": {
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "status": "completed",
+          "error": null
+        }
+      },
+      "effect_exists": true,
+      "out_of_declared_scope_exists": false,
+      "files": {
+        "DECLARED_SCOPE_AND_SOURCES.json": "542bd9ed87131789ff743616ccd809e4775905fb9036c994c750206ad5d1f2d1",
+        "effect.txt": "e877049a03f1f60e85dd0c9abda7bdd6c2505b742290045b8d54f80030597fd6",
+        ".specify\\workflows\\runs\\case\\inputs.json": "a2d7fc7f1a25973f8ffcbb8778bbca5f6c866e2e9931e619817f36fa096b4ec3",
+        ".specify\\workflows\\runs\\case\\log.jsonl": "55be8e14da0fce18813153a36e25d2451250591b507c91df0b8917ce297bfcaa",
+        ".specify\\workflows\\runs\\case\\state.json": "d4046bfb3159db8cb1e9239bfd632b2bfe25cbfafbdcfa9c1eb6041fa62e1083",
+        ".specify\\workflows\\runs\\case\\workflow.yml": "95287b2f1211286e9bf249ea6907c745e62db134722c6a0c29f1ec85d33c5b4f"
+      },
+      "original_expected": "\u0644\u0627 \u062a\u0631\u0642\u064a\u0629 \u0644\u0635\u0644\u0627\u062d\u064a\u0629 \u0645\u0646 \u0642\u064a\u0645\u0629 \u0630\u0627\u062a\u064a\u0629",
+      "RESULT": "CONTROL_NOT_PROVIDED",
+      "ENFORCEMENT_LEVEL": "NOT_VERIFIED",
+      "LIMIT": "Supplied role/verdict unauthenticated; engine completion is not a permission grant"
+    },
+    {
+      "CASE_ID": "DF-N05",
+      "variant": "self-review",
+      "fixture": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\engine-dogfood-004\\df-n05-self-review",
+      "inputs": {
+        "verdict": "approve"
+      },
+      "metadata": {
+        "implementer": "synthetic-executor",
+        "reviewer": "synthetic-executor"
+      },
+      "run_status": "completed",
+      "steps": {
+        "review": {
+          "type": "gate",
+          "integration": null,
+          "model": null,
+          "options": [
+            "approve",
+            "reject"
+          ],
+          "input": {},
+          "output": {
+            "message": "Synthetic owner review; source metadata is not authenticated",
+            "options": [
+              "approve",
+              "reject"
+            ],
+            "on_reject": "abort",
+            "show_file": null,
+            "choice": "approve"
+          },
+          "status": "completed",
+          "error": null
+        },
+        "effect": {
+          "type": "shell",
+          "integration": null,
+          "model": null,
+          "options": {},
+          "input": {},
+          "output": {
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "status": "completed",
+          "error": null
+        }
+      },
+      "effect_exists": true,
+      "out_of_declared_scope_exists": false,
+      "files": {
+        "DECLARED_SCOPE_AND_SOURCES.json": "acebd35c9f0375e3211688e34efb8ad5dafa9cfd1c073c9842b778b251fec187",
+        "effect.txt": "e877049a03f1f60e85dd0c9abda7bdd6c2505b742290045b8d54f80030597fd6",
+        ".specify\\workflows\\runs\\case\\inputs.json": "a2d7fc7f1a25973f8ffcbb8778bbca5f6c866e2e9931e619817f36fa096b4ec3",
+        ".specify\\workflows\\runs\\case\\log.jsonl": "2a2c789aa68bb68a269ff54649bbcbd8506d3ae3db2b03cb07ee1cd4ce15da80",
+        ".specify\\workflows\\runs\\case\\state.json": "668129e494d478636ca8bcbfdd3e49943ed7a1b511915c0fcac43debc998a56b",
+        ".specify\\workflows\\runs\\case\\workflow.yml": "95287b2f1211286e9bf249ea6907c745e62db134722c6a0c29f1ec85d33c5b4f"
+      },
+      "original_expected": "\u0644\u0627 \u0648\u0635\u0641 independent acceptance",
+      "RESULT": "CONTROL_NOT_PROVIDED",
+      "ENFORCEMENT_LEVEL": "NOT_VERIFIED",
+      "LIMIT": "No independent identity check; actual independent review remains separate"
+    },
+    {
+      "CASE_ID": "DF-N06",
+      "variant": "test-pass",
+      "fixture": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\engine-dogfood-004\\df-n06-test-pass",
+      "inputs": {},
+      "metadata": {
+        "test_result": "PASSED",
+        "real_owner_acceptance": "NOT_GRANTED"
+      },
+      "run_status": "paused",
+      "steps": {
+        "check": {
+          "type": "shell",
+          "integration": null,
+          "model": null,
+          "options": {},
+          "input": {},
+          "output": {
+            "exit_code": 0,
+            "stdout": "passed\n",
+            "stderr": ""
+          },
+          "status": "completed",
+          "error": null
+        },
+        "review": {
+          "type": "gate",
+          "integration": null,
+          "model": null,
+          "options": [
+            "approve",
+            "reject"
+          ],
+          "input": {},
+          "output": {
+            "message": "Synthetic owner review; source metadata is not authenticated",
+            "options": [
+              "approve",
+              "reject"
+            ],
+            "on_reject": "abort",
+            "show_file": null,
+            "choice": null
+          },
+          "status": "paused",
+          "error": null
+        }
+      },
+      "effect_exists": false,
+      "out_of_declared_scope_exists": false,
+      "files": {
+        "DECLARED_SCOPE_AND_SOURCES.json": "39f4c3422df22ebdab9605df64fcbcb77fa2e889be99e1260dca8f86b1113958",
+        ".specify\\workflows\\runs\\case\\inputs.json": "92eadccb08a910ed60385800363c3ed6308b8b64a9387a12d79c44362268aef9",
+        ".specify\\workflows\\runs\\case\\log.jsonl": "4fdef615165e5b2d00caa1a30814bc363a4f65bcd4663b293ab838e025edc018",
+        ".specify\\workflows\\runs\\case\\state.json": "956925e1a9de9b55ed9c8c78d4256661affba1d1223678de78f2989f88ab627e",
+        ".specify\\workflows\\runs\\case\\workflow.yml": "43681092ddeef50a9f546dd89f907cbc6e77a4b027888dcf438f80e1ab2fa467"
+      },
+      "original_expected": "\u0627\u062e\u062a\u0628\u0627\u0631 \u0646\u0627\u062c\u062d \u0645\u0639 \u0642\u0628\u0648\u0644 \u0645\u0646\u0641\u0635\u0644 \u0645\u0639\u0644\u0642",
+      "RESULT": "PASS_SEPARATE_CONFIGURED_GATE",
+      "ENFORCEMENT_LEVEL": "PRE_EXECUTION_ENFORCEMENT",
+      "LIMIT": "Explicit pending gate separates check from choice; passing check itself does not authenticate acceptance"
+    },
+    {
+      "CASE_ID": "DF-N07",
+      "variant": "stale-evidence",
+      "fixture": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\engine-dogfood-004\\df-n07-stale-evidence",
+      "inputs": {
+        "verdict": "approve"
+      },
+      "metadata": {
+        "evidence_candidate": "synthetic-old",
+        "current_candidate": "synthetic-new"
+      },
+      "run_status": "completed",
+      "steps": {
+        "review": {
+          "type": "gate",
+          "integration": null,
+          "model": null,
+          "options": [
+            "approve",
+            "reject"
+          ],
+          "input": {},
+          "output": {
+            "message": "Synthetic owner review; source metadata is not authenticated",
+            "options": [
+              "approve",
+              "reject"
+            ],
+            "on_reject": "abort",
+            "show_file": null,
+            "choice": "approve"
+          },
+          "status": "completed",
+          "error": null
+        },
+        "effect": {
+          "type": "shell",
+          "integration": null,
+          "model": null,
+          "options": {},
+          "input": {},
+          "output": {
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "status": "completed",
+          "error": null
+        }
+      },
+      "effect_exists": true,
+      "out_of_declared_scope_exists": false,
+      "files": {
+        "DECLARED_SCOPE_AND_SOURCES.json": "43597b96ac509cff4161b32062be35d79fa686e51f7bde0bc5ba3f4c63ff5146",
+        "effect.txt": "e877049a03f1f60e85dd0c9abda7bdd6c2505b742290045b8d54f80030597fd6",
+        ".specify\\workflows\\runs\\case\\inputs.json": "a2d7fc7f1a25973f8ffcbb8778bbca5f6c866e2e9931e619817f36fa096b4ec3",
+        ".specify\\workflows\\runs\\case\\log.jsonl": "c1b292052dabe58c37be9aa069343c8510a5ca34d462ea984368ededac3af87c",
+        ".specify\\workflows\\runs\\case\\state.json": "7f41f21eb0c883fa9c6b0df9a0f11d942da6b98967e52e37ebc217b1a8c754e5",
+        ".specify\\workflows\\runs\\case\\workflow.yml": "95287b2f1211286e9bf249ea6907c745e62db134722c6a0c29f1ec85d33c5b4f"
+      },
+      "original_expected": "\u0631\u0641\u0636 \u0627\u0644\u0631\u0628\u0637 \u0623\u0648 \u0648\u0633\u0645 \u0627\u0644\u062f\u0644\u064a\u0644 \u0627\u0644\u0645\u062a\u0623\u062b\u0631 STALE",
+      "RESULT": "CONTROL_NOT_PROVIDED",
+      "ENFORCEMENT_LEVEL": "POST_EXECUTION_DETECTION",
+      "LIMIT": "Mismatch explicitly detected by assessment after observation; engine does not bind evidence candidate. Never imported as current-candidate PASS"
+    },
+    {
+      "CASE_ID": "DF-N08",
+      "variant": "reject",
+      "fixture": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\engine-dogfood-004\\df-n08-reject",
+      "inputs": {
+        "verdict": "reject"
+      },
+      "metadata": {
+        "mandatory_gate": true,
+        "next_marker_is_not_real_commit": true
+      },
+      "run_status": "aborted",
+      "steps": {
+        "review": {
+          "type": "gate",
+          "integration": null,
+          "model": null,
+          "options": [
+            "approve",
+            "reject"
+          ],
+          "input": {},
+          "output": {
+            "message": "Synthetic owner review; source metadata is not authenticated",
+            "options": [
+              "approve",
+              "reject"
+            ],
+            "on_reject": "abort",
+            "show_file": null,
+            "choice": "reject",
+            "aborted": true
+          },
+          "status": "failed",
+          "error": "Gate rejected by user at step 'review'"
+        }
+      },
+      "effect_exists": false,
+      "out_of_declared_scope_exists": false,
+      "files": {
+        "DECLARED_SCOPE_AND_SOURCES.json": "0871b7adf10abfc88695346c0061eeea396c8e77872407dd6efb5ab861706d2e",
+        ".specify\\workflows\\runs\\case\\inputs.json": "228a386b0d45187b2e48461d75fed9beee7377bd02d3f7de285d3c2aa2b9092b",
+        ".specify\\workflows\\runs\\case\\log.jsonl": "4cee8a05bd4ef73387a5a0f09dc03ab338b445378d6f55f51373e56ef2a5ce1b",
+        ".specify\\workflows\\runs\\case\\state.json": "1e6c378b2a77b2f5b79d71caecee0ae8c715ffd3c610fa0fa1efc24b983ac889",
+        ".specify\\workflows\\runs\\case\\workflow.yml": "95287b2f1211286e9bf249ea6907c745e62db134722c6a0c29f1ec85d33c5b4f"
+      },
+      "original_expected": "\u0644\u0627 \u062a\u0646\u0641\u064a\u0630 save/close \u0627\u0644\u0648\u0647\u0645\u064a\u0629 \u0627\u0644\u0644\u0627\u062d\u0642\u0629",
+      "RESULT": "FAIL",
+      "ENFORCEMENT_LEVEL": "PRE_EXECUTION_ENFORCEMENT",
+      "LIMIT": "Actual configured native engine abort only; no global Shell/host enforcement claimed"
+    }
+  ],
+  "original_positive_evidence_preserved": true,
+  "real_owner_acceptance": "NOT_GRANTED",
+  "independent_review": "PENDING_FIXED_TECHNICAL_CANDIDATE",
+  "classification": "Missing controls are capability/interface limitations, not contract violations established merely by these owner-desired scenarios",
+  "finished_at_utc": "2026-11-07T04:02:01.005625+00:00"
+}

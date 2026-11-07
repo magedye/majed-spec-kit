@@ -1,0 +1,1 @@
+Owner reply: السماح بالتنزيل المحدد لـRuff; response to explicit request for Ruff==0.15.0 from pypi.org/simple/ruff and files.pythonhosted.org only. Available chat wording, no invented submission timestamp.

@@ -1,0 +1,44 @@
+{
+  "exit_code": 1,
+  "collect_only": false,
+  "collected_nodeids": [
+    "tests/specify_cli/events/test_events.py::TestCommandRunner::test_sh_variant_without_launcher_returns_none"
+  ],
+  "unique_count": 1,
+  "duplicate_nodeids": 0,
+  "counts": {
+    "FAILED": 1
+  },
+  "cases": [
+    {
+      "nodeid": "tests/specify_cli/events/test_events.py::TestCommandRunner::test_sh_variant_without_launcher_returns_none",
+      "result": "FAILED"
+    }
+  ],
+  "reports": [
+    {
+      "nodeid": "tests/specify_cli/events/test_events.py::TestCommandRunner::test_sh_variant_without_launcher_returns_none",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration": 0.04219060007017106,
+      "detail": null
+    },
+    {
+      "nodeid": "tests/specify_cli/events/test_events.py::TestCommandRunner::test_sh_variant_without_launcher_returns_none",
+      "phase": "call",
+      "outcome": "failed",
+      "duration": 0.1120805999962613,
+      "detail": "tests\\specify_cli\\events\\test_events.py:2237: in test_sh_variant_without_launcher_returns_none\n    assert _resolve_event_command_argv(cmd_dir / \"boot.md\", tmp_path, None) is None\nE   AssertionError: assert ['D:\\\\APP\\\\maged-spec-kit\\\\majed-spec-kit\\\\specs\\\\003-msk-baseline-closure\\\\execution-worktree\\\\specs\\\\003-msk-baselin...-recovery-001\\\\temp\\\\regression-before-001\\\\pytest\\\\test_sh_variant_without_launch0\\\\.specify\\\\scripts\\\\bash\\\\boot.sh'] is None\nE    +  where ['D:\\\\APP\\\\maged-spec-kit\\\\majed-spec-kit\\\\specs\\\\003-msk-baseline-closure\\\\execution-worktree\\\\specs\\\\003-msk-baselin...-recovery-001\\\\temp\\\\regression-before-001\\\\pytest\\\\test_sh_variant_without_launch0\\\\.specify\\\\scripts\\\\bash\\\\boot.sh'] = <function _resolve_event_command_argv at 0x0000024715B1D800>((WindowsPath('D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree/specs/003-msk-base...nvironment-recovery-001/temp/regression-before-001/pytest/test_sh_variant_without_launch0/.specify/templates/commands') / 'boot.md'), WindowsPath('D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree/specs/003-msk-baseline-closure/execution/environment-recovery-001/temp/regression-before-001/pytest/test_sh_variant_without_launch0'), None)"
+    },
+    {
+      "nodeid": "tests/specify_cli/events/test_events.py::TestCommandRunner::test_sh_variant_without_launcher_returns_none",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration": 0.0005587000632658601,
+      "detail": null
+    }
+  ],
+  "collection_errors": [],
+  "source_import": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\src\\specify_cli\\__init__.py",
+  "interpreter": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe"
+}

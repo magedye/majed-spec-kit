@@ -1,0 +1,45 @@
+{
+  "started_at_utc": "2026-11-07T05:06:12.082674+00:00",
+  "interpreter": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+  "server_argv": [
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+    "-c",
+    "from specify_cli import main; main()",
+    "mcp"
+  ],
+  "timeout_seconds": 12,
+  "profile": "D:\\APP\\maged-spec-kit\\msk003-qualification-temp-20261107-001\\stdio-diagnostic-profile",
+  "scope": "Single local initialize request; no model/provider/service deployment",
+  "initialized": {
+    "meta": null,
+    "protocol_version": "2025-11-25",
+    "capabilities": {
+      "experimental": null,
+      "logging": null,
+      "prompts": {
+        "list_changed": false
+      },
+      "resources": {
+        "subscribe": false,
+        "list_changed": false
+      },
+      "tools": {
+        "list_changed": false
+      },
+      "completions": null,
+      "extensions": null,
+      "tasks": null
+    },
+    "server_info": {
+      "name": "specify",
+      "title": "Spec Kit CLI",
+      "version": "experimental",
+      "description": "Experimental stdio-only MCP adapter for stable Specify CLI JSON commands.",
+      "website_url": null,
+      "icons": null
+    },
+    "instructions": null
+  },
+  "result": "INITIALIZE_PASSED_DIAGNOSTIC_ONLY",
+  "finished_at_utc": "2026-11-07T05:06:16.905337+00:00"
+}

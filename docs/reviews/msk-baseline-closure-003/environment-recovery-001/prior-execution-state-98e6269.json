@@ -1,0 +1,13 @@
+{
+  "request_id": "MSK-BASELINE-CLOSURE-003",
+  "status": "PARTIAL_WITH_BLOCKERS",
+  "reviewed_documentary_candidate": "b5817243c090a08b1d6371011bf144af6a509c16",
+  "review": "DOCUMENTARY_PARTIAL_PACKAGE_REVIEWED",
+  "full_independent_technical_review": "INDEPENDENT_REVIEW_PENDING",
+  "blocker": "DEPENDENCY_UNAVAILABLE",
+  "unchanged_source_baseline": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+  "preserved_old_candidate": "ca3233afe5192ba01861098c429effea7e6a4f6c",
+  "task_branch": "fix/msk-baseline-closure-003-qualified",
+  "next_action": "Use a verified existing compliant MSK environment if owner identifies it; otherwise separate provisioning authorization needed. Then collect unique cases, run required regressions, complete7negative engine cases, and review fixed technical candidate. No Core/main merge/push.",
+  "safe_stop": "All launched processes finished; no continuing qualification process. Existing worktree/branches/planning backup retained."
+}

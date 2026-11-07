@@ -1,0 +1,9 @@
+{
+  "process_id": 32676,
+  "command_line": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe -B -m pytest -p qualification_capture -p no:cacheprovider --basetemp D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\temp\\full-windows-001\\pytest tests -p xdist.plugin -n 4 -q",
+  "observed_head": "10b5862f6905e62eaef0983418cb9567b1b8a8d6",
+  "reason": "Independent review observed shared task Git branch changed during full suite; stop owned process tree only to prevent further repository mutations",
+  "observed_branch": "001-no-git",
+  "parent_process_id": 52464,
+  "time_utc": "2026-11-07T04:09:01.4596417Z"
+}

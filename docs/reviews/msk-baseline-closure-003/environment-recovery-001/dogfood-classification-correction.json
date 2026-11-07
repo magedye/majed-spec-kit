@@ -1,0 +1,14 @@
+{
+  "original_raw_preserved": true,
+  "raw_sha256": "3fa245d680eb9e6a07d7757ec48b1c84c80e29b05a717df5c5f5caad17152625",
+  "original_raw_label": "FAIL",
+  "corrected_assessment": "PASS_NATIVE_ABORT",
+  "reason": "TEST_DEFECT in task harness classification: RunStatus.ABORTED is the native expected abort, not RunStatus.FAILED. Original oracle: no subsequent save marker; gatefailed and markerabsent are observed. No expected control changed and no runtime rerun.",
+  "evidence": {
+    "run_status": "aborted",
+    "gate_status": "failed",
+    "aborted": true,
+    "marker_exists": false
+  },
+  "source_contract": "src/specify_cli/workflows/_execution.py:820 chooses aborted when failed gate output.aborted is true"
+}

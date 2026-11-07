@@ -1,0 +1,34 @@
+{
+  "run_id": "regression-before-001",
+  "started_at_utc": "2026-11-07T03:58:23.378894+00:00",
+  "argv": [
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "-p",
+    "qualification_capture",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\temp\\regression-before-001\\pytest",
+    "tests/specify_cli/events/test_events.py::TestCommandRunner::test_sh_variant_without_launcher_returns_none",
+    "-q"
+  ],
+  "git_head": "98e6269f4112b9627f78e154cf17760d5f86f43d",
+  "source_import_profile": "Owned source root via explicit PYTHONPATH; no other project editable install",
+  "isolation": "Task-local profile/temp; external Python sockets blocked, loopback allowed; no OS sandbox claim",
+  "process_only_PATH_prefix": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts",
+  "network_downloads": false,
+  "source_files": {
+    "src/specify_cli/events/__init__.py": "e1a124593f445aa88b083b0b4d428125d48f57892df266c1478527ff601eb62a",
+    "tests/specify_cli/events/test_events.py": "8374df795578788eef21e557881e78ed9592e18207946bb5b55970d01a888dad",
+    "tests/integrations/test_integration_generic.py": "65deb244ee96a3d6c764c66f8d0fb0258eb93b665bbb8706da2fe4da2b38dbcf",
+    "tests/specify_cli/workflows/test_command_definition.py": "c3164f7bba6e2dfce67f9432597e7429e5d478e4546aa1dfdbdd6df64164aa9f"
+  },
+  "process_id": 46448,
+  "exit_code": 1,
+  "finished_at_utc": "2026-11-07T03:58:30.093494+00:00",
+  "stdout_sha256": "da5af95574cc1aedbab77497655729db3de30a380dc41b26ece777d6ed3df9bf",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

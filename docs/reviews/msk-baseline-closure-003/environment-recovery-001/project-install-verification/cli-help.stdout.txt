@@ -1,0 +1,35 @@
+             ███████╗██████╗ ███████╗ ██████╗██╗███████╗██╗   ██╗              
+             ██╔════╝██╔══██╗██╔════╝██╔════╝██║██╔════╝╚██╗ ██╔╝              
+             ███████╗██████╔╝█████╗  ██║     ██║█████╗   ╚████╔╝               
+             ╚════██║██╔═══╝ ██╔══╝  ██║     ██║██╔══╝    ╚██╔╝                
+             ███████║██║     ███████╗╚██████╗██║██║        ██║                 
+             ╚══════╝╚═╝     ╚══════╝ ╚═════╝╚═╝╚═╝        ╚═╝                 
+                                                                               
+               GitHub Spec Kit - Spec-Driven Development Toolkit               
+
+                                                                               
+ Usage: specify [OPTIONS] COMMAND [ARGS]...                                    
+                                                                               
+ Setup tool for Specify spec-driven development projects                       
+                                                                               
+┌─ Options ───────────────────────────────────────────────────────────────────┐
+│ --version  -V        Show version and exit.                                 │
+│ --help               Show this message and exit.                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌─ Commands ──────────────────────────────────────────────────────────────────┐
+│ init         Initialize a new Specify project.                              │
+│ check        Check that all required tools are installed.                   │
+│ version      Display version and system information.                        │
+│ mcp          Run the experimental MCP server over stdio.                    │
+│ self         Manage the specify CLI itself: check for newer releases,       │
+│              preview upgrades with --dry-run, and upgrade in place.         │
+│ extension    Manage spec-kit extensions                                     │
+│ integration  Manage coding agent integrations                               │
+│ event        Manage and execute event-driven commands                       │
+│ preset       Manage spec-kit presets                                        │
+│ artifact     Introspect commands, templates, scripts, and hooks Spec Kit    │
+│              exposes.                                                       │
+│ bundle       Discover, install, and author Spec Kit bundles                 │
+│ workflow     Manage and run automation workflows                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+

@@ -1,0 +1,377 @@
+{
+  "denominator": 24,
+  "records": [
+    {
+      "REQUIREMENT_ID": "SG-01",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-02",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-03",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-04",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-05",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-06",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-07",
+      "case_id": "DF-N06",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "BLOCKED",
+      "current_native_variants": [
+        {
+          "case": "DF-N06",
+          "variant": "test-pass",
+          "assessment": "PASS_SEPARATE_CONFIGURED_GATE",
+          "enforcement_level": "PRE_EXECUTION_ENFORCEMENT",
+          "limit": "Explicit pending gate separates check from choice; passing check itself does not authenticate acceptance",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "PASS_SEPARATE_CONFIGURED_GATE"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-08",
+      "case_id": "DF-N01",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "BLOCKED",
+      "current_native_variants": [
+        {
+          "case": "DF-N01",
+          "variant": "missing",
+          "assessment": "PASS_CONFIGURED_GATE_ONLY",
+          "enforcement_level": "PRE_EXECUTION_ENFORCEMENT",
+          "limit": "No missing-grant semantic check; this is absence of gate choice",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "PASS_CONFIGURED_GATE_ONLY"
+        },
+        {
+          "case": "DF-N01",
+          "variant": "expired",
+          "assessment": "CONTROL_NOT_PROVIDED",
+          "enforcement_level": "NOT_VERIFIED",
+          "limit": "Native gate does not validate expiry; supplied choice cannot establish real authorization",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-09",
+      "case_id": "DF-N02",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "BLOCKED",
+      "current_native_variants": [
+        {
+          "case": "DF-N02",
+          "variant": "outside",
+          "assessment": "CONTROL_NOT_PROVIDED",
+          "enforcement_level": "POST_EXECUTION_DETECTION",
+          "limit": "Harness observes fixture effect afterwards; product has no write-set sandbox. Effect stayed inside authorized synthetic parent",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-10",
+      "case_id": "DF-N03",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "BLOCKED",
+      "current_native_variants": [
+        {
+          "case": "DF-N03",
+          "variant": "conflict",
+          "assessment": "PASS_CONFIGURED_HOLD_ONLY",
+          "enforcement_level": "BEHAVIORAL_COMPLIANCE",
+          "limit": "Operator represented unresolved conflict by withholding choice; engine did not interpret/detect source authority",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "PASS_CONFIGURED_HOLD_ONLY"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-11",
+      "case_id": "DF-N04",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "BLOCKED",
+      "current_native_variants": [
+        {
+          "case": "DF-N04",
+          "variant": "self-role",
+          "assessment": "CONTROL_NOT_PROVIDED",
+          "enforcement_level": "NOT_VERIFIED",
+          "limit": "Supplied role/verdict unauthenticated; engine completion is not a permission grant",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-12",
+      "case_id": "DF-N05",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "BLOCKED",
+      "current_native_variants": [
+        {
+          "case": "DF-N05",
+          "variant": "self-review",
+          "assessment": "CONTROL_NOT_PROVIDED",
+          "enforcement_level": "NOT_VERIFIED",
+          "limit": "No independent identity check; actual independent review remains separate",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-13",
+      "case_id": "DF-N06",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "BLOCKED",
+      "current_native_variants": [
+        {
+          "case": "DF-N06",
+          "variant": "test-pass",
+          "assessment": "PASS_SEPARATE_CONFIGURED_GATE",
+          "enforcement_level": "PRE_EXECUTION_ENFORCEMENT",
+          "limit": "Explicit pending gate separates check from choice; passing check itself does not authenticate acceptance",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "PASS_SEPARATE_CONFIGURED_GATE"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-14",
+      "case_id": "DF-N07",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "BLOCKED",
+      "current_native_variants": [
+        {
+          "case": "DF-N07",
+          "variant": "stale-evidence",
+          "assessment": "CONTROL_NOT_PROVIDED",
+          "enforcement_level": "POST_EXECUTION_DETECTION",
+          "limit": "Mismatch explicitly detected by assessment after observation; engine does not bind evidence candidate. Never imported as current-candidate PASS",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-15",
+      "case_id": "DF-N08",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [
+        {
+          "case": "DF-N08",
+          "variant": "reject",
+          "assessment": "PASS_NATIVE_ABORT",
+          "enforcement_level": "PRE_EXECUTION_ENFORCEMENT",
+          "limit": "Actual configured native engine abort only; no global Shell/host enforcement claimed",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "FAIL"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-16",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-17",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-18",
+      "case_id": "DF-N08",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [
+        {
+          "case": "DF-N08",
+          "variant": "reject",
+          "assessment": "PASS_NATIVE_ABORT",
+          "enforcement_level": "PRE_EXECUTION_ENFORCEMENT",
+          "limit": "Actual configured native engine abort only; no global Shell/host enforcement claimed",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "FAIL"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-19",
+      "case_id": "DF-N08",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [
+        {
+          "case": "DF-N08",
+          "variant": "reject",
+          "assessment": "PASS_NATIVE_ABORT",
+          "enforcement_level": "PRE_EXECUTION_ENFORCEMENT",
+          "limit": "Actual configured native engine abort only; no global Shell/host enforcement claimed",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "FAIL"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-20",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-21",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-22",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-23",
+      "case_id": "DF-N04",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "BLOCKED",
+      "current_native_variants": [
+        {
+          "case": "DF-N04",
+          "variant": "self-role",
+          "assessment": "CONTROL_NOT_PROVIDED",
+          "enforcement_level": "NOT_VERIFIED",
+          "limit": "Supplied role/verdict unauthenticated; engine completion is not a permission grant",
+          "actual_runtime": "EXECUTED",
+          "raw_result_preserved": "CONTROL_NOT_PROVIDED"
+        }
+      ],
+      "positive_prior_source_script_evidence_preserved": false,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-24",
+      "case_id": "DF-POS",
+      "meaning_and_source_preserved": true,
+      "older_observation_remains_historical": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "current_native_variants": [],
+      "positive_prior_source_script_evidence_preserved": true,
+      "acceptance_status": "NOT_GRANTED",
+      "requirement_fulfillment_not_inferred_from_case_execution": true
+    }
+  ],
+  "status": "PARTIAL_WITH_CONTROL_GAPS",
+  "raw_source_meaning_and_50line_accounting_unchanged": true,
+  "limits": "Executing all named variants is not proof of all24 broad obligations or host enforcement; original method sample limitations preserved"
+}

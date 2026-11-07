@@ -1,0 +1,16 @@
+{
+  "source_candidate": "10b5862f6905e62eaef0983418cb9567b1b8a8d6",
+  "changed_sources": {
+    "src/specify_cli/events/__init__.py": "dd3feec5259d02a0ebf274176724751a33aafb7c0005b7af676704a0cad773b6",
+    "tests/specify_cli/events/test_events.py": "8374df795578788eef21e557881e78ed9592e18207946bb5b55970d01a888dad",
+    "tests/integrations/test_integration_generic.py": "2eb92053e5992669e53de6493b45e8ad72afdd9f7a07235edbb9e63ea5fecb35",
+    "tests/specify_cli/workflows/test_command_definition.py": "603a4872e559fdc0412f3c037c0f652fa4955436e5f25d7e0adb6ce0feba7c0b"
+  },
+  "source_reuse": "Byte-identical four existing ca3233a source/test files; AGENTS excluded",
+  "environment_change": "50offline hash-pinned thirdparty packages; after initialpopulation completed, canonical offline owned editable install adds1distribution and CLI entrypoint;50versions fixed, final51RECORD checked. Earlier env/evidence retained.",
+  "environment_differential": "final-differential-plan.json;285impacted cases275pass8skip2fail; standalone actualMCPtest1PASS, paralleltimeout remains material/not root-caused.",
+  "reruns_justified": "Dependency conditions changed; before/after focused regression and mandatory full Windows profile now feasible",
+  "preserved_valid": "Original source-script positive, prior semantic/authority analysis and documentary review retain only exact scopes",
+  "invalid_for_final_qualification": "Historical unverified counts; earlier readchar blocked collection; generated mirror cases do not replace primary package tests",
+  "re_review": "Code/runtime/env assessment requires new independent technical review; no automatic transfer from documentary review"
+}

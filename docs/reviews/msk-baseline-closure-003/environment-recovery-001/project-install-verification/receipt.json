@@ -1,0 +1,46 @@
+{
+  "commands": [
+    {
+      "label": "isolated-import",
+      "argv": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\python.exe",
+        "-I",
+        "-B",
+        "-c",
+        "import sys,json,importlib.metadata as m,site,specify_cli\nd=m.distribution(\"specify-cli\")\nprint(json.dumps({\"version\":d.version,\"origin\":specify_cli.__file__,\"executable\":sys.executable,\"user_site\":site.ENABLE_USER_SITE,\"direct_url\":json.loads(d.read_text(\"direct_url.json\")),\"entry_points\":[{\"name\":e.name,\"value\":e.value,\"group\":e.group} for e in d.entry_points],\"packages\":{x.metadata[\"Name\"].lower():x.version for x in m.distributions()}}))"
+      ],
+      "cwd": "D:\\APP\\maged-spec-kit\\msk003-qualification-temp-20261107-001\\installed-smoke",
+      "exit_code": 0
+    },
+    {
+      "label": "cli-help",
+      "argv": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\specify.exe",
+        "--help"
+      ],
+      "cwd": "D:\\APP\\maged-spec-kit\\msk003-qualification-temp-20261107-001\\installed-smoke",
+      "exit_code": 0
+    },
+    {
+      "label": "cli-version",
+      "argv": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-recovery-001\\venv\\Scripts\\specify.exe",
+        "--version"
+      ],
+      "cwd": "D:\\APP\\maged-spec-kit\\msk003-qualification-temp-20261107-001\\installed-smoke",
+      "exit_code": 0
+    }
+  ],
+  "no_PYTHONPATH": true,
+  "isolated_outside_repo_import": true,
+  "actual_editable_directory_provenance": {
+    "url": "file:///D:/APP/maged-spec-kit/majed-spec-kit/specs/003-msk-baseline-closure/execution-worktree",
+    "dir_info": {
+      "editable": true
+    }
+  },
+  "third_party_versions_unchanged": 50,
+  "third_party_integrity": "Final all-distribution RECORD check passed; install --no-deps did not request thirdparty modifications. No invented old per-file snapshot comparison.",
+  "new_distribution": "specify-cli1.3.3.dev0 only",
+  "final_environment_evidence": "../environment-final-verified.json"
+}
