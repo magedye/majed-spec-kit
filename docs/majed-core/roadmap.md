@@ -3,13 +3,15 @@
 ## Delivered in this Core candidate
 
 - Native `majed-adeq` preset with append/wrap contributions.
-- Native `majed-governance` extension with deterministic checks and derived views.
-- Native `majed-controlled` workflow with profile routing, preflight, evidence,
-  gates, pause/resume, and an explicit non-acceptance boundary.
-- Native `majed-governed` local bundle with install, repeat install, preservation,
-  validation, and removal tests.
-- Requirement matrix, qualification record, compatibility limits, and engineering
-  report.
+- Native `majed-governance` extension with intake, impact, sources, checks,
+  convergence, metrics, trace, and decision views.
+- Native `majed-controlled` workflow with profile routing, dependency checks,
+  preflight, evidence, gates, pause/resume, command dispatch, and an explicit
+  non-acceptance boundary.
+- Native `majed-governed` bundle with artifact install, repeat install, refresh,
+  preservation, validation, and removal tests.
+- Requirement matrix, qualification record, effectiveness limits, compatibility
+  limits, and engineering report.
 
 ## Mandatory before owner acceptance or merge
 

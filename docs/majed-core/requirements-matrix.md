@@ -19,38 +19,42 @@ capability. A `CORE_PARTIAL` overall result is expected while any
 
 | ID | Capability | Decision | Component / evidence | Status |
 |---|---|---|---|---|
-| MSK-01 | Understand the objective and preserve request, constraints, exceptions | IMPROVE / CONFIGURE | `majed-adeq` spec append; governance record template; `tests/specify_cli/presets/test_majed_adeq_preset.py` | IMPLEMENTED_PARTIAL |
+| MSK-01 | Understand the objective and preserve request, constraints, exceptions | IMPROVE / CONFIGURE | `intake` source spans; `majed-adeq` spec append; governance record template; completion tests | IMPLEMENTED_VERIFIED |
 | MSK-02 | Ambiguity analysis and clarification | CONFIGURE | `majed-adeq` clarify wrap; preset tests | IMPLEMENTED_VERIFIED |
 | MSK-03 | Alternatives and trade-off evaluation | CONFIGURE | `majed-adeq` plan append; preset tests | IMPLEMENTED_VERIFIED |
-| MSK-04 | Impact analysis and rollback readiness | IMPROVE | `majed-adeq` plan append; controlled workflow; tests | IMPLEMENTED_PARTIAL |
+| MSK-04 | Impact analysis and rollback readiness | IMPROVE | `impact` map/rollback check; `majed-adeq` plan append; tests | IMPLEMENTED_VERIFIED |
 | MSK-05 | Confidence before and after execution | CONFIGURE | `majed-adeq` plan append; preset tests | IMPLEMENTED_VERIFIED |
 | MSK-06 | Document quality and completeness | CONFIGURE | `majed-adeq` checklist append; preset tests | IMPLEMENTED_VERIFIED |
-| MSK-07 | Requirement and obligation traceability | BUILD / INTEGRATE | `majed-governance` trace/check; record template; extension tests | IMPLEMENTED_PARTIAL |
-| MSK-08 | Output consistency and contradiction detection | IMPROVE | `majed-governance` duplicate/missing checks; native `analyze` reused | IMPLEMENTED_PARTIAL |
-| MSK-09 | Bounded convergence and gap correction | IMPROVE | Unsupported-completion and stale-evidence checks; no full convergence engine | IMPLEMENTED_PARTIAL |
+| MSK-07 | Requirement and obligation traceability | BUILD / INTEGRATE | Source spans, component/test links, `trace`/`check`; completion tests | IMPLEMENTED_VERIFIED |
+| MSK-08 | Output consistency and contradiction detection | IMPROVE | Duplicate evidence, control links, acceptance/open-requirement checks; tests | IMPLEMENTED_VERIFIED |
+| MSK-09 | Bounded convergence and gap correction | IMPROVE | `converge` one bounded item per open requirement; correction via native tasks | IMPLEMENTED_VERIFIED |
 | MSK-10 | Bug diagnosis and repair | REUSE | Native `bug` extension exists; not bundled or qualified here | REUSE_ONLY |
-| MSK-11 | Proportional, resumable execution routing | INTEGRATE | `majed-controlled` quick/standard/controlled routes; workflow tests | IMPLEMENTED_VERIFIED |
+| MSK-11 | Proportional, resumable execution routing | INTEGRATE | `majed-controlled` quick/standard/controlled/assess routes; dispatch/resume tests | IMPLEMENTED_VERIFIED |
 | MSK-12 | Skill and context selection | DEFER | Not implemented; no new context-selection engine | DEFERRED |
-| MSK-13 | Sources, versions, authority, and precedence | IMPROVE | Governance record `source`, `revision`, authorization fields; no source registry | IMPLEMENTED_PARTIAL |
+| MSK-13 | Sources, versions, authority, and precedence | IMPROVE | Source manifest authority/revision/hash/priority/supersedes validation | IMPLEMENTED_VERIFIED |
 | MSK-14 | Document and request intake | REUSE | Native `assess` extension is available; not bundled or qualified here | REUSE_ONLY |
 | MSK-15 | Document change review and diff adoption | DEFER | Not implemented | DEFERRED |
 | MSK-16 | Local Explorer and relationship view | DEFER | Explicitly outside Core; Full only | DEFERRED |
 | MSK-17 | Compare/merge items while preserving obligations | DEFER | Not implemented | DEFERRED |
 | MSK-18 | Source-grounded search | DEFER | Not implemented; no RAG claim | DEFERRED |
-| MSK-19 | Evidence, review, and quality metrics | BUILD / INTEGRATE | Governance check/trace/decide; workflow evidence artifact; tests | IMPLEMENTED_PARTIAL |
+| MSK-19 | Evidence, review, and quality metrics | BUILD / INTEGRATE | `metrics`, evidence/review checks, workflow evidence artifact; tests | IMPLEMENTED_VERIFIED |
 | MSK-20 | Governed learning, maintenance, compatibility | IMPROVE | Bundle compatibility/limitations and RCCA reuse decision; no learning loop | IMPLEMENTED_PARTIAL |
 
 **CORE_REQUIRED items:** MSK-01, 02, 03, 04, 05, 06, 07, 08, 09, 11, 13, 19.
-Several remain partial; therefore the overall result is `CORE_PARTIAL`, not
-`CORE_CANDIDATE_COMPLETE`.
+All twelve have a defined scoped acceptance criterion and focused verification.
+Correction/remediation for MSK-09 is executed through native tasks; the extension
+produces the bounded plan and does not auto-approve or auto-correct. MSK-13
+validates source authority/version/priority/hash but does not implement a new
+host-wide source-resolution engine. MSK-19 computes local evidence/review metrics
+but does not perform independent review.
 
 ## ADEQ-01..24
 
 | ID | ADEQ obligation | Coverage | Status |
 |---|---|---|---|
 | ADEQ-01 | Understand the intended outcome | Preset spec outcome/non-goals; record template | IMPLEMENTED_VERIFIED |
-| ADEQ-02 | Preserve and trace obligations | Preset obligation trace; governance trace | IMPLEMENTED_PARTIAL |
-| ADEQ-03 | Inspect sources and reconcile authority | Record source/revision; authority findings | IMPLEMENTED_PARTIAL |
+| ADEQ-02 | Preserve and trace obligations | Intake source spans; component/test links; governance trace | IMPLEMENTED_VERIFIED |
+| ADEQ-03 | Inspect sources and reconcile authority | Source manifest authority/revision/hash/priority/supersedes | IMPLEMENTED_VERIFIED |
 | ADEQ-04 | Identify consequential ambiguity | Clarify wrap | IMPLEMENTED_VERIFIED |
 | ADEQ-05 | Clarify with options and advice | Clarify wrap | IMPLEMENTED_VERIFIED |
 | ADEQ-06 | Avoid unnecessary interruptions | Clarify wrap guidance | IMPLEMENTED_VERIFIED |
@@ -68,7 +72,7 @@ Several remain partial; therefore the overall result is `CORE_PARTIAL`, not
 | ADEQ-18 | Use relevant existing capabilities | No `src/specify_cli` changes; native Preset/Extension/Workflow/Bundle | IMPLEMENTED_VERIFIED |
 | ADEQ-19 | Define observable success before coding | Spec success criteria + evidence plan | IMPLEMENTED_VERIFIED |
 | ADEQ-20 | Verify and review according to risk | Profile routing; review gates | IMPLEMENTED_VERIFIED |
-| ADEQ-21 | Converge and audit completion honestly | Unsupported-completion and self-assertion checks | IMPLEMENTED_PARTIAL |
+| ADEQ-21 | Converge and audit completion honestly | Unsupported-completion checks; bounded convergence plan | IMPLEMENTED_VERIFIED |
 | ADEQ-22 | Execute within valid delegation | Authorization representation; no host identity enforcement | IMPLEMENTED_PARTIAL |
 | ADEQ-23 | Escalate decisions rather than routine steps | Workflow gates; decision brief | IMPLEMENTED_VERIFIED |
 | ADEQ-24 | Learn and measure practical effectiveness | `EFFECTIVENESS_NOT_VERIFIED`; no comparative measurement | DEFERRED |

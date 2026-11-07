@@ -5,8 +5,8 @@ Majed Governed Core packages three native Spec Kit components:
 | Component | Kind | Version |
 |---|---|---|
 | `majed-adeq` | preset | 1.0.0 |
-| `majed-governance` | extension | 1.0.0 |
-| `majed-controlled` | workflow | 1.0.0 |
+| `majed-governance` | extension | 1.1.0 |
+| `majed-controlled` | workflow | 1.1.0 |
 
 The bundle does not add runtime behavior of its own. Each component is
 installed through its native Spec Kit machinery.
@@ -44,6 +44,19 @@ specify workflow run majed-controlled \
 
 The workflow's `assess` mode runs without dispatching agent commands. The
 `execute` mode requires an installed agent integration.
+
+## Build and install the bundle artifact
+
+```bash
+specify bundle build --path ./bundles/majed-governed --output ./dist
+specify bundle install ./dist/majed-governed-1.0.0.zip \
+  --integration claude --offline
+```
+
+The artifact install is tested in a clean consumer. In this source checkout the
+component payloads are still resolved from the Majed component directories; a
+published wheel requires the upstream force-include proposal documented in
+`docs/majed-core/compatibility-and-limitations.md`.
 
 ## Upgrade and removal
 

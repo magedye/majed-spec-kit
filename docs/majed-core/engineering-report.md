@@ -1,156 +1,158 @@
 # Majed Spec Kit Core — engineering report
 
-**Request:** `MSK-EXTENSION-CORE-001`  
-**Mode:** autonomous, extension-first, upstream-preserving  
-**Baseline:** `f74bdb893dcba23de72069b46ced5baaeb1684ea`  
-**Branch:** `feat/msk-extension-core-001`  
+**Request:** `MSK-EXTENSION-CORE-002`
+**Mode:** extension-first, upstream-preserving, controlled local execution
+**Baseline:** `ba397542684da2b2d1fe00bbca05cf3911136237`
+**Branch:** `feat/msk-extension-core-002`
 **Delivery HEAD:** the commit containing this report (`git rev-parse HEAD`)
 
 ## 1. Result
 
-`CORE_PARTIAL`
+`CORE_CANDIDATE_COMPLETE` for the agreed Core scope.
 
-Four native components are implemented and locally qualified. The Core is not
-complete because several `CORE_REQUIRED` capabilities are partial (notably
-automatic semantic traceability, full convergence, lifecycle/drift, and
-independent review), and no comparative effectiveness study was performed.
-
-No authorization is granted by this report:
+The four native components are integrated and locally qualified. All twelve
+`CORE_REQUIRED` requirements have scoped acceptance criteria and focused
+verification. This is a functional candidate, not an accepted or released
+product:
 
 - `OWNER_ACCEPTANCE: NOT_GRANTED`
 - `POLICY_ACTIVATION: NOT_AUTHORIZED`
 - `RELEASE_AUTHORIZED: NO`
 - `UPSTREAM_CORE_MODIFIED: NO`
+- `EFFECTIVENESS_NOT_VERIFIED` for behavioral/agent outcomes.
 
-## 2. What was implemented
+The two known upstream Windows composition-test failures remain; they are not
+Majed defects and are disclosed in the qualification record.
 
-### 2.1 `majed-adeq` preset
+## 2. Component versions
 
-- Appends ADEQ sections to `spec-template`, `plan-template`, `tasks-template`,
-  and `checklist-template`.
-- Wraps `speckit.clarify` with a decision-changing clarification guard while
-  preserving the native body through `{CORE_TEMPLATE}`.
-- Covers outcome/non-goals, assumptions, alternatives, impact/recovery,
-  confidence, obligations, and evidence planning.
-- Verified by `tests/specify_cli/presets/test_majed_adeq_preset.py`.
+| Component | Version | Status |
+|---|---|---|
+| `majed-adeq` preset | 1.0.0 | IMPLEMENTED_VERIFIED |
+| `majed-governance` extension | 1.1.0 | IMPLEMENTED_VERIFIED |
+| `majed-controlled` workflow | 1.1.0 | IMPLEMENTED_VERIFIED |
+| `majed-governed` bundle | 1.1.0 | IMPLEMENTED_VERIFIED |
 
-### 2.2 `majed-governance` extension
+## 3. Completion work in this request
 
-- Adds `speckit.majed-governance.check`, `.trace`, and `.decide`.
-- Provides a project-owned JSON record template and schema.
-- Deterministic stdlib validator detects:
-  - unsupported `COMPLETE` claims without evidence;
-  - self-asserted evidence used as completion proof;
-  - stale evidence revisions;
-  - untrusted/expired authorization sources;
-  - false independence;
-  - missing/unsupported control claims;
-  - unauthenticated acceptance;
-  - unsupported budget claims.
-- Adds `workflow_bridge.py` for the controlled workflow because the current
-  bundled-workflow install path does not copy workflow-package companions.
-- Verified by `tests/extensions/test_majed_governance.py`.
+### Requirement completion
 
-### 2.3 `majed-controlled` workflow
+- `intake`: source-span candidate extraction with `PENDING` status.
+- `impact`: changed-file mapping, unmatched-path detection, rollback requirement
+  for risky/non-reversible changes, dependency-note warning.
+- `check`: source-span validation, required component/test links, duplicate
+  evidence IDs, control-to-requirement links, acceptance/open-requirement
+  consistency.
+- `trace`: source, component, criteria, evidence, authorization, review columns.
+- `converge`: one bounded remediation item per open requirement; optional
+  derived plan output without mutating the record.
+- `sources`: authority, revision, SHA-256, priority, and supersession validation.
+- `metrics`: deterministic requirement/evidence/review/control/acceptance counts.
 
-- One native workflow with `quick`, `standard`, and `controlled` routes.
-- `assess` mode: deterministic preflight → evidence record → review gate →
-  acceptance gate → close.
-- `execute` mode: native `speckit.specify`, `clarify`, `plan`, `tasks`,
-  `analyze`, and `implement` commands, with gates and an acceptance boundary.
-- Uses native checkpoints, pause, resume, and gate verdict inputs.
-- Verified by `tests/specify_cli/workflows/test_majed_controlled_workflow.py`.
+### Dependency and execution
 
-### 2.4 `majed-governed` bundle
+- Added `dependency-check` and `dependency-version` workflow steps.
+- Missing extension fails before preflight with `DEPENDENCY_MISSING`.
+- Incompatible bridge version fails before governance checks.
+- Bundle plans the extension before the dependent workflow.
+- QUICK/STANDARD/CONTROLLED/ASSESS routes exercised.
+- Native command dispatch exercised with a disposable stub `claude` CLI:
+  2/4/6 dispatches for quick/standard/controlled.
 
-- Composes the preset, extension, and workflow through native references.
-- Local clean-consumer install, list, repeat install, user-file preservation,
-  and removal are tested.
-- `specify bundle validate --path bundles/majed-governed` passes.
-- Verified by `tests/specify_cli/bundles/test_majed_governed_bundle.py`.
+### Packaging
 
-## 3. Git history
-
-| Commit | Change |
-|---|---|
-| `c03a161` | `feat: add majed-adeq decision-quality preset` |
-| `f00be7a` | `feat: add majed-governance assurance extension` |
-| `56524fe` | `feat: add majed-controlled profile workflow` |
-| `5d4395a` | `feat: add majed-governed installable bundle` |
-| `ae28be2` | `fix: install controlled workflow bridge with governance extension` |
-| `60381c1` | `fix: harden governance console output and workflow fixture` |
-| final docs commit | Requirements matrix, compatibility, roadmap, qualification, this report |
-
-No file under `src/specify_cli/` was modified. No upstream template was replaced.
-No push, merge, release, deployment, or global installation was performed.
+- `bundle build` artifact created.
+- Artifact installed in a clean consumer.
+- Repeat install, `--refresh`, user-file preservation, and removal verified.
+- Wheel/catalog distribution remains `NOT_VERIFIED`; the upstream
+  force-include proposal is documented separately and not implemented.
 
 ## 4. Verification
 
 | Check | Result |
 |---|---|
-| New focused tests | 32 passed in 19.05s |
-| Affected component/contract/extension suite | 3999 collected; 3719 passed, 278 skipped, 2 failed |
-| Bundle validation | pass |
-| Clean consumer install/list/reinstall/remove | pass |
-| Controlled workflow `assess` run | completed; evidence `owner_acceptance=NOT_GRANTED` |
-| Governance record check | PASS with 3 limitations/warnings |
-| POSIX / CI matrix | NOT_VERIFIED |
-| Wheel/catalog distribution | NOT_VERIFIED |
-| `mode=execute` agent dispatch | NOT_RUN |
+| Focused Majed tests | 54 passed in 21.57s |
+| Contract suite | 170 passed |
+| Preset suite | 763 passed |
+| Extension suite | 236 passed, 10 skipped |
+| Bundle suite | 1272 passed, 4 skipped |
+| Workflow definition suite | 66 passed, 2 known baseline failures |
+| Bundle artifact build/install | PASS |
+| Consumer execute routes | PASS (stub dispatch) |
+| Dependency removal behavior | PASS (workflow fails at dependency-check) |
+| Checker microbenchmark | 0.0455 ms/check, 1000 iterations |
+| Synthetic negative detection | 5/5 |
+| POSIX/CI/wheel/catalog | NOT_VERIFIED |
+| Real agent behavior | EXECUTE_NOT_VERIFIED |
 | Comparative effectiveness | EFFECTIVENESS_NOT_VERIFIED |
 
-The two suite failures are the known upstream Windows Q-03 composition-test
-fixture issue (`run: 'true'`), unrelated to the Majed components. The prior
-review verified the test-only correction in `ca3233a`; that candidate was not
-merged here.
+The two failures are the pre-existing upstream Q-03 fixture issue:
 
-## 5. Requirement coverage
+```text
+test_same_call_bound_per_fan_out_item
+test_same_call_bound_per_loop_iteration
+```
 
-The detailed matrix is in [requirements-matrix.md](requirements-matrix.md).
-Summary:
+The prior review verified the test-only correction in `ca3233a`; that candidate
+was not merged here.
 
-- `CORE_REQUIRED`: MSK-01, 02, 03, 04, 05, 06, 07, 08, 09, 11, 13, 19.
-- Implemented verified: MSK-02, 03, 05, 06, 11.
-- Implemented partial: MSK-01, 04, 07, 08, 09, 13, 19.
-- Reuse/interface: MSK-10, 14.
-- Deferred to Full: MSK-12, 15, 16, 17, 18.
-- Partial compatibility/maintenance: MSK-20.
+## 5. Requirements coverage
+
+Detailed matrix: [requirements-matrix.md](requirements-matrix.md).
+
+- `CORE_REQUIRED`: 12/12 have scoped acceptance criteria and verification.
+- `REUSE_ONLY`: MSK-10, MSK-14 (native capabilities; not rebundled here).
+- `DEFERRED` to Full: MSK-12, MSK-15, MSK-16, MSK-17, MSK-18.
+- MSK-20 remains `IMPLEMENTED_PARTIAL` (no learning/lifecycle loop).
+- MSK-09 correction executes through native tasks; the extension produces the
+  bounded plan and does not auto-approve or auto-correct.
+- MSK-13 validates a source manifest; it is not a new host-wide source resolver.
+- MSK-19 computes local evidence/review metrics; it does not perform an
+  independent review.
 
 ## 6. Governance and enforcement boundaries
 
-- Gate choices are recorded but are not authenticated approval.
-- `accept` remains `PENDING` / `owner_acceptance: NOT_GRANTED`.
+- Workflow gates record choices; they do not authenticate identity.
+- `accept` remains `owner_acceptance: NOT_GRANTED` and `authenticated: false`.
 - Local JSON evidence is not tamper-proof.
-- No host-wide Policy Enforcement Point, identity provider, or network/OS gate
-  is implemented or claimed.
-- No budget/cost hard cap is claimed.
-- No anti-replay transaction layer is claimed.
-- RCCA v1.4.0 is used as a reference only; its candidate policies are not
-  activated.
+- No host-wide PEP, OS/network mediation, or credential control is implemented.
+- No budget/token/cost hard cap is claimed.
+- No anti-replay transaction manager is claimed.
+- RCCA v1.4.0 remains an inactive candidate reference.
 
 ## 7. Pending owner decisions
 
-1. Accept or reject this `CORE_PARTIAL` candidate as the basis for a limited
-   first Core implementation phase.
+1. Accept or reject this `CORE_CANDIDATE_COMPLETE` scoped candidate.
 2. Bind owner acceptance to the delivery HEAD and evidence hashes.
-3. Provide or close the C-01..C-11 authority register; decide the constitution
-   vs CI/SUPPORT drift.
-4. Decide whether to accept the two known upstream Windows baseline test
+3. Decide the constitution vs CI/SUPPORT drift and any remaining C-01..C-11
+   register items.
+4. Decide whether to accept the two pre-existing upstream Windows baseline
    failures or authorize the prior test-only correction separately.
-5. Authorize the OS/Python matrix and any POSIX qualification.
-6. Decide whether a published wheel/catalog distribution is required; if so,
-   add the component paths to the wheel force-include list and qualify the built
-   artifact.
-7. Decide whether to authorize comparative effectiveness work.
+5. Authorize POSIX/CI matrix qualification.
+6. Decide whether wheel/catalog distribution is required; if so, authorize the
+   documented upstream force-include proposal and qualify the built artifact.
+7. Authorize or decline comparative effectiveness work.
 8. Provide independent review by a different model/human, or explicitly accept
    the session-level independence limitation.
 
-## 8. Final limitations
+## 8. Completion contract
 
-- `MSK-CORE-IMPLEMENT-002` was not located; its detailed scope is `NOT_VERIFIED`.
-- The bundle is installable from the source checkout; catalog publication and
-  wheel-bundled installation are not qualified.
-- The workflow's `execute` mode is structurally validated but was not dispatched
-  against a real agent in this qualification.
-- The existing upstream baseline still has two known Windows test failures.
-- This is a candidate, not an accepted or released product.
+```text
+CORE_IMPLEMENTATION_STATUS: CORE_CANDIDATE_COMPLETE (agreed scoped Core)
+NATIVE_EXTENSION_COMPATIBILITY: VERIFIED_LOCAL_SOURCE_AND_BUNDLE_ARTIFACT; WHEEL_AND_CATALOG_NOT_VERIFIED; POSIX_NOT_VERIFIED
+PRESET_STATUS: IMPLEMENTED_VERIFIED
+EXTENSION_STATUS: IMPLEMENTED_VERIFIED
+WORKFLOW_STATUS: IMPLEMENTED_VERIFIED (routing/gates/resume/dispatch; real agent behavior NOT_VERIFIED)
+BUNDLE_STATUS: IMPLEMENTED_VERIFIED (artifact install/reinstall/refresh/remove)
+REQUIREMENTS_COVERAGE: 12/12 CORE_REQUIRED scoped criteria verified; Full items deferred
+FUNCTIONAL_VERIFICATION: PASS (54/54 focused; regression suites pass except 2 known upstream baseline failures)
+INTEGRATION_VERIFICATION: PASS (clean consumer; dependency and removal behavior)
+EFFECTIVENESS_STATUS: EFFECTIVENESS_NOT_VERIFIED
+UPSTREAM_CORE_MODIFIED: NO
+INDEPENDENT_REVIEW_STATUS: NOT_PERFORMED
+OWNER_ACCEPTANCE_STATUS: NOT_GRANTED
+RELEASE_AUTHORIZATION_STATUS: NOT_AUTHORIZED
+OWNER_ACCEPTANCE: NOT_GRANTED
+POLICY_ACTIVATION: NOT_AUTHORIZED
+RELEASE_AUTHORIZED: NO
+```

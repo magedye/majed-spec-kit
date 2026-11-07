@@ -10,16 +10,18 @@
 | Spec Kit | `1.3.3.dev0` |
 | Pytest | `9.2.0` |
 | Repository | `D:\APP\maged-spec-kit\majed-spec-kit` |
-| Branch | `feat/msk-extension-core-001` |
-| Baseline | `f74bdb893dcba23de72069b46ced5baaeb1684ea` |
+| Branch | `feat/msk-extension-core-002` |
+| Delivery baseline | `ba397542684da2b2d1fe00bbca05cf3911136237` |
 
-## Focused component tests
+## Focused Majed tests
 
 ```text
 python -m pytest \
   tests/specify_cli/presets/test_majed_adeq_preset.py \
   tests/extensions/test_majed_governance.py \
+  tests/extensions/test_majed_governance_completion.py \
   tests/specify_cli/workflows/test_majed_controlled_workflow.py \
+  tests/specify_cli/workflows/test_majed_execute_dispatch.py \
   tests/specify_cli/bundles/test_majed_governed_bundle.py \
   -q -p no:cacheprovider
 ```
@@ -27,147 +29,105 @@ python -m pytest \
 Result:
 
 ```text
-collected 32 items
-32 passed in 19.05s
+collected 54 items
+54 passed in 21.57s
 ```
 
-Coverage in this run:
+This covers:
 
-- preset manifest, append composition, wrap preservation, tasks/checklist;
-- governance positive path, unsupported completion, self-asserted evidence,
-  stale revision, false independence, untrusted/expired authorization,
-  missing control, invalid schema, trace/decision views, CLI exit codes;
-- workflow definition, controlled preflight failure, quick pass, controlled
-  evidence pass, pause/resume, execute-branch command structure;
-- bundle manifest resolution, clean install, list, repeat install, user-file
-  preservation, removal.
+- ADEQ append/wrap composition and preservation;
+- intake source spans, linkage, impact, rollback, sources, converge, metrics;
+- unsupported completion, self-assertion, stale evidence, false independence,
+  untrusted/expired authorization, duplicate evidence, control links,
+  acceptance/open-requirement consistency;
+- quick/standard/controlled/assess routing;
+- native command dispatch through a disposable `claude` stub CLI (2/4/6 calls);
+- workflow gates, pause, resume, missing-extension and incompatible-version
+  failure behavior;
+- bundle manifest resolution, artifact build/install, repeat install, refresh,
+  user-file preservation, and removal.
 
-## Affected component, contract, and extension suite
+## Regression suites
+
+| Suite | Result |
+|---|---|
+| `tests/contract` | 170 passed |
+| `tests/specify_cli/presets` | 763 passed |
+| `tests/specify_cli/extensions` | 236 passed, 10 skipped |
+| `tests/specify_cli/bundles` | 1272 passed, 4 skipped |
+| `tests/specify_cli/workflows/test_command_definition.py` | 66 passed, 2 failed (known baseline) |
+
+The two failures are the pre-existing upstream Windows Q-03 fixture issue:
 
 ```text
-python -m pytest \
-  tests/specify_cli/presets tests/specify_cli/extensions \
-  tests/specify_cli/workflows tests/specify_cli/bundles \
-  tests/contract tests/extensions \
-  -q -p no:cacheprovider
+test_same_call_bound_per_fan_out_item
+test_same_call_bound_per_loop_iteration
 ```
 
-Result:
+They are unrelated to the Majed components. The prior review verified the
+test-only correction in `ca3233a`; that candidate was not merged here.
+
+## Bundle artifact and consumer qualification
 
 ```text
-3999 collected
-3719 passed, 278 skipped, 2 failed
+specify bundle build --path ./bundles/majed-governed --output ./dist
+specify bundle install ./dist/majed-governed-1.1.0.zip --integration claude --offline
 ```
 
-The two failures are **pre-existing upstream baseline failures** on Windows:
+The artifact install test passed in a clean consumer. The consumer demo also
+installed from `bundle.yml` and ran:
+
+| Run | Result |
+|---|---|
+| QUICK `mode=execute` | completed; 2 stub dispatches (specify, implement) |
+| STANDARD `mode=execute` | completed; 4 stub dispatches (specify, plan, tasks, implement) |
+| CONTROLLED `mode=execute` | completed; 6 stub dispatches (specify, clarify, plan, tasks, analyze, implement) |
+| QUICK `mode=assess` | completed; review + acceptance gates + close |
+| CONTROLLED `mode=assess` | completed; preflight + evidence + gates + close |
+
+Example dispatch log:
 
 ```text
-tests/specify_cli/workflows/test_command_definition.py::TestComposition::test_same_call_bound_per_fan_out_item
-tests/specify_cli/workflows/test_command_definition.py::TestComposition::test_same_call_bound_per_loop_iteration
+-p /speckit-specify Bundle-installed standard dispatch
+-p /speckit-plan Bundle-installed standard dispatch
+-p /speckit-tasks Bundle-installed standard dispatch
+-p /speckit-implement Bundle-installed standard dispatch
 ```
 
-They are the known Q-03 cross-platform fixture issue (`run: 'true'` on a Windows
-shell). The prior review verified the test-only correction in
-`ca3233afe5192ba01861098c429effea7e6a4f6c` (`junit-postfix3.xml`, 68 passed).
-That candidate is **not merged** into this branch, so the failures remain here.
-They are unrelated to the Majed components; the new component tests all pass.
+The stub verifies native integration dispatch mechanics. Real agent behavior is
+`EXECUTE_NOT_VERIFIED`.
 
-## Bundle validation
+## Dependency contract
 
-```text
-specify bundle validate --path bundles/majed-governed
-```
+| Check | Result |
+|---|---|
+| Bundle plans extension before workflow | PASS (`test_manifest_is_structurally_valid...`) |
+| Missing extension fails before preflight | PASS; `dependency-check` reports `DEPENDENCY_MISSING` |
+| Incompatible bridge version fails | PASS; `dependency-version` reports `compatible: false` |
+| Extension removed while workflow remains | Workflow fails at `dependency-check` with exit 1 |
+| Bundle removal | PASS; user file preserved; owned components removed |
 
-Result:
+## Packaging limits
 
-```text
-✓ majed-governed is well-formed and valid.
-exit=0
-```
+- Local source-checkout install: PASS.
+- Bundle artifact build/install: PASS.
+- Wheel-installed CLI without the component force-include: `NOT_VERIFIED`.
+- Catalog-based distribution: `NOT_VERIFIED`.
+- Upstream packaging proposal is documented in
+  [compatibility-and-limitations.md](compatibility-and-limitations.md).
 
-## Clean consumer installation and workflow demonstration
+## Effectiveness
 
-A disposable consumer project was initialized by the bundle installer with the
-`claude` integration:
+- Checker microbenchmark: 1000 `validate_record()` calls in 0.0455s
+  (0.0455 ms/check on this host).
+- Synthetic negative detection: 5/5.
+- Behavioral/agent comparison: `EFFECTIVENESS_NOT_VERIFIED`.
+- No rework, token, cost, or agent-quality measurement was possible.
 
-```text
-specify bundle install ./bundles/majed-governed/bundle.yml \
-  --integration claude --offline
-```
+## Not verified
 
-Observed:
-
-```text
-✓ Workflow 'Majed Controlled Delivery' (majed-controlled) installed
-✓ Installed 'majed-governed' (3 added, 0 already present).
-```
-
-A governance record was copied from the installed template and given the
-baseline revision. The workflow was run in `assess` mode:
-
-```text
-specify workflow run majed-controlled \
-  --input task="Demonstrate governed Core candidate" \
-  --input profile=controlled \
-  --input mode=assess \
-  --input evidence_path=.specify/governance/record.json \
-  --input review_verdict=approve \
-  --input accept_verdict=pending \
-  --json
-```
-
-Observed:
-
-```json
-{
-  "run_id": "ce72781a",
-  "workflow_id": "majed-controlled",
-  "status": "completed",
-  "current_step_id": "close",
-  "current_step_index": 3
-}
-```
-
-Evidence artifact:
-
-```text
-.specify/workflows/majed-controlled/evidence/ce72781a.json
-```
-
-The artifact records:
-
-```json
-"close": {
-  "review_status": "APPROVED_SELF_ASSERTED",
-  "review_independent": false,
-  "gate_accept_choice": "pending",
-  "acceptance_status": "PENDING",
-  "owner_acceptance": "NOT_GRANTED",
-  "authenticated": false
-},
-"owner_acceptance": "NOT_GRANTED"
-```
-
-This is the intended boundary: the gate records a choice; it does not grant
-owner acceptance.
-
-## Governance record check
-
-```text
-python .specify/extensions/majed-governance/scripts/python/governance_core.py \
-  check --record .specify/governance/record.json --root . --json
-```
-
-Observed: `PASS` with three warnings (pending requirement, pending owner
-acceptance, no budget telemetry). `PASS` here means the local record has no
-checker errors; it is not owner acceptance.
-
-## What is not qualified
-
-- POSIX execution of the new scripts/tests: `NOT_VERIFIED`.
-- CI matrix / Python 3.11, 3.13–3.15: `NOT_VERIFIED`.
-- Published wheel force-include and catalog installation: `NOT_VERIFIED`.
-- `mode=execute` agent command dispatch: structurally validated, not executed
-  against a real agent in this qualification.
-- Comparative effectiveness: `EFFECTIVENESS_NOT_VERIFIED`.
-- Independent review and owner acceptance: `NOT_GRANTED`.
+- POSIX execution of the new scripts/tests.
+- CI matrix, Python 3.11/3.13–3.15.
+- Published wheel and catalog install.
+- Real agent behavior and output quality.
+- Independent review and owner acceptance.

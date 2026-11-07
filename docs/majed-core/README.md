@@ -7,9 +7,10 @@ templates globally, or introduce a second workflow/approval engine.
 
 ## Delivery status
 
-`CORE_PARTIAL` — the four components are implemented and locally qualified, but
-not every `CORE_REQUIRED` capability is complete and no comparative
-effectiveness evaluation was performed.
+`CORE_CANDIDATE_COMPLETE` for the agreed scoped Core — the four components are
+implemented and locally qualified, and all twelve `CORE_REQUIRED` requirements
+have scoped acceptance criteria and verification. Comparative behavioral
+effectiveness was not established.
 
 This is a candidate, not an accepted or released product:
 
@@ -24,8 +25,8 @@ This is a candidate, not an accepted or released product:
 | Component | Native kind | Purpose |
 |---|---|---|
 | `majed-adeq` | Preset | ADEQ outcome, obligation, alternatives, impact, confidence, and evidence guidance |
-| `majed-governance` | Extension | Deterministic governance record validation, trace view, and owner decision brief |
-| `majed-controlled` | Workflow | Quick/standard/controlled routes, preflight, evidence capture, review gates, resume, and acceptance boundary |
+| `majed-governance` | Extension | Governance record checks, intake, impact, sources, convergence, metrics, trace, and decision brief |
+| `majed-controlled` | Workflow | Quick/standard/controlled/assess routes, dependency checks, preflight, evidence, gates, resume, and acceptance boundary |
 | `majed-governed` | Bundle | Installs the three components as one local Core candidate |
 
 ## Install in an isolated consumer project
@@ -57,6 +58,27 @@ python .specify/extensions/majed-governance/scripts/python/governance_core.py \
 
 Exit `0` is a local `PASS`; it is not owner acceptance, independent review, or
 host enforcement.
+
+Additional deterministic helpers:
+
+```bash
+python .specify/extensions/majed-governance/scripts/python/governance_core.py \
+  intake --source request.md --revision "$(git rev-parse HEAD)" \
+  --output .specify/governance/record.json
+
+python .specify/extensions/majed-governance/scripts/python/governance_core.py \
+  impact --map .specify/extensions/majed-governance/templates/impact-map.json \
+  --files "presets/majed-adeq/preset.yml" --rollback "revert the commit"
+
+python .specify/extensions/majed-governance/scripts/python/governance_core.py \
+  sources --manifest .specify/governance/sources.json --root .
+
+python .specify/extensions/majed-governance/scripts/python/governance_core.py \
+  converge --record .specify/governance/record.json --apply
+
+python .specify/extensions/majed-governance/scripts/python/governance_core.py \
+  metrics --record .specify/governance/record.json --json
+```
 
 ## Use the controlled workflow
 
@@ -109,5 +131,6 @@ as a known baseline limitation.
 - [Requirements coverage](requirements-matrix.md)
 - [Compatibility and limitations](compatibility-and-limitations.md)
 - [Qualification evidence](qualification.md)
+- [Scoped effectiveness evaluation](effectiveness.md)
 - [Core-to-Full roadmap](roadmap.md)
 - [Engineering report](engineering-report.md)

@@ -64,6 +64,37 @@ merged** here. Consequently those two existing tests still fail on Windows in
 this upstream baseline. They are unrelated to the Majed components; the prior
 review verified the fix in `ca3233a` (`junit-postfix3.xml`, 68 passed).
 
+## Distribution qualification and upstream packaging proposal
+
+Tested and reproducible:
+
+- source-checkout local bundle install;
+- `bundle build` versioned ZIP creation;
+- install from the built ZIP into a clean consumer project;
+- repeat install, user-file preservation, and removal.
+
+Not verified:
+
+- installation from a published wheel;
+- catalog-based distribution by ID;
+- behavior when the CLI itself is installed outside this source checkout.
+
+**Proposed upstream packaging change (NOT implemented):** add the Majed
+component directories to the wheel build's `force-include` map so
+`_locate_bundled_preset/extension/workflow` can resolve them from
+`specify_cli/core_pack/`:
+
+```text
+presets/majed-adeq        -> specify_cli/core_pack/presets/majed-adeq
+extensions/majed-governance -> specify_cli/core_pack/extensions/majed-governance
+workflows/majed-controlled -> specify_cli/core_pack/workflows/majed-controlled
+bundles/majed-governed    -> specify_cli/core_pack/bundles/majed-governed
+```
+
+This is an upstream packaging change and requires separate owner/maintainer
+authorization. Catalog publication would additionally require catalog entries
+with versioned download URLs and an install-allowed source; it is not claimed.
+
 ## RCCA v1.4.0 reuse
 
 RCCA v1.4.0 is `IMPLEMENTED_CANDIDATE / NOT_ACTIVE`; its package status records
