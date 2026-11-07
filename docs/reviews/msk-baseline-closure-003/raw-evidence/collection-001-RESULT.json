@@ -1,0 +1,29 @@
+{
+  "run_id": "collection-001",
+  "command": [
+    "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "tests",
+    "--collect-only",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "started_at_utc": "2026-11-07T03:07:57.847357+00:00",
+  "finished_at_utc": "2026-11-07T03:07:59.005795+00:00",
+  "exit_code": 4,
+  "process_status": "FINISHED",
+  "candidate": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+  "cwd": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree",
+  "stdout": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\collection-001\\stdout.txt",
+  "stderr": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\collection-001\\stderr.txt",
+  "pythonpath": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\src;D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree",
+  "plugin_autoload": "DISABLED_TO_AVOID_UNRELATED_HOST_PLUGINS",
+  "source_files_sha256": {
+    "pyproject.toml": "1b5f7d3e20c5e0bbc9a2f1b16efe966f3f4f0d5ceb2e44a8e92c2b43f5b9d1b5",
+    "src/specify_cli/events/__init__.py": "e1a124593f445aa88b083b0b4d428125d48f57892df266c1478527ff601eb62a",
+    "tests/conftest.py": "9a654c3365f8718c1e0ddbb9616ed88ddcdde157d2a21767e5d6e7fdee58d70f"
+  }
+}

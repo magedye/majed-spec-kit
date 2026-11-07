@@ -1,0 +1,17 @@
+test_exact_output (test_message.MessageTest.test_exact_output) ... FAIL
+
+======================================================================
+FAIL: test_exact_output (test_message.MessageTest.test_exact_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution\fixtures\dogfood-001\project\test_message.py", line 6, in test_exact_output
+    self.assertEqual(message(), "after")
+AssertionError: 'before' != 'after'
+- before
++ after
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

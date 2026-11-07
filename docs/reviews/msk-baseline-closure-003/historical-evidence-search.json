@@ -1,0 +1,67 @@
+{
+  "status": "HISTORICAL_EVIDENCE_UNAVAILABLE",
+  "search_scope": "MSK repo/root planning and parent filename metadata; assigned known archive member names; local Git refs/history. No unrelated repositories or broader filesystem. Six NEW_UNASSIGNED loose references unread.",
+  "observed_candidates": [
+    {
+      "path": "D:\\APP\\maged-spec-kit\\MSK_Baseline_Audit_Request_Review_Synthetic_Response_Appendix_v1-OK.pdf",
+      "bytes": 140973,
+      "kind": "FILENAME_METADATA_ONLY"
+    },
+    {
+      "path": "D:\\APP\\maged-spec-kit\\TEST_REPORT.json",
+      "bytes": 1620,
+      "kind": "FILENAME_METADATA_ONLY"
+    },
+    {
+      "archive": "D:\\APP\\maged-spec-kit\\Majed_Spec_Kit_Execution_Pack_v1.0.zip",
+      "matching_member_names": []
+    },
+    {
+      "archive": "D:\\APP\\maged-spec-kit\\MSK_Execution_Governance_Addendum_v1.1.zip",
+      "matching_member_names": []
+    },
+    {
+      "archive": "D:\\APP\\maged-spec-kit\\Agent_Governance_RCCA_Kit_EN_v1.4.0.zip",
+      "matching_member_names": []
+    },
+    {
+      "archive": "D:\\APP\\maged-spec-kit\\Agent_Source_Audit_Windows_v2.0.0.zip",
+      "matching_member_names": []
+    },
+    {
+      "git_matching_paths": []
+    }
+  ],
+  "claims": [
+    {
+      "group": "Workflow",
+      "reported_passed": 878,
+      "reported_skipped": 5,
+      "evidence_status": "UNKNOWN_UNAVAILABLE",
+      "raw_evidence": null
+    },
+    {
+      "group": "Presets/Extensions/Bundles",
+      "reported_passed": 1983,
+      "reported_skipped": 6,
+      "evidence_status": "UNKNOWN_UNAVAILABLE",
+      "raw_evidence": null
+    },
+    {
+      "group": "Contract/Security",
+      "reported_passed": 215,
+      "reported_skipped": null,
+      "evidence_status": "UNKNOWN_UNAVAILABLE",
+      "raw_evidence": null
+    },
+    {
+      "group": "Workflow Steps",
+      "reported_passed": 577,
+      "reported_skipped": 23,
+      "evidence_status": "UNKNOWN_UNAVAILABLE",
+      "raw_evidence": null
+    }
+  ],
+  "claim_status": "UNVERIFIED_HISTORICAL_CLAIMS_NOT_ADDED_OR_RECONSTRUCTED",
+  "replacement_authorized": "Final owner directive section4, within eligible environments only"
+}

@@ -1,0 +1,126 @@
+{
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "190597d5c47628e78c01565a528636b17f4643053a1a7e4cf61369f1add79151",
+      "revision": "f74bdb893dcba23de72069b46ced5baaeb1684ea"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "6f6344696ff152d9218336f8214b51c829c808ce772ab07ec91365bab05625df",
+      "revision": "f74bdb893dcba23de72069b46ced5baaeb1684ea"
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "e839ce5ad7a571143acfbcfe89c8e429e9097f7a6f5cbc0c25da02c079bb6e18",
+      "revision": "f74bdb893dcba23de72069b46ced5baaeb1684ea"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "sha256": "857b8b5972f637caa0254e4a6215c919bc0c260e9429b1c784f6ee15c59d394f",
+      "revision": "f74bdb893dcba23de72069b46ced5baaeb1684ea"
+    },
+    {
+      "path": "templates/commands/plan.md",
+      "sha256": "206a0386d20b3eed4c087a4d9de247a3e7b2b59348bf3c801fc74f63ca2726a5",
+      "revision": "f74bdb893dcba23de72069b46ced5baaeb1684ea"
+    },
+    {
+      "path": "templates/commands/analyze.md",
+      "sha256": "ffe0640ebe778795737937f2d4ec6f0149d7d55b72692e25369a668f985d1dfe",
+      "revision": "f74bdb893dcba23de72069b46ced5baaeb1684ea"
+    },
+    {
+      "path": "templates/commands/tasks.md",
+      "sha256": "2f9176c6e7c23d2a83d2bd018ffa1e67aee977389a57f2a3fe35fe987b425944",
+      "revision": "f74bdb893dcba23de72069b46ced5baaeb1684ea"
+    },
+    {
+      "path": "templates/tasks-template.md",
+      "sha256": "1e448e9153462e8c5b5a55231a54c756d870a82950d4dd9425a2bf5b7008a0d9",
+      "revision": "f74bdb893dcba23de72069b46ced5baaeb1684ea"
+    },
+    {
+      "path": "templates/plan-template.md",
+      "sha256": "dfba43da2b2a207ff8c177a0fba03af074fd45e261696b4b64172041fad2e992",
+      "revision": "f74bdb893dcba23de72069b46ced5baaeb1684ea"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "1b5f7d3e20c5e0bbc9a2f1b16efe966f3f4f0d5ceb2e44a8e92c2b43f5b9d1b5",
+      "revision": "f74bdb893dcba23de72069b46ced5baaeb1684ea"
+    },
+    {
+      "path": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\.specify\\memory\\constitution.md",
+      "sha256": "93218a57ccdb45d6a6f92f1c949b5131a6d8649eb8f7c005974d3397a2863302",
+      "role": "OWNER_DESIGNATED_PROTECTED_CONSTITUTION; local ignored original, adoption history not inferred"
+    }
+  ],
+  "cases": [
+    {
+      "id": "C-01",
+      "classification": "APPLICATION_GAP",
+      "claim_kind": "FACT_WITH_EXPLICIT_UNVERIFIED_RUNTIME",
+      "sources": [
+        "templates/commands/plan.md:64-72",
+        "templates/commands/analyze.md:60,102-104",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\.specify\\memory\\constitution.md"
+      ],
+      "finding": "Planning/analyze command guidance explicitly loads and applies the constitution. No general-session automatic startup loader is established. setup_plan.py copies a template, not an LLM context or constitutional decision.",
+      "runtime_status": "NOT_VERIFIED",
+      "authority_conflict": "Not proven: absence of global auto-load alone is not REAL_CONFLICT.",
+      "disposition": "Preserve constitution; qualify actual agent workflow once environment permits. Current source-script exercise does not certify all agent instruction loading."
+    },
+    {
+      "id": "C-08",
+      "classification": "SCOPE_DIFFERENCE",
+      "claim_kind": "FACT_AND_BOUNDED_INFERENCE",
+      "sources": [
+        "templates/tasks-template.md:12",
+        "templates/commands/tasks.md:147",
+        "CONTRIBUTING.md:229-250",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\.specify\\memory\\constitution.md"
+      ],
+      "finding": "Consumer-template optional test tasks do not waive SpecKit development positive/negative/regression requirements.",
+      "runtime_status": "NOT_VERIFIED",
+      "condition": "If a consumer constitution itself mandates tests, optional template wording cannot silently override it; actual resolution at the agent decision boundary remains unverified.",
+      "disposition": "Do not weaken development tests or amend constitution. Record conditional consumer application gap; proposed clarification only."
+    },
+    {
+      "id": "C-MATRIX",
+      "classification": "REAL_CONFLICT",
+      "claim_kind": "FACT_OF_TEXTUAL_INCONSISTENCY_NOT_AUTHORITY_REORDER",
+      "sources": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\.specify\\memory\\constitution.md",
+        ".github/workflows/test.yml:29-34",
+        "SUPPORT.md:16-43"
+      ],
+      "finding": "Constitution declares ubuntu/windows x3.11/3.12/3.13 mandatory; CI routine selects3.13/3.14/3.15 across3OS plusUbuntu3.11, manual3.11-3.15; SUPPORT describes rolling coverage. Neither source establishes approval to waive the other.",
+      "runtime_status": "NOT_RUN",
+      "disposition": "Owner/maintainer reconciliation required. No CI/config/constitution edits or matrix reduction."
+    },
+    {
+      "id": "C-AGENTS",
+      "classification": "DOCUMENTATION_DRIFT",
+      "claim_kind": "FACT",
+      "sources": [
+        "AGENTS.md:73-76",
+        "CONTRIBUTING.md:280-289",
+        "ca3233a:AGENTS.md"
+      ],
+      "finding": "Existing candidate adds Windows virtualenv path spelling only; no authority or permission change observed in the diff.",
+      "disposition": "Protected file still excluded from this execution candidate; preserve original candidate and present separate owner proposal."
+    }
+  ],
+  "precedence": [
+    "Current explicit owner bounded directive",
+    "Applicable repository instructions and protected constitution in their domains",
+    "Contracts and approved decisions",
+    "Existing plan",
+    "Implementation/tests/evidence",
+    "summaries/assumptions"
+  ],
+  "no_new_authority_framework": true,
+  "protected_sources_changed": false,
+  "runtime_gate_identity_limit": "GateStep verdict_input is supplied data, not authenticated owner/reviewer identity; CLI process permissions are not a host PEP."
+}

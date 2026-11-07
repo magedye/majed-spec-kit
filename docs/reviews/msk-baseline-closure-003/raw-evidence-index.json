@@ -1,0 +1,125 @@
+{
+  "kind": "Exact original attempt outputs copied only; no test acceptance inferred",
+  "files": [
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-001\\stdout.txt",
+      "copy": "raw-evidence/environment-001-stdout.txt",
+      "sha256": "cb552b5b52d33000feaae560bcf2548ed058b888db708dcba06c591612a51238",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-001\\stderr.txt",
+      "copy": "raw-evidence/environment-001-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\environment-001\\RESULT.json",
+      "copy": "raw-evidence/environment-001-RESULT.json",
+      "sha256": "e1d93c2af3aa5c17df2e1a6e65e77f930ae962a9dde6438f4c96cb31d8d62cc6",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\collection-001\\stdout.txt",
+      "copy": "raw-evidence/collection-001-stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\collection-001\\stderr.txt",
+      "copy": "raw-evidence/collection-001-stderr.txt",
+      "sha256": "87f5ed2506ea006809e721682ac0c7c46bc68c57ac9ace90042033a6aa39b69c",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\collection-001\\RESULT.json",
+      "copy": "raw-evidence/collection-001-RESULT.json",
+      "sha256": "da2526caeed1128dc81eb8c08e35530d33c58d45b993c65a227b2655539c79b4",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\fixture-regression-after.stderr.txt",
+      "copy": "raw-evidence/dogfood-fixture-regression-after.stderr.txt",
+      "sha256": "45ea8bb645460c6e29caf3a1abe646cc14ea9b31cae7fb592ff5a1c0a3145bbb",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\fixture-regression-after.stdout.txt",
+      "copy": "raw-evidence/dogfood-fixture-regression-after.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\fixture-regression-before.stderr.txt",
+      "copy": "raw-evidence/dogfood-fixture-regression-before.stderr.txt",
+      "sha256": "2303e382808b0cde18fd59026e84aee0a977ed6ae0023ce9e40e78ed29bf0bdd",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\fixture-regression-before.stdout.txt",
+      "copy": "raw-evidence/dogfood-fixture-regression-before.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\native-artifact-check.stderr.txt",
+      "copy": "raw-evidence/dogfood-native-artifact-check.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\native-artifact-check.stdout.txt",
+      "copy": "raw-evidence/dogfood-native-artifact-check.stdout.txt",
+      "sha256": "ba504a6e2637ea6ffdb521de325b18a3b382329afbb9850a61bfa7cd8e230e9e",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\native-missing-tasks-gate.stderr.txt",
+      "copy": "raw-evidence/dogfood-native-missing-tasks-gate.stderr.txt",
+      "sha256": "cbf0a84b7b4adeb5715d8c736b797a2716503475709808da2a8639cc5d55c755",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\native-missing-tasks-gate.stdout.txt",
+      "copy": "raw-evidence/dogfood-native-missing-tasks-gate.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\native-plan-setup.stderr.txt",
+      "copy": "raw-evidence/dogfood-native-plan-setup.stderr.txt",
+      "sha256": "ff0a91b4e5e2b4a3fb266a528ffd9cfe7abe768cd4188817c0712a50776dfa24",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\native-plan-setup.stdout.txt",
+      "copy": "raw-evidence/dogfood-native-plan-setup.stdout.txt",
+      "sha256": "ab94241c2f6507f093d890ad04a40c3a49a6304e1b96edfb9b49ee87faca2c43",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dispatcher-001\\portable-echo-on-windows.stderr.txt",
+      "copy": "raw-evidence/dispatcher-portable-echo-on-windows.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dispatcher-001\\portable-echo-on-windows.stdout.txt",
+      "copy": "raw-evidence/dispatcher-portable-echo-on-windows.stdout.txt",
+      "sha256": "b01ac5865d471f9f00d8fbc06d0f605c8ef7b24a5894c388a13b2e5115ad04bf",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dispatcher-001\\posix-true-on-windows.stderr.txt",
+      "copy": "raw-evidence/dispatcher-posix-true-on-windows.stderr.txt",
+      "sha256": "3a76df4f858208db8ff6831a001eb32a1d4118e82fab93ac246b381a6a0aaf3d",
+      "byte_identical": true
+    },
+    {
+      "original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dispatcher-001\\posix-true-on-windows.stdout.txt",
+      "copy": "raw-evidence/dispatcher-posix-true-on-windows.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    }
+  ]
+}

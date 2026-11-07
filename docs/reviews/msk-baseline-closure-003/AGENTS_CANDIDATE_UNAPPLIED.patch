@@ -1,0 +1,16 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index 1ab4e0a..132f99f 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -71,6 +71,8 @@ before acting.
+ ## Common Pitfalls
+ 
+ - **Running tests against the wrong environment:** Run the suite inside this
+-  worktree's own virtualenv (`uv sync --extra test` then
+-  `.venv/bin/python -m pytest`). A bare `uv run pytest` can pick up an
+-  editable install from another worktree and fail to import new subpackages.
++  worktree's own virtualenv (`uv sync --extra test`, then
++  `.venv/bin/python -m pytest` on POSIX or
++  `.venv\Scripts\python.exe -m pytest` on Windows). A bare `uv run pytest`
++  can pick up an editable install from another worktree and fail to import
++  new subpackages.

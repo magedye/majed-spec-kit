@@ -1,0 +1,118 @@
+{
+  "findings": [
+    {
+      "FINDING_ID": "F-WIN-LAUNCH",
+      "REPRODUCTION": "bounded-diagnostics generated no-launcher/bash/sh cases; exact baseline/candidate function diff; package regression BLOCKED",
+      "ROOT_CAUSE": "On Windows baseline primary resolver returns a bare .sh path when neither bash nor sh exists; candidate returns None, matching the unchanged stdlib dispatcher.",
+      "DEFECT_TYPE": "PRODUCT_DEFECT",
+      "ROOT_CAUSE_EVIDENCE_LEVEL": "SOURCE_CONFIRMED_AND_GENERATED_MIRROR_TESTED; primary package execution blocked",
+      "EXISTING_PATCH": "ca3233a:src/specify_cli/events/__init__.py",
+      "PROPOSED_FIX": "Reuse existing minimal None fallback after primary positive/negative regression qualification.",
+      "WRITE_SET": [
+        "src/specify_cli/events/__init__.py",
+        "tests/specify_cli/events/test_events.py"
+      ],
+      "ACCEPTANCE_TEST": "Actual primary resolver with bash, only sh, neither; confinement regressions and generated parity; distinguish argv from WSL/Bash runtime.",
+      "ROLLBACK": "No patch applied here; old ca3233a branch preserved. Future reversal scoped to exact four-file change only.",
+      "status": "REUSE_PENDING_QUALIFIED_ENVIRONMENT"
+    },
+    {
+      "FINDING_ID": "F-RICH-WRAP",
+      "REPRODUCTION": "Rich14.2 Console width20 reproduces phrase split; normalized phrase preserved; other complete-test AST statements identical.",
+      "ROOT_CAUSE": "A display-width line break splits a literal substring assertion without changing the semantic error.",
+      "DEFECT_TYPE": "TEST_DEFECT",
+      "EXISTING_PATCH": "ca3233a:tests/integrations/test_integration_generic.py",
+      "PROPOSED_FIX": "Reuse whitespace-normalized complete message assertion; retain exit1, exact user edit and enabled registry assertions.",
+      "WRITE_SET": [
+        "tests/integrations/test_integration_generic.py"
+      ],
+      "ACCEPTANCE_TEST": "Run both skills parametrizations on qualified CLI environment; no weaker assertion.",
+      "ROLLBACK": "Existing original candidate retained; no test file changed in this branch.",
+      "status": "DISPLAY_CAUSE_REPRODUCED_INTEGRATION_BLOCKED"
+    },
+    {
+      "FINDING_ID": "F-WIN-NOOP",
+      "REPRODUCTION": "Actual cmd /d /c true ->exit1; echo noop ->exit0 on this host.",
+      "ROOT_CAUSE": "POSIX-only true command is used by otherwise platform-neutral nested-workflow fixtures.",
+      "DEFECT_TYPE": "TEST_DEFECT",
+      "EXISTING_PATCH": "ca3233a:tests/specify_cli/workflows/test_command_definition.py",
+      "PROPOSED_FIX": "Reuse existing echo noop fixture after nested-definition regression execution.",
+      "WRITE_SET": [
+        "tests/specify_cli/workflows/test_command_definition.py"
+      ],
+      "ACCEPTANCE_TEST": "Both fan-out/loop bound-call path assertions unchanged and pass; actual WorkflowEngine currently blocked.",
+      "ROLLBACK": "No source/test patch applied; preserve original candidate.",
+      "status": "COMMAND_CAUSE_REPRODUCED_WORKFLOW_BLOCKED"
+    },
+    {
+      "FINDING_ID": "F-WIN-WSL",
+      "REPRODUCTION": "No real WSL compatibility trial performed; generated tests prove selection only.",
+      "ROOT_CAUSE": "UNVERIFIED; finding a bash executable is not evidence it accepts native Windows paths.",
+      "DEFECT_TYPE": "UNVERIFIED",
+      "EXISTING_PATCH": "ca3233a does not establish WSL/native Bash execution qualification.",
+      "PROPOSED_FIX": "First reproduce supported launch behavior; no speculative product change or host configuration change.",
+      "WRITE_SET": [],
+      "ACCEPTANCE_TEST": "Separately identified native Bash/WSL runtime and path behavior under unchanged host settings.",
+      "ROLLBACK": "No changes",
+      "status": "UNVERIFIED_RUNTIME_BOUNDARY"
+    },
+    {
+      "FINDING_ID": "F-ENV",
+      "REPRODUCTION": "collection-001 exit4, actual ModuleNotFoundError readchar; environment.json lists8 unsatisfied declared requirements.",
+      "ROOT_CAUSE": "The available existing Python package set does not meet the repository package/test declaration.",
+      "DEFECT_TYPE": "ENVIRONMENT_LIMITATION",
+      "EXISTING_PATCH": null,
+      "PROPOSED_FIX": "Verified pre-existing compliant environment, or separate explicit provisioning authorization; no stubs or requirement reductions.",
+      "WRITE_SET": [],
+      "ACCEPTANCE_TEST": "All declared requirements satisfied; source import rooted in this worktree; successful complete collection before suite outcomes.",
+      "ROLLBACK": "Own .venv may be retained; no global settings/dependencies modified.",
+      "status": "BLOCKS_PRIMARY_QUALIFICATION"
+    },
+    {
+      "FINDING_ID": "F-CI-DOC",
+      "REPRODUCTION": "authority C-MATRIX source comparison.",
+      "ROOT_CAUSE": "No supersession/adoption evidence resolving differing matrix mandates.",
+      "DEFECT_TYPE": "DOCUMENTATION_DEFECT",
+      "EXISTING_PATCH": null,
+      "PROPOSED_FIX": "Owner-reviewable governance/CI options only; do not change protected files.",
+      "WRITE_SET": [],
+      "ACCEPTANCE_TEST": "Explicit approved coverage policy with matching CI/docs and future actual evidence.",
+      "ROLLBACK": "No changes",
+      "status": "OWNER_DECISION_REQUIRED"
+    }
+  ],
+  "new_product_corrections_implemented": 0,
+  "why_not_duplicate_existing_fixes": "ca3233a already contains corrections; missing primary regressions prevent claiming their qualification or committing another implementation.",
+  "candidate_file_dispositions": [
+    {
+      "path": "AGENTS.md",
+      "disposition": "OWNER_DECISION_REQUIRED",
+      "applied_to_this_candidate": false,
+      "qualification": "PROTECTED_PROPOSAL_ONLY"
+    },
+    {
+      "path": "src/specify_cli/events/__init__.py",
+      "disposition": "REUSE",
+      "applied_to_this_candidate": false,
+      "qualification": "CONDITIONAL_ON_REQUIRED_PRIMARY_REGRESSIONS"
+    },
+    {
+      "path": "tests/specify_cli/events/test_events.py",
+      "disposition": "REUSE",
+      "applied_to_this_candidate": false,
+      "qualification": "CONDITIONAL_ON_REQUIRED_PRIMARY_REGRESSIONS"
+    },
+    {
+      "path": "tests/integrations/test_integration_generic.py",
+      "disposition": "REUSE",
+      "applied_to_this_candidate": false,
+      "qualification": "CONDITIONAL_ON_REQUIRED_PRIMARY_REGRESSIONS"
+    },
+    {
+      "path": "tests/specify_cli/workflows/test_command_definition.py",
+      "disposition": "REUSE",
+      "applied_to_this_candidate": false,
+      "qualification": "CONDITIONAL_ON_REQUIRED_PRIMARY_REGRESSIONS"
+    }
+  ]
+}

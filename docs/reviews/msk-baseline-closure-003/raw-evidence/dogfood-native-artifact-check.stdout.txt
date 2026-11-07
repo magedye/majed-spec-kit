@@ -1,0 +1,1 @@
+{"FEATURE_DIR":"D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\project\\specs\\003-message","AVAILABLE_DOCS":["tasks.md"]}

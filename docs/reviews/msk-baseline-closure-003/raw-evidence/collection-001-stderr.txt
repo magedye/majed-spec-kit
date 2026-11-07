@@ -1,0 +1,18 @@
+ImportError while loading conftest 'D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution-worktree\tests\conftest.py'.
+tests\conftest.py:13: in <module>
+    from specify_cli.presets import PresetRegistry
+src\specify_cli\__init__.py:37: in <module>
+    from .shared_infra import (
+src\specify_cli\shared_infra.py:15: in <module>
+    from .integrations.base import IntegrationBase
+src\specify_cli\integrations\__init__.py:159: in <module>
+    _register_builtins()
+src\specify_cli\integrations\__init__.py:70: in _register_builtins
+    from .alquimia import AlquimiaAIIntegration
+src\specify_cli\integrations\alquimia\__init__.py:7: in <module>
+    from ..._utils import dump_frontmatter
+src\specify_cli\_utils.py:14: in <module>
+    from ._console import console
+src\specify_cli\_console.py:14: in <module>
+    import readchar
+E   ModuleNotFoundError: No module named 'readchar'

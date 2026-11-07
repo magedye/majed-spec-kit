@@ -1,0 +1,33 @@
+{
+  "request_id": "MSK-BASELINE-CLOSURE-003",
+  "authority": "Final owner directive830cd907 sections3/5/13; existing plan is primary, this is its execution annex",
+  "worktree": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree",
+  "source_baseline": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+  "existing_candidate_preserved": "ca3233afe5192ba01861098c429effea7e6a4f6c on fix/msk-baseline-closure-003",
+  "source_paths_conditionally_authorized": [
+    "src/specify_cli/events/__init__.py",
+    "tests/specify_cli/events/test_events.py",
+    "tests/integrations/test_integration_generic.py",
+    "tests/specify_cli/workflows/test_command_definition.py"
+  ],
+  "source_change_gate": "Reproducible finding and before/after/affected verification; do not checkpoint unverified product changes",
+  "report_prefix": "docs/reviews/msk-baseline-closure-003/",
+  "report_location_basis": "CONTRIBUTING docs/ change evidence and owner section14; no parallel authority register",
+  "local_evidence_prefix": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution",
+  "local_fixture_prefix": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\fixtures",
+  "local_environment": "Latest owner clarification: inspect/use existing MSK or host interpreters only; do not create another environment, install dependencies or change PATH/system settings. Initial agent-created own .venv predates clarification and is retained as unqualified attempt provenance.",
+  "protected": [
+    "AGENTS.md",
+    ".gitignore",
+    ".specify/memory/constitution.md",
+    "all other source/test files",
+    "remote CI/global settings",
+    "original candidate",
+    "unrelated primary worktree"
+  ],
+  "main_merge": false,
+  "remote_push": false,
+  "core_implementation": false,
+  "new_policy_engine": false,
+  "original_preserved_local_evidence": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution"
+}

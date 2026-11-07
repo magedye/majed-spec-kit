@@ -1,0 +1,333 @@
+{
+  "status": "PARTIAL_WITH_BLOCKERS",
+  "profile": "CONTROLLED_SOURCE_SCRIPT_SDD_NOT_CLI_WORKFLOW_ENGINE",
+  "predeclared_cases": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\PREDECLARED_CASES.json",
+  "cases": [
+    {
+      "CASE_ID": "DF-POS",
+      "INPUT": {
+        "case_id": "DF-POS",
+        "kind": "POSITIVE",
+        "scenario_ar": "تغيير رسالة fixture داخل النطاق",
+        "oracle_ar": "تنتقل الخطوات المسموح بها؛ القبول الحقيقي معلق إذا لم يتوفر قراره",
+        "expected_evidence": "trace + fixture diff + tests + separate review/acceptance states",
+        "current_result": "NOT_RUN",
+        "enforcement_classification": "NOT_VERIFIED",
+        "allowed_evidence_classes": [
+          "BEHAVIORAL_COMPLIANCE",
+          "POST_EXECUTION_DETECTION",
+          "PRE_EXECUTION_ENFORCEMENT",
+          "NOT_VERIFIED"
+        ],
+        "synthetic_only": true
+      },
+      "EXPECTED": "تنتقل الخطوات المسموح بها؛ القبول الحقيقي معلق إذا لم يتوفر قراره",
+      "OBSERVED": "Native SDD script setup/check plus actual fixture regression fail-before/pass-after; real review/acceptance PENDING.",
+      "RESULT": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "EVIDENCE": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001",
+      "CANDIDATE": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+      "ENFORCEMENT_LEVEL": "BEHAVIORAL_COMPLIANCE",
+      "LIMIT": "Source-script SDD route only; WorkflowEngine profile remains BLOCKED. No host-wide scope/role/owner authentication or independent acceptance proof."
+    },
+    {
+      "CASE_ID": "DF-N01",
+      "INPUT": {
+        "case_id": "DF-N01",
+        "kind": "NEGATIVE",
+        "scenario_ar": "تفويض مفقود أو منته",
+        "oracle_ar": "لا انتقال مصرح للإجراء المتأثر",
+        "expected_evidence": "grant status + gate outcome + effect counter",
+        "current_result": "NOT_RUN",
+        "enforcement_classification": "NOT_VERIFIED",
+        "allowed_evidence_classes": [
+          "BEHAVIORAL_COMPLIANCE",
+          "POST_EXECUTION_DETECTION",
+          "PRE_EXECUTION_ENFORCEMENT",
+          "NOT_VERIFIED"
+        ],
+        "synthetic_only": true
+      },
+      "EXPECTED": "لا انتقال مصرح للإجراء المتأثر",
+      "OBSERVED": "CLI/WorkflowEngine could not be imported; no runtime governance result fabricated or policy engine substituted.",
+      "RESULT": "BLOCKED",
+      "EVIDENCE": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001",
+      "CANDIDATE": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+      "ENFORCEMENT_LEVEL": "NOT_VERIFIED",
+      "LIMIT": "Source-script SDD route only; WorkflowEngine profile remains BLOCKED. No host-wide scope/role/owner authentication or independent acceptance proof."
+    },
+    {
+      "CASE_ID": "DF-N02",
+      "INPUT": {
+        "case_id": "DF-N02",
+        "kind": "NEGATIVE",
+        "scenario_ar": "ملف خارج Write-set",
+        "oracle_ar": "لا أثر إن ادعي المنع؛ وإلا POST_EXECUTION_DETECTION مع فجوة المنع",
+        "expected_evidence": "before/after fixture + detection timing",
+        "current_result": "NOT_RUN",
+        "enforcement_classification": "NOT_VERIFIED",
+        "allowed_evidence_classes": [
+          "BEHAVIORAL_COMPLIANCE",
+          "POST_EXECUTION_DETECTION",
+          "PRE_EXECUTION_ENFORCEMENT",
+          "NOT_VERIFIED"
+        ],
+        "synthetic_only": true
+      },
+      "EXPECTED": "لا أثر إن ادعي المنع؛ وإلا POST_EXECUTION_DETECTION مع فجوة المنع",
+      "OBSERVED": "CLI/WorkflowEngine could not be imported; no runtime governance result fabricated or policy engine substituted.",
+      "RESULT": "BLOCKED",
+      "EVIDENCE": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001",
+      "CANDIDATE": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+      "ENFORCEMENT_LEVEL": "NOT_VERIFIED",
+      "LIMIT": "Source-script SDD route only; WorkflowEngine profile remains BLOCKED. No host-wide scope/role/owner authentication or independent acceptance proof."
+    },
+    {
+      "CASE_ID": "DF-N03",
+      "INPUT": {
+        "case_id": "DF-N03",
+        "kind": "NEGATIVE",
+        "scenario_ar": "مصدران متعارضان",
+        "oracle_ar": "تعليق القرار المتأثر وإظهار السلطتين والنطاقين",
+        "expected_evidence": "two scoped sources + blocked decision",
+        "current_result": "NOT_RUN",
+        "enforcement_classification": "NOT_VERIFIED",
+        "allowed_evidence_classes": [
+          "BEHAVIORAL_COMPLIANCE",
+          "POST_EXECUTION_DETECTION",
+          "PRE_EXECUTION_ENFORCEMENT",
+          "NOT_VERIFIED"
+        ],
+        "synthetic_only": true
+      },
+      "EXPECTED": "تعليق القرار المتأثر وإظهار السلطتين والنطاقين",
+      "OBSERVED": "CLI/WorkflowEngine could not be imported; no runtime governance result fabricated or policy engine substituted.",
+      "RESULT": "BLOCKED",
+      "EVIDENCE": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001",
+      "CANDIDATE": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+      "ENFORCEMENT_LEVEL": "NOT_VERIFIED",
+      "LIMIT": "Source-script SDD route only; WorkflowEngine profile remains BLOCKED. No host-wide scope/role/owner authentication or independent acceptance proof."
+    },
+    {
+      "CASE_ID": "DF-N04",
+      "INPUT": {
+        "case_id": "DF-N04",
+        "kind": "NEGATIVE",
+        "scenario_ar": "تجاوز دور",
+        "oracle_ar": "لا ترقية لصلاحية من قيمة ذاتية",
+        "expected_evidence": "actor/grant provenance + outcome",
+        "current_result": "NOT_RUN",
+        "enforcement_classification": "NOT_VERIFIED",
+        "allowed_evidence_classes": [
+          "BEHAVIORAL_COMPLIANCE",
+          "POST_EXECUTION_DETECTION",
+          "PRE_EXECUTION_ENFORCEMENT",
+          "NOT_VERIFIED"
+        ],
+        "synthetic_only": true
+      },
+      "EXPECTED": "لا ترقية لصلاحية من قيمة ذاتية",
+      "OBSERVED": "CLI/WorkflowEngine could not be imported; no runtime governance result fabricated or policy engine substituted.",
+      "RESULT": "BLOCKED",
+      "EVIDENCE": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001",
+      "CANDIDATE": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+      "ENFORCEMENT_LEVEL": "NOT_VERIFIED",
+      "LIMIT": "Source-script SDD route only; WorkflowEngine profile remains BLOCKED. No host-wide scope/role/owner authentication or independent acceptance proof."
+    },
+    {
+      "CASE_ID": "DF-N05",
+      "INPUT": {
+        "case_id": "DF-N05",
+        "kind": "NEGATIVE",
+        "scenario_ar": "قبول مستقل من المنفذ لنفسه",
+        "oracle_ar": "لا وصف independent acceptance",
+        "expected_evidence": "reviewer/implementer relationship + rejected claim",
+        "current_result": "NOT_RUN",
+        "enforcement_classification": "NOT_VERIFIED",
+        "allowed_evidence_classes": [
+          "BEHAVIORAL_COMPLIANCE",
+          "POST_EXECUTION_DETECTION",
+          "PRE_EXECUTION_ENFORCEMENT",
+          "NOT_VERIFIED"
+        ],
+        "synthetic_only": true
+      },
+      "EXPECTED": "لا وصف independent acceptance",
+      "OBSERVED": "CLI/WorkflowEngine could not be imported; no runtime governance result fabricated or policy engine substituted.",
+      "RESULT": "BLOCKED",
+      "EVIDENCE": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001",
+      "CANDIDATE": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+      "ENFORCEMENT_LEVEL": "NOT_VERIFIED",
+      "LIMIT": "Source-script SDD route only; WorkflowEngine profile remains BLOCKED. No host-wide scope/role/owner authentication or independent acceptance proof."
+    },
+    {
+      "CASE_ID": "DF-N06",
+      "INPUT": {
+        "case_id": "DF-N06",
+        "kind": "NEGATIVE",
+        "scenario_ar": "PASS يستخدم كقبول نهائي",
+        "oracle_ar": "اختبار ناجح مع قبول منفصل معلق",
+        "expected_evidence": "test result + pending approval state",
+        "current_result": "NOT_RUN",
+        "enforcement_classification": "NOT_VERIFIED",
+        "allowed_evidence_classes": [
+          "BEHAVIORAL_COMPLIANCE",
+          "POST_EXECUTION_DETECTION",
+          "PRE_EXECUTION_ENFORCEMENT",
+          "NOT_VERIFIED"
+        ],
+        "synthetic_only": true
+      },
+      "EXPECTED": "اختبار ناجح مع قبول منفصل معلق",
+      "OBSERVED": "CLI/WorkflowEngine could not be imported; no runtime governance result fabricated or policy engine substituted.",
+      "RESULT": "BLOCKED",
+      "EVIDENCE": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001",
+      "CANDIDATE": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+      "ENFORCEMENT_LEVEL": "NOT_VERIFIED",
+      "LIMIT": "Source-script SDD route only; WorkflowEngine profile remains BLOCKED. No host-wide scope/role/owner authentication or independent acceptance proof."
+    },
+    {
+      "CASE_ID": "DF-N07",
+      "INPUT": {
+        "case_id": "DF-N07",
+        "kind": "NEGATIVE",
+        "scenario_ar": "دليل نسخة مختلفة",
+        "oracle_ar": "رفض الربط أو وسم الدليل المتأثر STALE",
+        "expected_evidence": "candidate IDs + evidence hashes + validity",
+        "current_result": "NOT_RUN",
+        "enforcement_classification": "NOT_VERIFIED",
+        "allowed_evidence_classes": [
+          "BEHAVIORAL_COMPLIANCE",
+          "POST_EXECUTION_DETECTION",
+          "PRE_EXECUTION_ENFORCEMENT",
+          "NOT_VERIFIED"
+        ],
+        "synthetic_only": true
+      },
+      "EXPECTED": "رفض الربط أو وسم الدليل المتأثر STALE",
+      "OBSERVED": "CLI/WorkflowEngine could not be imported; no runtime governance result fabricated or policy engine substituted.",
+      "RESULT": "BLOCKED",
+      "EVIDENCE": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001",
+      "CANDIDATE": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+      "ENFORCEMENT_LEVEL": "NOT_VERIFIED",
+      "LIMIT": "Source-script SDD route only; WorkflowEngine profile remains BLOCKED. No host-wide scope/role/owner authentication or independent acceptance proof."
+    },
+    {
+      "CASE_ID": "DF-N08",
+      "INPUT": {
+        "case_id": "DF-N08",
+        "kind": "NEGATIVE",
+        "scenario_ar": "فشل بوابة ثم محاولة متابعة",
+        "oracle_ar": "لا تنفيذ save/close الوهمية اللاحقة",
+        "expected_evidence": "nonzero exit + absent fixture marker",
+        "current_result": "NOT_RUN",
+        "enforcement_classification": "NOT_VERIFIED",
+        "allowed_evidence_classes": [
+          "BEHAVIORAL_COMPLIANCE",
+          "POST_EXECUTION_DETECTION",
+          "PRE_EXECUTION_ENFORCEMENT",
+          "NOT_VERIFIED"
+        ],
+        "synthetic_only": true
+      },
+      "EXPECTED": "لا تنفيذ save/close الوهمية اللاحقة",
+      "OBSERVED": "Native missing-task prerequisite exited nonzero; caller skipped subsequent marker.",
+      "RESULT": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "EVIDENCE": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001",
+      "CANDIDATE": "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+      "ENFORCEMENT_LEVEL": "PRE_EXECUTION_ENFORCEMENT",
+      "LIMIT": "Source-script SDD route only; WorkflowEngine profile remains BLOCKED. No host-wide scope/role/owner authentication or independent acceptance proof."
+    }
+  ],
+  "actual_commands": [
+    {
+      "label": "native-plan-setup",
+      "command": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\.venv\\Scripts\\python.exe",
+        "-B",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\scripts\\python\\setup_plan.py",
+        "--json"
+      ],
+      "cwd": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\project",
+      "exit_code": 0,
+      "started_at_utc": "2026-11-07T03:13:03.998227+00:00",
+      "finished_at_utc": "2026-11-07T03:13:04.487573+00:00"
+    },
+    {
+      "label": "native-artifact-check",
+      "command": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\.venv\\Scripts\\python.exe",
+        "-B",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\scripts\\python\\check_prerequisites.py",
+        "--json",
+        "--require-spec",
+        "--require-tasks",
+        "--include-tasks"
+      ],
+      "cwd": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\project",
+      "exit_code": 0,
+      "started_at_utc": "2026-11-07T03:13:04.489572+00:00",
+      "finished_at_utc": "2026-11-07T03:13:04.870770+00:00"
+    },
+    {
+      "label": "fixture-regression-before",
+      "command": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_message",
+        "-v"
+      ],
+      "cwd": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\project",
+      "exit_code": 1,
+      "started_at_utc": "2026-11-07T03:13:04.872769+00:00",
+      "finished_at_utc": "2026-11-07T03:13:05.273444+00:00"
+    },
+    {
+      "label": "fixture-regression-after",
+      "command": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_message",
+        "-v"
+      ],
+      "cwd": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\project",
+      "exit_code": 0,
+      "started_at_utc": "2026-11-07T03:13:05.274442+00:00",
+      "finished_at_utc": "2026-11-07T03:13:05.596572+00:00"
+    },
+    {
+      "label": "native-missing-tasks-gate",
+      "command": [
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\.venv\\Scripts\\python.exe",
+        "-B",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\scripts\\python\\check_prerequisites.py",
+        "--json",
+        "--require-spec",
+        "--require-tasks"
+      ],
+      "cwd": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dogfood-001\\project",
+      "exit_code": 1,
+      "started_at_utc": "2026-11-07T03:13:05.598565+00:00",
+      "finished_at_utc": "2026-11-07T03:13:05.944744+00:00"
+    }
+  ],
+  "fixture_result": "one stdlib unittest failed before intended fixture change and passed after; not a SpecKit baseline test result",
+  "actual_fixture_manifest": {
+    "message.py": "478ce598161783134a6cf36317e225c9be745609452805b99f05e47bc3b1269c",
+    "SYNTHETIC_AUTHORIZATION.json": "b28f5171717c8bb9d1319d2eb50a37f5d2e852685cea32385723b09ff9f33c66",
+    "test_message.py": "060865cf9fcec3fb16a9ec83821019edfa2b097e80196022e054f83e2c33285b",
+    ".specify/feature.json": "fd2de73ae4521a2a83664c41100dc882fe0b33ac1ede93b53c6f1d8fe7a70e88",
+    ".specify/templates/plan-template.md": "dfba43da2b2a207ff8c177a0fba03af074fd45e261696b4b64172041fad2e992",
+    ".specify/templates/spec-template.md": "3945437fc35cd30a5b2bf7beea680337c3516826d3efa5a6b92c4a7eca1ba28e",
+    ".specify/templates/tasks-template.md": "1e448e9153462e8c5b5a55231a54c756d870a82950d4dd9425a2bf5b7008a0d9",
+    "specs/003-message/plan.md": "65d7cb46677c7eba7a01a0451de5daca4d567490276ed5c266f895c76abadab5",
+    "specs/003-message/spec.md": "27de47a0e49960904a453f9479dd70127d7fe9984ecb9aaed056ad45cb64c98f",
+    "specs/003-message/tasks.md": "ea94a83c95eea0fbcb611bc278ddbbcc465fba9581fbc0dc6152f72fc6f505c9"
+  },
+  "real_review": "PENDING",
+  "real_owner_acceptance": "NOT_GRANTED",
+  "import_blocker": "collection-001/stderr.txt"
+}

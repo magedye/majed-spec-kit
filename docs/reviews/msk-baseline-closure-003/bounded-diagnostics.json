@@ -1,0 +1,97 @@
+{
+  "source_revisions": [
+    "f74bdb893dcba23de72069b46ced5baaeb1684ea",
+    "ca3233afe5192ba01861098c429effea7e6a4f6c"
+  ],
+  "generated_script_sha256": "e78e7edb7dd8c5d3a86d61386eb4313ed5b1f8eb6891e496a04b2a53ff7ea984",
+  "generated_cases": [
+    {
+      "case": "no-launcher",
+      "result": "PASSED",
+      "expected_first_argv": null,
+      "observed": null,
+      "boundary": "EXISTING_GENERATED_STDLIB_ARGV_SELECTION_ONLY"
+    },
+    {
+      "case": "bash-selected",
+      "result": "PASSED",
+      "expected_first_argv": "C:\\fixture\\bash.exe",
+      "observed": [
+        "C:\\fixture\\bash.exe",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dispatcher-001\\bash-selected\\.specify\\scripts\\bash\\boot.sh"
+      ],
+      "boundary": "EXISTING_GENERATED_STDLIB_ARGV_SELECTION_ONLY"
+    },
+    {
+      "case": "sh-fallback",
+      "result": "PASSED",
+      "expected_first_argv": "C:\\fixture\\sh.exe",
+      "observed": [
+        "C:\\fixture\\sh.exe",
+        "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution\\fixtures\\dispatcher-001\\sh-fallback\\.specify\\scripts\\bash\\boot.sh"
+      ],
+      "boundary": "EXISTING_GENERATED_STDLIB_ARGV_SELECTION_ONLY"
+    },
+    {
+      "case": "absolute-rejected",
+      "result": "PASSED",
+      "observed": null,
+      "boundary": "EXISTING_GENERATED_STDLIB_RESOLVER_ONLY"
+    },
+    {
+      "case": "traversal-rejected",
+      "result": "PASSED",
+      "observed": null,
+      "boundary": "EXISTING_GENERATED_STDLIB_RESOLVER_ONLY"
+    },
+    {
+      "case": "malformed-quote",
+      "result": "PASSED",
+      "observed": null,
+      "boundary": "EXISTING_GENERATED_STDLIB_RESOLVER_ONLY"
+    },
+    {
+      "case": "python-inline-executes-owned-handler",
+      "result": "PASSED",
+      "exit_code": 0,
+      "boundary": "ACTUAL_GENERATED_STDLIB_HANDLER_EXECUTION; not SpecKit workflow or package qualification"
+    }
+  ],
+  "shell_runs": [
+    {
+      "case": "posix-true-on-windows",
+      "command": [
+        "C:\\WINDOWS\\system32\\cmd.exe",
+        "/d",
+        "/c",
+        "true"
+      ],
+      "exit_code": 1,
+      "boundary": "ACTUAL_LOCAL_CMD_COMMAND_ONLY; workflow regression remains BLOCKED"
+    },
+    {
+      "case": "portable-echo-on-windows",
+      "command": [
+        "C:\\WINDOWS\\system32\\cmd.exe",
+        "/d",
+        "/c",
+        "echo noop"
+      ],
+      "exit_code": 0,
+      "boundary": "ACTUAL_LOCAL_CMD_COMMAND_ONLY; workflow regression remains BLOCKED"
+    }
+  ],
+  "rich_wrap": {
+    "raw": "Error: artifact \nmodified or is not \nowned\n",
+    "raw_phrase_present": false,
+    "normalized_phrase_present": true,
+    "other_semantic_assertions_unchanged_by_ast": true
+  },
+  "limits": [
+    "Generated mirror is existing stdlib functionality, not a new policy engine.",
+    "Primary package import, event resolver integration and workflow test suites are blocked by missing dependencies.",
+    "No actual Bash/WSL runtime compatibility, source fix qualification, governance scenario or host-wide enforcement inferred."
+  ],
+  "product_files_changed": false,
+  "runtime_qualification": "BLOCKED"
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "f74bdb8 source baseline and historical ca3233a patch; no adoption of concurrent Core work",
+  "capabilities": [
+    {
+      "id": "FG01",
+      "capability": "Specifications/clarification/planning/tasks/analyze",
+      "classification": "REUSE_EXISTING",
+      "evidence_and_limit": "templates/commands and scripts/python; actual source-script setup/check exercised, LLM context/CLI not qualified",
+      "qualification": "SCOPED_STATIC_OR_SCRIPT_EVIDENCE; no full runtime/owner acceptance"
+    },
+    {
+      "id": "FG02",
+      "capability": "Workflow pause/resume and gates",
+      "classification": "REUSE_EXISTING",
+      "evidence_and_limit": "Existing workflows engine/step/gate contracts; actual engine profile BLOCKED, verdict_input not authenticated authority",
+      "qualification": "SCOPED_STATIC_OR_SCRIPT_EVIDENCE; no full runtime/owner acceptance"
+    },
+    {
+      "id": "FG03",
+      "capability": "Presets/extensions/bundles integration",
+      "classification": "INTEGRATE_EXISTING",
+      "evidence_and_limit": "Existing registries and package managers; no reinstall, current compliant environment needed for runtime qualification",
+      "qualification": "SCOPED_STATIC_OR_SCRIPT_EVIDENCE; no full runtime/owner acceptance"
+    },
+    {
+      "id": "FG04",
+      "capability": "Semantic traceability and candidate evidence validity",
+      "classification": "UNRESOLVED",
+      "evidence_and_limit": "Scenario24 audit rows preserve gaps; no project-wide automatic fulfillment or authority engine proven",
+      "qualification": "SCOPED_STATIC_OR_SCRIPT_EVIDENCE; no full runtime/owner acceptance"
+    },
+    {
+      "id": "FG05",
+      "capability": "Host-wide authenticated identity/authorization/enforcement",
+      "classification": "INTERFACE_ONLY",
+      "evidence_and_limit": "No technical boundary established by user-supplied gate verdicts or a source-script fixture",
+      "qualification": "SCOPED_STATIC_OR_SCRIPT_EVIDENCE; no full runtime/owner acceptance"
+    },
+    {
+      "id": "FG06",
+      "capability": "Optional Full UI",
+      "classification": "DEFER",
+      "evidence_and_limit": "Existing planning/reference separation retained as proposal; no implementation authority",
+      "qualification": "SCOPED_STATIC_OR_SCRIPT_EVIDENCE; no full runtime/owner acceptance"
+    },
+    {
+      "id": "FG07",
+      "capability": "Concurrent Majed governance/Core work on another branch",
+      "classification": "UNRESOLVED",
+      "evidence_and_limit": "Only branch/path metadata observed; outside frozen baseline source scope, not read, imported, modified, or qualified. Do not infer a need to rebuild it.",
+      "qualification": "SCOPED_STATIC_OR_SCRIPT_EVIDENCE; no full runtime/owner acceptance"
+    }
+  ],
+  "implement_required": [],
+  "no_unproven_redevelopment_recommended": true
+}

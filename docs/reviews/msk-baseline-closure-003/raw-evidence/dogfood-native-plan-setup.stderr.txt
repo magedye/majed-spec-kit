@@ -1,0 +1,1 @@
+Copied plan template to D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution\fixtures\dogfood-001\project\specs\003-message\plan.md

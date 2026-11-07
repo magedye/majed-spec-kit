@@ -1,0 +1,25 @@
+{
+  "CANDIDATE": "source f74bdb893dcba23de72069b46ced5baaeb1684ea; documentary commit to be pinned separately",
+  "CHANGED_ARTIFACTS": [
+    "docs/reviews/msk-baseline-closure-003/ reports only",
+    "local task evidence/fixtures"
+  ],
+  "AFFECTED_REQUIREMENTS": [
+    "P0-P9 assessment/evidence reporting; no new production behavior"
+  ],
+  "AFFECTED_TESTS": [
+    "No baseline test file changed; primary collection blocked by dependency availability"
+  ],
+  "RERUN_RESULTS": [
+    "Actual environment probe and collection exit4",
+    "7existing generated-dispatcher cases",
+    "Rich wrapping and cmd command diagnostics",
+    "Native SDD setup/check and fixture unittest before/after",
+    "Native missing-prerequisite failure prevents caller marker"
+  ],
+  "STALE_EVIDENCE": [
+    "Historical reported counts unverified; no primary resolver/CLI/WorkflowEngine/PythonOS matrix PASS available"
+  ],
+  "REVIEW_VALIDITY": "Fixed documentary review only after scoped save; full qualification review remains pending. Source byte identity must match before reuse.",
+  "no_repeated_full_suite_or_product_audit": true
+}

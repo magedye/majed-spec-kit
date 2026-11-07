@@ -1,0 +1,2 @@
+ERROR: tasks.md not found in D:\APP\maged-spec-kit\majed-spec-kit\specs\003-msk-baseline-closure\execution\fixtures\dogfood-001\project\specs\003-message
+Run /speckit.tasks first to create the task list.

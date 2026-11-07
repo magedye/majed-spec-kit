@@ -1,0 +1,736 @@
+{
+  "population": "All24 manually enumerated scenario obligations from owner sections7/8 in declared source-script/engine comparison scope; not allMSK requirements.",
+  "denominator": 24,
+  "initial_method_sample": [
+    "DF-N01",
+    "DF-N02",
+    "DF-N03",
+    "DF-N07",
+    "DF-N06"
+  ],
+  "method_sample_execution": "BLOCKED; method structure can be checked but no successful runtime pilot claimed",
+  "full_population_accounted_after_declared_sample": true,
+  "records": [
+    {
+      "REQUIREMENT_ID": "SG-01",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 358,
+        "exact_source_line": "Execute one complete positive scenario and eight predefined negative scenarios using isolated synthetic fixtures.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Isolated non-destructive synthetic fixture",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "All created fixture paths are inside the declared fixture root; project source/user work unchanged.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-01",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-02",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 26,
+        "exact_source_line": "Use the existing approved project mechanisms wherever possible. Do not introduce a parallel governance framework, request registry, authorization engine, or workflow system unless a separately approved requirement and demonstrated gap justify doing so.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Existing SpecKit mechanisms rather than new policy engine",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "Invoke existing setup_plan/check_prerequisites and source templates, without installing or writing a policy/workflow engine.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-02",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-03",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 366,
+        "exact_source_line": "- Valid scope and authorization.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Explicit synthetic scope and authorization; no transfer to real authority",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "Fixture authorization identifies exact scope and SYNTHETIC_TEST_DATA; no actual owner permission derived from it.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-03",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-04",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 367,
+        "exact_source_line": "- Requirement-to-plan traceability.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Requirement to plan traceability",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "FR001 -> native-created plan -> tasks T001/T002 -> message.py/test_message.py retained by exact artifact hashes.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-04",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-05",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 368,
+        "exact_source_line": "- Controlled execution.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Small controlled change within declared fixture scope",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "Only declared message change before->after is implemented; helper/bootstrap outputs are inside the isolated fixture scope.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-05",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-06",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 369,
+        "exact_source_line": "- Verification results.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Actual verification and separate review status",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "A real unittest fails before intended fixture change and passes after; review remains separately PENDING, not inferred from PASS.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-06",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-07",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 372,
+        "exact_source_line": "Synthetic approval data must not create real project authority.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Real owner acceptance remains separate from synthetic fixture or test success",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "workflows/engine.py + step/gate and agent authority procedure; runtime blocked",
+      "acceptance": "Real candidate owner acceptance remains NOT_GRANTED regardless of synthetic identity or test outcomes.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-07",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/6",
+        "Verification": "BLOCKED; collection-001 exit4",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N06",
+      "execution_result": "BLOCKED",
+      "technical_strength": "NOT_VERIFIED",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-08",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 378,
+        "exact_source_line": "1. Missing or expired authorization.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Missing or expired authorization prevents affected authorized transition",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "workflows/engine.py + step/gate and agent authority procedure; runtime blocked",
+      "acceptance": "Both missing and expired authorization must prevent affected authorized transition; neither is currently executed/verified in engine profile.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-08",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/1",
+        "Verification": "BLOCKED; collection-001 exit4",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N01",
+      "execution_result": "BLOCKED",
+      "technical_strength": "NOT_VERIFIED",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-09",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 379,
+        "exact_source_line": "2. Modification outside the permitted write-set.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Out-of-write-set operation rejected or actual detection level disclosed",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "workflows/engine.py + step/gate and agent authority procedure; runtime blocked",
+      "acceptance": "Out-of-scope request must be blocked before effect if prevention is claimed; otherwise disclose actual post-execution detection. Current case BLOCKED.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-09",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/2",
+        "Verification": "BLOCKED; collection-001 exit4",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N02",
+      "execution_result": "BLOCKED",
+      "technical_strength": "NOT_VERIFIED",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-10",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 380,
+        "exact_source_line": "3. Conflicting authority sources.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Unresolved authority conflict holds affected decision",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "workflows/engine.py + step/gate and agent authority procedure; runtime blocked",
+      "acceptance": "Expose both unresolved authority sources and hold only affected decision; current runtime case BLOCKED.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-10",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/3",
+        "Verification": "BLOCKED; collection-001 exit4",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N03",
+      "execution_result": "BLOCKED",
+      "technical_strength": "NOT_VERIFIED",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-11",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 381,
+        "exact_source_line": "4. Unauthorized role or permission escalation.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "No role/permission acquired from executor-supplied values",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "workflows/engine.py + step/gate and agent authority procedure; runtime blocked",
+      "acceptance": "Executor-supplied role/permission cannot acquire authority; authenticated source and denial evidence required, currently BLOCKED.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-11",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/4",
+        "Verification": "BLOCKED; collection-001 exit4",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N04",
+      "execution_result": "BLOCKED",
+      "technical_strength": "NOT_VERIFIED",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-12",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 382,
+        "exact_source_line": "5. Implementer attempting independent self-approval.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Implementer cannot self-grant independent review",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "workflows/engine.py + step/gate and agent authority procedure; runtime blocked",
+      "acceptance": "Implementer cannot issue independent approval; genuine reviewer scope/evidence required, currently BLOCKED in runtime case.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-12",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/5",
+        "Verification": "BLOCKED; collection-001 exit4",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N05",
+      "execution_result": "BLOCKED",
+      "technical_strength": "NOT_VERIFIED",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-13",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 383,
+        "exact_source_line": "6. Passing tests being treated as final acceptance.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "A passing test is not final acceptance",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "workflows/engine.py + step/gate and agent authority procedure; runtime blocked",
+      "acceptance": "PASS test result and acceptance status remain distinct; complete negative engine path still BLOCKED.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-13",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/6",
+        "Verification": "BLOCKED; collection-001 exit4",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N06",
+      "execution_result": "BLOCKED",
+      "technical_strength": "NOT_VERIFIED",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-14",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 384,
+        "exact_source_line": "7. Reusing evidence from a different candidate revision.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Different-candidate evidence cannot qualify current candidate",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "workflows/engine.py + step/gate and agent authority procedure; runtime blocked",
+      "acceptance": "Candidate/version mismatch invalidates the evidence association instead of importing old PASS; actual runtime negative BLOCKED.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-14",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/7",
+        "Verification": "BLOCKED; collection-001 exit4",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N07",
+      "execution_result": "BLOCKED",
+      "technical_strength": "NOT_VERIFIED",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-15",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 385,
+        "exact_source_line": "8. Continuing execution after a mandatory gate fails.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Failed mandatory gate stops subsequent save/close fixture action",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "Native prerequisite returns nonzero for missing tasks; check=True caller does not create subsequent marker. This proves only this caller path.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-15",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/8",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N08",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "PRE_EXECUTION_ENFORCEMENT",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-16",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 387,
+        "exact_source_line": "Define the expected oracle before each test.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Expected oracle declared before testing each case",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "Existing case/oracle population frozen before any fixture execution; later outcomes do not redefine expected results.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-16",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-17",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 391,
+        "exact_source_line": "`CASE_ID / INPUT / EXPECTED / OBSERVED / RESULT / EVIDENCE / CANDIDATE / ENFORCEMENT_LEVEL`",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Record actual input/expected/observed/result/evidence/candidate/strength",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "Each of9cases has original input/expected, actual observed/result/evidence, exact source revision and enforcement class.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-17",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-18",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 393,
+        "exact_source_line": "Classify evidence strength as:",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "State behavioral/detection/prevention/unknown scope honestly",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "Use behavioral compliance for agent/script positive, limited pre-execution prevention for this failed-prerequisite caller, NOT_VERIFIED for blocked7cases.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-18",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/8",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N08",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "PRE_EXECUTION_ENFORCEMENT",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-19",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 400,
+        "exact_source_line": "Do not claim that a successful fixture or wrapper proves host-wide enforcement over unrestricted shell, filesystem, or network operations.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "No host-wide shell/filesystem/network enforcement inferred",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "No local fixture result is reported as a host-wide filesystem/network/shell or authenticated-identity guarantee.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-19",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/8",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N08",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "PRE_EXECUTION_ENFORCEMENT",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-20",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 340,
+        "exact_source_line": "- Preserve conditions and exceptions.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Preserve all mandatory scenario obligations, conditions and unknowns",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "All declared24scenario obligations remain visible, including blocked execution, source conditions and unresolved acceptance.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-20",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-21",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 348,
+        "exact_source_line": "Use an initial predefined sample to validate the traceability method, then account for the entire mandatory obligation population of the selected scenario.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Initial trace-method sample precedes full-population accounting without generalization",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "Original5-case method sample preserved; its runtime validation is BLOCKED, so no sample success or completed P4 exit is claimed.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-21",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-22",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 341,
+        "exact_source_line": "- Identify the authoritative source and applicable scope.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Source authority, component, acceptance and execution evidence linked",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "Each row has source quote/hash, scope, component, criterion, full9-link chain and actual evidence or explicit BLOCKED.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-22",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-23",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 402,
+        "exact_source_line": "Do not treat model-supplied approval or identity values as authenticated owner authorization.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "Do not treat model-supplied identity or approval as authenticated",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "workflows/engine.py + step/gate and agent authority procedure; runtime blocked",
+      "acceptance": "Fixture owner/reviewer/approval values explicitly remain data, not authenticated real owner or independent-review authority.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-23",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/4",
+        "Verification": "BLOCKED; collection-001 exit4",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-N04",
+      "execution_result": "BLOCKED",
+      "technical_strength": "NOT_VERIFIED",
+      "execution_or_acceptance_not_inferred_from_links": true
+    },
+    {
+      "REQUIREMENT_ID": "SG-24",
+      "source": {
+        "tracked_text_view": "OWNER_EXECUTION_DIRECTIVE.md",
+        "preserved_raw_original": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\execution-worktree\\specs\\003-msk-baseline-closure\\execution\\OWNER_EXECUTION_DIRECTIVE.md",
+        "line": 350,
+        "exact_source_line": "Do not generalize the success of one scenario to the entire MSK project.",
+        "raw_sha256": "79c800d47a4fab37dece5000904bf736efad7ec94375281fce1249a2b4ace3fe",
+        "git_text_normalization_is_not_byte_original": true
+      },
+      "meaning": "No whole-project qualification from one fixture",
+      "conditions_exceptions": "Synthetic source-script profile only; CLI/engine dependency blocker, unknown technical identity/isolation and real acceptance remain explicit.",
+      "component": "scripts/python/setup_plan.py + check_prerequisites.py and agent procedure",
+      "acceptance": "Scoped script evidence is not generalized to allMSK requirements, runtime qualification or Core readiness.",
+      "chain": {
+        "Owner Instruction": "OWNER_EXECUTION_DIRECTIVE.md sections7/8",
+        "Requirement": "SG-24",
+        "Scope": "write-set.json + synthetic fixture manifests only",
+        "Authorization": "Final owner bounded directive; fixture identity does not grant real authority",
+        "Plan": "D:\\APP\\maged-spec-kit\\majed-spec-kit\\specs\\003-msk-baseline-closure\\plan.md",
+        "Execution Evidence": "dogfooding-results.json#/cases/0",
+        "Verification": "Source-script observations only",
+        "Review": "PENDING_FIXED_CANDIDATE_REVIEW",
+        "Acceptance Status": "NOT_GRANTED"
+      },
+      "case_id": "DF-POS",
+      "execution_result": "PASSED_IN_SOURCE_SCRIPT_PROFILE",
+      "technical_strength": "BEHAVIORAL_COMPLIANCE",
+      "execution_or_acceptance_not_inferred_from_links": true
+    }
+  ],
+  "actual_scenario_qualification": "PARTIAL_WITH_BLOCKERS"
+}
