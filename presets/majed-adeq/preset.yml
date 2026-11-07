@@ -1,0 +1,51 @@
+schema_version: "1.0"
+
+preset:
+  id: "majed-adeq"
+  name: "Majed ADEQ Decision Quality"
+  version: "1.0.0"
+  description: "Adds ADEQ decision-quality, alternatives, impact, confidence, and evidence guidance to Spec Kit specifications, plans, tasks, checklists, and clarification."
+  author: "Majed Spec Kit"
+  repository: "https://github.com/magedye/majed-spec-kit"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=1.3.0"
+
+provides:
+  templates:
+    - type: "template"
+      name: "spec-template"
+      file: "templates/spec-adeq.md"
+      description: "ADEQ outcome, obligation, assumption, alternatives, confidence, and evidence sections"
+      strategy: "append"
+
+    - type: "template"
+      name: "plan-template"
+      file: "templates/plan-adeq.md"
+      description: "ADEQ alternatives, trade-offs, impact, recovery, confidence, and evidence sections"
+      strategy: "append"
+
+    - type: "template"
+      name: "tasks-template"
+      file: "templates/tasks-adeq.md"
+      description: "ADEQ verification and evidence requirements for task generation"
+      strategy: "append"
+
+    - type: "template"
+      name: "checklist-template"
+      file: "templates/checklist-adeq.md"
+      description: "ADEQ decision-quality and evidence checklist"
+      strategy: "append"
+
+    - type: "command"
+      name: "speckit.clarify"
+      file: "commands/speckit.clarify.md"
+      description: "ADEQ clarification guard wrapped around the native clarify command"
+      strategy: "wrap"
+
+tags:
+  - "adeq"
+  - "decision-quality"
+  - "governance"
+  - "requirements"
